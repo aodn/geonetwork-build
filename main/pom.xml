@@ -17,4 +17,65 @@
     <description>AODN/IMOS GeoNetwork v${project.version} with classifier plugin.</description>
     <url>http://imos.org.au</url>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.geonetwork-opensource</groupId>
+            <artifactId>geonetwork-main</artifactId>
+            <version>${geonetwork.version}</version>
+            <scope>runtime</scope>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>au.org.emii</groupId>
+            <artifactId>aodn-classifier</artifactId>
+            <version>${project.version}</version>
+            <scope>runtime</scope>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+
+        <resources>
+            <resource>
+                <directory>${basedir}/src/main/java</directory>
+                <includes>
+                    <include>applicationContextOverrides.xml</include>
+                </includes>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <overlays>
+                        <overlay>
+                            <groupId>org.geonetwork-opensource</groupId>
+                            <artifactId>geonetwork-main</artifactId>
+                        </overlay>
+                    </overlays>
+                    <warName>geonetwork-imos-${project.version}</warName>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <id>localGeoNetwork</id>
+            <name>GeoNetwork local repository</name>
+            <url>file://${project.basedir}/../maven_repo/</url>
+        </repository>
+    </repositories>
+
 </project>
