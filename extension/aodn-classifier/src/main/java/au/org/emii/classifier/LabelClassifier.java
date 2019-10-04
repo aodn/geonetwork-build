@@ -15,19 +15,24 @@ import java.util.List;
 public class LabelClassifier implements Classifier {
     private static Logger logger = Logger.getLogger(LabelClassifier.class);
 
-    private final AodnThesaurus vocabularyThesaurus; // vocabulary in which the term is defined
-    private final AodnTermClassifier termClassifier; // classifier used to create CategoryPaths for a term
+    private final ThesaurusFinder thesaurusFinder; // thesaurus finder
+    private final String vocabularyScheme; // vocabulary in which the term is defined
+    private final String classificationScheme; // classifier used to create CategoryPaths for a term
     private final String indexKey; // classifier indexKey
 
     public LabelClassifier(ThesaurusFinder thesaurusFinder, String vocabularyScheme, String classificationScheme, String indexKey) {
-        vocabularyThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(vocabularyScheme));
-        AodnThesaurus classificationThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(classificationScheme));
-        termClassifier = new AodnTermClassifier(vocabularyThesaurus, classificationThesaurus);
+        this.thesaurusFinder = thesaurusFinder;
+        this.vocabularyScheme = vocabularyScheme;
+        this.classificationScheme = classificationScheme;
         this.indexKey = indexKey;
     }
 
     @Override
     public List<CategoryPath> classify(String value) {
+        AodnThesaurus vocabularyThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(vocabularyScheme));
+        AodnThesaurus classificationThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(classificationScheme));
+        AodnTermClassifier termClassifier = new AodnTermClassifier(vocabularyThesaurus, classificationThesaurus);
+
         List<AodnTerm> matchingTerms = vocabularyThesaurus.getTermWithLabel(value);
 
         if (matchingTerms.isEmpty()) {
@@ -61,7 +66,7 @@ public class LabelClassifier implements Classifier {
         AodnTerm term = matchingTerms.get(0);
 
         logger.warn("Multiple matching terms found for '" + label + "' in '"
-            + vocabularyThesaurus.getThesaurusTitle() + "' returning '" + term.getPrefLabel() + "'");
+                + vocabularyScheme + "' returning '" + term.getPrefLabel() + "'");
 
         return term;
 

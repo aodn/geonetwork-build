@@ -17,7 +17,7 @@ public class LabelClassifierTest {
 
     private static final String VOCABULARY_SCHEME = "http://www.my.com/test_vocabulary";
     private static final String CLASSIFICATION_SCHEME = "http://www.my.com/test_classification";
-    
+    private final String indexKey = "";
     private static ThesaurusFinder thesaurusFinder;
 
     private Classifier labelClassifier;
@@ -30,7 +30,7 @@ public class LabelClassifierTest {
     
     @Before
     public void setup() {
-        labelClassifier = new LabelClassifier(thesaurusFinder, VOCABULARY_SCHEME, CLASSIFICATION_SCHEME, null);
+        labelClassifier = new LabelClassifier(thesaurusFinder, VOCABULARY_SCHEME, CLASSIFICATION_SCHEME, indexKey);
     }
 
     @Test

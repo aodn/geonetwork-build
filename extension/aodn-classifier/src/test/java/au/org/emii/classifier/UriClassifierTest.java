@@ -17,7 +17,7 @@ public class UriClassifierTest {
 
     private static final String VOCABULARY_SCHEME = "http://www.my.com/test_vocabulary";
     private static final String CLASSIFICATION_SCHEME = "http://www.my.com/test_classification";
-    
+    private final String indexKey = "";
     private static ThesaurusFinder thesaurusFinder;
 
     private Classifier uriClassifier;
@@ -30,7 +30,7 @@ public class UriClassifierTest {
     
     @Before
     public void setup() {
-        uriClassifier = new UriClassifier(thesaurusFinder, VOCABULARY_SCHEME, CLASSIFICATION_SCHEME, null);
+        uriClassifier = new UriClassifier(thesaurusFinder, VOCABULARY_SCHEME, CLASSIFICATION_SCHEME, indexKey);
     }
 
     @Test
