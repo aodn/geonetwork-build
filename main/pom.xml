@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>org.geonetwork-opensource</groupId>
-            <artifactId>geonetwork-main</artifactId>
+            <artifactId>web-app</artifactId>
             <version>${geonetwork.version}</version>
             <scope>runtime</scope>
             <type>war</type>
@@ -54,13 +54,21 @@
                     <overlays>
                         <overlay>
                             <groupId>org.geonetwork-opensource</groupId>
-                            <artifactId>geonetwork-main</artifactId>
+                            <artifactId>web-app</artifactId>
                         </overlay>
                     </overlays>
                     <warName>geonetwork-imos-${project.version}</warName>
                 </configuration>
             </plugin>
         </plugins>
+
+        <extensions>
+            <extension>
+                <groupId>org.springframework.build</groupId>
+                <artifactId>aws-maven</artifactId>
+                <version>5.0.0.RELEASE</version>
+            </extension>
+        </extensions>
 
     </build>
 
@@ -76,6 +84,18 @@
             <name>GeoNetwork local repository</name>
             <url>file://${project.basedir}/../maven_repo/</url>
         </repository>
+        <repository>
+            <id>aodn</id>
+            <url>http://content.aodn.org.au/repo/maven/</url>
+        </repository>
     </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>maven-s3-repo</id>
+            <name>AODN Repository</name>
+            <url>s3://content.aodn.org.au/repo/maven</url>
+        </repository>
+    </distributionManagement>
 
 </project>
