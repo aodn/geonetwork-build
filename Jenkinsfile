@@ -10,12 +10,12 @@ pipeline {
                 }
             }
             stages {
-                stage('set_version_build') {
+                /** stage('set_version_build') {
                     when { not { branch "master" } }
                     steps {
                         sh './bumpversion.sh build'
                     }
-                }
+                } **/
                 stage('set_version_release') {
                     when { branch "master" }
                     steps {
