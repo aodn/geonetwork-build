@@ -24,11 +24,18 @@
         <project.resources.sourceEncoding>${project.build.sourceEncoding}</project.resources.sourceEncoding>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>aodn</id>
+            <url>https://s3-ap-southeast-2.amazonaws.com/content.dev.aodn.org.au/repo/maven/</url>
+        </repository>
+    </repositories>
+
     <distributionManagement>
         <repository>
             <id>maven-s3-repo</id>
             <name>AODN Repository</name>
-            <url>s3://content.aodn.org.au/repo/maven</url>
+            <url>s3://content.dev.aodn.org.au/repo/maven</url>
         </repository>
     </distributionManagement>
 
