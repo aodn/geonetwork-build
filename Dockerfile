@@ -8,6 +8,7 @@ ENV JAVA_TOOL_OPTIONS -Duser.home=/home/builder
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git-core \
+    libxml2-utils \
     libnetcdf11 \
     libgsl2 \
     libudunits2-0 \
