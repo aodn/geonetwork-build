@@ -30,7 +30,7 @@
 
   <!-- Catch layer name and index them -->
   <xsl:template mode="index"
-                match="/mdb:MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource[cit:linkage/*!='=' and not(contains(lower-case(cit:linkage/*), 'service=wms') and not(string(normalize-space(cit:protocol/gco:CharacterString))))]">
+                match="/mdb:MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource[cit:linkage/*!='' and not(contains(lower-case(cit:linkage/*), 'service=wms') and not(string(normalize-space(cit:protocol/gco:CharacterString))))]">
       <Field name="layer" string="{normalize-space(cit:name/gco:CharacterString|cit:name/gcx:MimeFileType)}" store="false" index="true"/>
   </xsl:template>
 
