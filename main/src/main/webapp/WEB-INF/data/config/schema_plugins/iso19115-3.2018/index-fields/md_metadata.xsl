@@ -29,20 +29,9 @@
   <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" />
 
   <!-- Catch layer name and index them -->
-<!--  <xsl:template mode="index"-->
-<!--                match="/mdb:MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource[cit:linkage/*!='=' and not(contains(lower-case(cit:linkage/*), 'service=wms') and not(string(normalize-space(cit:protocol/gco:CharacterString))))]">-->
-<!--      <Field name="layer" string="{normalize-space(cit:name/gco:CharacterString|cit:name/gcx:MimeFileType)}" store="false" index="true"/>-->
-<!--  </xsl:template>-->
-<!--    <xsl:template mode="index"-->
-<!--                  match="/mdb:MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource[cit:linkage/*!='' and not(contains(lower-case(cit:linkage/*), 'service=wms') and not(string(normalize-space(cit:protocol/gco:CharacterString))))]">-->
-<!--        <Field name="layerDiffClassification" string="{normalize-space(cit:name/gco:CharacterString|cit:name/gcx:MimeFileType)}" store="false" index="true"/>-->
-<!--    </xsl:template>-->
-<!--    <xsl:template mode="index" match="/">-->
-<!--        <xsl:variable name="platform-level" select="//gmd:MD_Keywords[gmd:thesaurusName//gmd:title/*/text()='srs-sst-classifications-levels']/gmd:keyword/*/text()"/>-->
-<!--        <xsl:variable name="platform-instrument" select="//gmd:MD_Keywords[gmd:thesaurusName//gmd:title/*/text()='srs-sst-classification-instrument']/gmd:keyword/*/text()"/>-->
-<!--        <xsl:if test="$platform-level and $platform-instrument">-->
-<!--            <Field name="platform-label" string="{concat($platform-level,'|',$platform-instrument)}" store="true" index="true"/>-->
-<!--        </xsl:if>-->
-<!--    </xsl:template>-->
+  <xsl:template mode="index"
+                match="/mdb:MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource[cit:linkage/*!='=' and not(contains(lower-case(cit:linkage/*), 'service=wms') and not(string(normalize-space(cit:protocol/gco:CharacterString))))]">
+      <Field name="layer" string="{normalize-space(cit:name/gco:CharacterString|cit:name/gcx:MimeFileType)}" store="false" index="true"/>
+  </xsl:template>
 
 </xsl:stylesheet>

@@ -24,5 +24,14 @@
                 match="/gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource[gmd:linkage/gmd:URL!='' and not(contains(lower-case(gmd:linkage/gmd:URL), 'service=wms') and not(string(normalize-space(gmd:protocol/gco:CharacterString))))]">
       <Field name="layer" string="{normalize-space(gmd:name/gco:CharacterString|gmd:name/gmx:MimeFileType)}" store="false" index="true"/>
   </xsl:template>
+  <xsl:template mode="index" match="/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords[1]">
+      <xsl:variable name="platform-item" select="//gmd:MD_Keywords[gmd:thesaurusName//gmd:title/*/text()='theme.aodn_aodn-platform-vocabulary.rdf'][1]/gmd:keyword[1]/*/text()"/>
+      <xsl:variable name="platform-level" select="//gmd:MD_Keywords[gmd:thesaurusName//gmd:title/*/text()='srs-sst-classifications-levels'][1]/gmd:keyword[1]/*/text()"/>
+      <xsl:variable name="platform-instrument" select="//gmd:MD_Keywords[gmd:thesaurusName//gmd:title/*/text()='srs-sst-classification-instrument'][1]/gmd:keyword[1]/*/text()"/>
+      <xsl:variable name="platform-temporal" select="//gmd:MD_Keywords[gmd:thesaurusName//gmd:title/*/text()='srs-sst-classification-temporal'][1]/gmd:keyword[1]/*/text()"/>
+      <xsl:if test="$platform-level and $platform-instrument">
+          <Field name="platformCat" string="{concat($platform-item,'|', $platform-level,'|',$platform-instrument,'|',$platform-temporal)}" store="true" index="true"/>
+      </xsl:if>
+  </xsl:template>
 
 </xsl:stylesheet>
