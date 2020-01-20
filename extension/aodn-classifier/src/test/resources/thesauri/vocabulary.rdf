@@ -42,10 +42,24 @@
         <skos:broader rdf:resource="http://www.my.com/test_vocabulary/#orbitting_satellite"/>
     </skos:Concept>
 
+    <skos:Concept rdf:about="http://www.my.com/test_vocabulary/#NOAA-18">
+        <skos:inScheme rdf:resource="http://www.my.com/test_vocabulary"/>
+        <skos:prefLabel xml:lang="en">NOAA-18</skos:prefLabel>
+        <skos:broadMatch rdf:resource="http://www.my.com/test_classification/#imos"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="http://www.my.com/test_vocabulary/#NOAA-17">
+        <skos:inScheme rdf:resource="http://www.my.com/test_vocabulary"/>
+        <skos:prefLabel xml:lang="en">NOAA-17</skos:prefLabel>
+        <skos:broadMatch rdf:resource="http://www.my.com/test_classification/#orbitting satellite"/>
+    </skos:Concept>
+
     <skos:Concept rdf:about="http://www.my.com/test_vocabulary/#orbitting_satellite">
         <skos:inScheme rdf:resource="http://www.my.com/test_vocabulary"/>
         <skos:prefLabel xml:lang="en">orbitting satellite</skos:prefLabel>
         <skos:narrower rdf:resource="http://www.my.com/test_vocabulary/#hubble"/>
+        <skos:narrower rdf:resource="http://www.my.com/test_vocabulary/#NOAA-17"/>
+        <skos:narrower rdf:resource="http://www.my.com/test_vocabulary/#NOAA-18"/>
         <skos:broadMatch rdf:resource="http://www.my.com/test_classification/#satellite"/>
     </skos:Concept>
 
@@ -75,6 +89,7 @@
         <skos:narrower rdf:resource="http://www.my.com/test_vocabulary/#aatams"/>
         <skos:narrower rdf:resource="http://www.my.com/test_vocabulary/#soop"/>
         <skos:narrower rdf:resource="http://www.my.com/test_vocabulary/#argo"/>
+        <skos:narrower rdf:resource="http://www.my.com/test_vocabulary/#NOAA-18"/>
     </skos:Concept>
 
     <skos:Concept rdf:about="http://www.my.com/test_vocabulary/#aims1">

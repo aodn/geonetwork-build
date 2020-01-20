@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.apache.lucene.facet.taxonomy.CategoryPath;
 import org.fao.geonet.kernel.ThesaurusFinder;
 import org.fao.geonet.kernel.search.classifier.Classifier;
+import org.fao.geonet.kernel.search.facet.CategoryHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,8 +28,36 @@ public class LabelClassifier implements Classifier {
         this.indexKey = indexKey;
     }
 
-    @Override
     public List<CategoryPath> classify(String value) {
+        // If value is a piped value, e.g. first|second|third, iterate through and classify each term.
+        if(value.indexOf('|') > -1){
+            List<CategoryPath> categories = new ArrayList<CategoryPath>();
+
+            for (String term: value.split("\\|")) {
+                List<CategoryPath> cp = lookupCategoryPaths(term);
+                // If the first item did not yield a category path return empty path (matches original behaviour)
+                if(categories.isEmpty() && cp.isEmpty()){
+                    logger.warn("Could not find category path as there is no matching term for first item in path.");
+                    return cp;
+                }
+                if(cp.isEmpty()){
+                    // For each CategoryPath in categories loop through and add the piped paths
+                    List<CategoryPath> newCp = new ArrayList<CategoryPath>();
+                    for (CategoryPath innerCP: categories) {
+                        newCp.add(CategoryHelper.addSubCategory(innerCP, term));
+                    }
+                    categories = newCp;
+                } else {
+                    categories.addAll(cp);
+                }
+            }
+            return categories;
+        }
+
+        return lookupCategoryPaths(value);
+    }
+
+    private List<CategoryPath> lookupCategoryPaths(String value) {
         AodnThesaurus vocabularyThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(vocabularyScheme));
         AodnThesaurus classificationThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(classificationScheme));
         AodnTermClassifier termClassifier = new AodnTermClassifier(vocabularyThesaurus, classificationThesaurus);

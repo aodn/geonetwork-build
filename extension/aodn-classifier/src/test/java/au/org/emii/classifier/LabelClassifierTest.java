@@ -75,4 +75,22 @@ public class LabelClassifierTest {
         assertCategoryListEquals(result, "Integrated Marine Observing System (IMOS)/Argo Floats Facility");
     }
 
+    @Test
+    public void testPipedLabelLookup() {
+        List<CategoryPath> result = labelClassifier.classify("NOAA-17|Level 3 - Mapped|Single swath|single sensor|single satellite");
+        assertCategoryListEquals(result, "space junk/satellite/orbitting satellite/NOAA-17/Level 3 - Mapped/Single swath/single sensor/single satellite");
+    }
+
+    @Test
+    public void testPipedLabelLookupMultiplePaths() {
+        List<CategoryPath> result = labelClassifier.classify("NOAA-18|Level 3 - Mapped|Single swath|single sensor|single satellite");
+        assertCategoryListEquals(result, "space junk/satellite/orbitting satellite/NOAA-18/Level 3 - Mapped/Single swath/single sensor/single satellite", "Integrated Marine Observing System (IMOS)/NOAA-18/Level 3 - Mapped/Single swath/single sensor/single satellite");
+    }
+
+    @Test
+    public void testPipedLabelLookupNoLeadingTerm() {
+        List<CategoryPath> result = labelClassifier.classify("NotARealThing|Level 3 - Mapped|Single swath|single sensor|single satellite");
+        assertEquals(0, result.size());
+    }
+
 }
