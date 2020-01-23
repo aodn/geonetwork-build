@@ -19,7 +19,7 @@
     </modules>
 
     <properties>
-        <geonetwork.version>3.8.1-0</geonetwork.version>
+        <geonetwork.version>3.10.0-0</geonetwork.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.resources.sourceEncoding>${project.build.sourceEncoding}</project.resources.sourceEncoding>
     </properties>
