@@ -1,5 +1,6 @@
 package au.org.emii.classifier;
 
+import org.apache.log4j.Logger;
 import org.fao.geonet.kernel.Thesaurus;
 import org.fao.geonet.kernel.rdf.*;
 import org.jdom.Namespace;
@@ -13,17 +14,22 @@ import java.util.List;
  */
 
 public class AodnThesaurus {
+
+    private static Logger logger = Logger.getLogger(AodnThesaurus.class);
+
     private static final String LANG_CODE = "en";
     private static final Namespace SKOS_NAMESPACE = Namespace.getNamespace("skos","http://www.w3.org/2004/02/skos/core#");
     private static final Namespace DCTERMS_NAMESPACE = Namespace.getNamespace("dcterms","http://purl.org/dc/terms/");
 
     private final Thesaurus thesaurus;
 
-    public AodnThesaurus(Thesaurus thesaurus) {
+    public AodnThesaurus(Thesaurus thesaurus, String scheme) {
+        if (thesaurus == null) { logger.warn(String.format("Could not find thesaurus for scheme='%s'", scheme)); }
         this.thesaurus = thesaurus;
     }
 
     public String getThesaurusTitle() {
+        if (thesaurus == null) { return "No title found. Missing thesaurus."; }
         return thesaurus.getTitle();
     }
 
@@ -89,10 +95,12 @@ public class AodnThesaurus {
 
             // Add alternate labels to terms
 
-            for (AodnTerm term: query.execute(thesaurus)) {
-                List<String> altLabels = getAltLabels(term.getUri());
-                term.setAltLabels(altLabels);
-                result.add(term);
+            if (thesaurus != null) {
+                for (AodnTerm term : query.execute(thesaurus)) {
+                    List<String> altLabels = getAltLabels(term.getUri());
+                    term.setAltLabels(altLabels);
+                    result.add(term);
+                }
             }
 
             return result;
@@ -102,6 +110,9 @@ public class AodnThesaurus {
     }
 
     private List<String> getAltLabels(String uri) throws java.io.IOException, org.openrdf.sesame.query.MalformedQueryException, org.openrdf.sesame.query.QueryEvaluationException, org.openrdf.sesame.config.AccessDeniedException {
+
+        List<String> result = new ArrayList<String>();
+
         Query<String> altLabelQuery = QueryBuilder.builder()
             .distinct(true)
             .select(Selectors.ID, true)
@@ -110,7 +121,11 @@ public class AodnThesaurus {
             .interpreter(new AltLabelResultInterpreter())
             .build();
 
-        return altLabelQuery.execute(thesaurus);
+        if (thesaurus != null) {
+            result = altLabelQuery.execute(thesaurus);
+        }
+
+        return result;
     }
 
     /* SERQL selectors */

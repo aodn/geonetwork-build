@@ -29,8 +29,8 @@ public class UriClassifier implements Classifier  {
 
     @Override
     public List<CategoryPath> classify(String value) {
-        AodnThesaurus vocabularyThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(vocabularyScheme));
-        AodnThesaurus classificationThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(classificationScheme));
+        AodnThesaurus vocabularyThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(vocabularyScheme), vocabularyScheme);
+        AodnThesaurus classificationThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(classificationScheme), classificationScheme);
         AodnTermClassifier termClassifier = new AodnTermClassifier(vocabularyThesaurus, classificationThesaurus);
 
         AodnTerm term = vocabularyThesaurus.getTerm(value);

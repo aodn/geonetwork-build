@@ -29,8 +29,9 @@ public class LabelClassifier implements Classifier {
 
     @Override
     public List<CategoryPath> classify(String value) {
-        AodnThesaurus vocabularyThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(vocabularyScheme));
-        AodnThesaurus classificationThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(classificationScheme));
+
+        AodnThesaurus vocabularyThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(vocabularyScheme), vocabularyScheme);
+        AodnThesaurus classificationThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(classificationScheme), classificationScheme);
         AodnTermClassifier termClassifier = new AodnTermClassifier(vocabularyThesaurus, classificationThesaurus);
 
         List<AodnTerm> matchingTerms = vocabularyThesaurus.getTermWithLabel(value);
