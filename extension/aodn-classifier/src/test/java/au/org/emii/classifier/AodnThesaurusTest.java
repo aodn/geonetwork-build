@@ -26,7 +26,7 @@ public class AodnThesaurusTest {
     @Test
     public void testMissingScheme() {
         AodnThesaurus thesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(MISSING_THESAURUS), MISSING_THESAURUS);
-        assertEquals(thesaurus.getThesaurusTitle(), "Missing thesaurus");
+        assertEquals(thesaurus.getThesaurusTitle(), "No title found. Missing thesaurus.");
     }
 
 }
