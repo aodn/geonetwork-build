@@ -21,11 +21,11 @@ public class AodnTermClassifier {
 
     private static Logger logger = Logger.getLogger(AodnTermClassifier.class);
 
-    private final AodnThesaurus vocabularyThesaurus;  // vocabulary in which the term is defined
-    private final AodnThesaurus classificationThesaurus;  // Classification scheme defining the portal facet hierarchy for
+    private final IAodnThesaurus vocabularyThesaurus;  // vocabulary in which the term is defined
+    private final IAodnThesaurus classificationThesaurus;  // Classification scheme defining the portal facet hierarchy for
                                                           // terms in this vocabulary.
 
-    public AodnTermClassifier(AodnThesaurus vocabularyThesaurus, AodnThesaurus classificationThesaurus) {
+    public AodnTermClassifier(IAodnThesaurus vocabularyThesaurus, IAodnThesaurus classificationThesaurus) {
         this.vocabularyThesaurus = vocabularyThesaurus;
         this.classificationThesaurus = classificationThesaurus;
     }

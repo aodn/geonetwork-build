@@ -17,10 +17,11 @@ public class LabelClassifierTest {
 
     private static final String VOCABULARY_SCHEME = "http://www.my.com/test_vocabulary";
     private static final String CLASSIFICATION_SCHEME = "http://www.my.com/test_classification";
+    private static final String MISSING_SCHEME = "http://www.my.com/missing_thesaurus";
     private final String indexKey = "";
     private static ThesaurusFinder thesaurusFinder;
 
-    private Classifier labelClassifier;
+    private LabelClassifier labelClassifier;
 
     @BeforeClass
     static public void loadThesauri() {
@@ -73,6 +74,12 @@ public class LabelClassifierTest {
     public void testUsesAltLabelIfPresent() {
         List<CategoryPath> result = labelClassifier.classify("Argo Floats Facility");
         assertCategoryListEquals(result, "Integrated Marine Observing System (IMOS)/Argo Floats Facility");
+    }
+
+    @Test
+    public void testFindMissingThesaurus() {
+        IAodnThesaurus thesaurus = labelClassifier.findThesaurus(MISSING_SCHEME);
+        assertEquals(thesaurus.getThesaurusTitle(), "No title found. Missing thesaurus.");
     }
 
 }
