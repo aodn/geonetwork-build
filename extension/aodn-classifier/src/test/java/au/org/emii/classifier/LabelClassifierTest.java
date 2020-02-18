@@ -2,7 +2,6 @@ package au.org.emii.classifier;
 
 import org.apache.lucene.facet.taxonomy.CategoryPath;
 import org.fao.geonet.kernel.ThesaurusFinder;
-import org.fao.geonet.kernel.search.classifier.Classifier;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -17,7 +16,6 @@ public class LabelClassifierTest {
 
     private static final String VOCABULARY_SCHEME = "http://www.my.com/test_vocabulary";
     private static final String CLASSIFICATION_SCHEME = "http://www.my.com/test_classification";
-    private static final String MISSING_SCHEME = "http://www.my.com/missing_thesaurus";
     private final String indexKey = "";
     private static ThesaurusFinder thesaurusFinder;
 
@@ -74,12 +72,6 @@ public class LabelClassifierTest {
     public void testUsesAltLabelIfPresent() {
         List<CategoryPath> result = labelClassifier.classify("Argo Floats Facility");
         assertCategoryListEquals(result, "Integrated Marine Observing System (IMOS)/Argo Floats Facility");
-    }
-
-    @Test
-    public void testFindMissingThesaurus() {
-        IAodnThesaurus thesaurus = labelClassifier.findThesaurus(MISSING_SCHEME);
-        assertEquals(thesaurus.getThesaurusTitle(), "No title found. Missing thesaurus.");
     }
 
 }

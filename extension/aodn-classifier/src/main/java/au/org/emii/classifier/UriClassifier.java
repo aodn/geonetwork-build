@@ -28,21 +28,13 @@ public class UriClassifier implements Classifier  {
         this.indexKey = indexKey;
     }
 
-    public IAodnThesaurus findThesaurus(String scheme) {
-
-        Thesaurus thesaurus = thesaurusFinder.getThesaurusByConceptScheme(scheme);
-        if (thesaurus == null) {
-            return new NullThesaurus();
-        } else {
-            return new AodnTermsThesaurus(thesaurus);
-        }
-
-    }
-
     @Override
     public List<CategoryPath> classify(String value) {
-        IAodnThesaurus vocabularyThesaurus = findThesaurus(vocabularyScheme);
-        IAodnThesaurus classificationThesaurus = findThesaurus(classificationScheme);
+
+        AodnThesaurusFactory thesaurusFactory = new AodnThesaurusFactory(thesaurusFinder);
+
+        IAodnThesaurus vocabularyThesaurus = thesaurusFactory.findThesaurus(vocabularyScheme);
+        IAodnThesaurus classificationThesaurus = thesaurusFactory.findThesaurus(classificationScheme);
         AodnTermClassifier termClassifier = new AodnTermClassifier(vocabularyThesaurus, classificationThesaurus);
 
         AodnTerm term = vocabularyThesaurus.getTerm(value);
