@@ -2,6 +2,7 @@ package au.org.emii.classifier;
 
 import org.apache.log4j.Logger;
 import org.apache.lucene.facet.taxonomy.CategoryPath;
+import org.fao.geonet.kernel.Thesaurus;
 import org.fao.geonet.kernel.ThesaurusFinder;
 import org.fao.geonet.kernel.search.classifier.Classifier;
 
@@ -29,8 +30,11 @@ public class UriClassifier implements Classifier  {
 
     @Override
     public List<CategoryPath> classify(String value) {
-        AodnThesaurus vocabularyThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(vocabularyScheme));
-        AodnThesaurus classificationThesaurus = new AodnThesaurus(thesaurusFinder.getThesaurusByConceptScheme(classificationScheme));
+
+        AodnThesaurusFactory thesaurusFactory = new AodnThesaurusFactory(thesaurusFinder);
+
+        IAodnThesaurus vocabularyThesaurus = thesaurusFactory.findThesaurus(vocabularyScheme);
+        IAodnThesaurus classificationThesaurus = thesaurusFactory.findThesaurus(classificationScheme);
         AodnTermClassifier termClassifier = new AodnTermClassifier(vocabularyThesaurus, classificationThesaurus);
 
         AodnTerm term = vocabularyThesaurus.getTerm(value);

@@ -12,19 +12,93 @@ import java.util.List;
  * instead of KeywordBeans
  */
 
-public class AodnThesaurus {
+public class AodnTermsThesaurus implements IAodnThesaurus {
+
     private static final String LANG_CODE = "en";
     private static final Namespace SKOS_NAMESPACE = Namespace.getNamespace("skos","http://www.w3.org/2004/02/skos/core#");
     private static final Namespace DCTERMS_NAMESPACE = Namespace.getNamespace("dcterms","http://purl.org/dc/terms/");
 
     private final Thesaurus thesaurus;
 
-    public AodnThesaurus(Thesaurus thesaurus) {
+    public AodnTermsThesaurus(Thesaurus thesaurus) {
         this.thesaurus = thesaurus;
     }
 
+    @Override
     public String getThesaurusTitle() {
         return thesaurus.getTitle();
+    }
+
+    @Override
+    public List<AodnTerm> getTerms(Query<AodnTerm> query) {
+        try {
+            List<AodnTerm> result = new ArrayList<AodnTerm>();
+
+            // Add alternate labels to terms
+            for (AodnTerm term : query.execute(thesaurus)) {
+                List<String> altLabels = getAltLabels(term.getUri());
+                term.setAltLabels(altLabels);
+                result.add(term);
+            }
+
+            return result;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public List<String> getAltLabels(String uri) throws java.io.IOException, org.openrdf.sesame.query.MalformedQueryException, org.openrdf.sesame.query.QueryEvaluationException, org.openrdf.sesame.config.AccessDeniedException {
+
+        Query<String> altLabelQuery = QueryBuilder.builder()
+                .distinct(true)
+                .select(Selectors.ID, true)
+                .select(ALT_LABEL_SELECTOR, false)
+                .where(idEquals(uri).and(ALT_LABEL_BOUND))
+                .interpreter(new AltLabelResultInterpreter())
+                .build();
+
+        List<String> result = altLabelQuery.execute(thesaurus);
+
+        return result;
+    }
+
+    public List<AodnTerm> getTermWithLabel(String label) {
+        try {
+            Query<AodnTerm> query = QueryBuilder.builder()
+                    .distinct(true)
+                    .select(Selectors.ID, true)
+                    .select(PREF_LABEL_SELECTOR, false)
+                    .select(ALT_LABEL_SELECTOR, false)
+                    .select(DISPLAY_LABEL_SELECTOR, false)
+                    .select(REPLACES_SELECTOR, false)
+                    .select(REPLACED_BY_SELECTOR, false)
+                    .where(prefLabelEquals(label).or(altLabelEquals(label)))
+                    .interpreter(new AodnTermResultInterpreter())
+                    .build();
+
+            return getTerms(query);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    public boolean hasRelatedTerms(AodnTerm aodnTerm, SkosRelation relation) {
+        return getRelatedTerms(aodnTerm, relation).size() > 0;
+    }
+
+    public List<AodnTerm> getRelatedTerms(AodnTerm aodnTerm, SkosRelation relationshipType) {
+        Query<AodnTerm> query = QueryBuilder.builder()
+                .distinct(true)
+                .select(Selectors.ID, true)
+                .select(relatedToTermSelector(aodnTerm, relationshipType), true)
+                .select(PREF_LABEL_SELECTOR, false)
+                .select(DISPLAY_LABEL_SELECTOR, false)
+                .interpreter(new AodnTermResultInterpreter())
+                .build();
+
+        return getTerms(query);
     }
 
     public AodnTerm getTerm(String uri) {
@@ -44,73 +118,6 @@ public class AodnThesaurus {
         }
 
         return aodnTerms.get(0);
-    }
-
-    public List<AodnTerm> getTermWithLabel(String label) {
-        try {
-            Query<AodnTerm> query = QueryBuilder.builder()
-                .distinct(true)
-                .select(Selectors.ID, true)
-                .select(PREF_LABEL_SELECTOR, false)
-                .select(ALT_LABEL_SELECTOR, false)
-                .select(DISPLAY_LABEL_SELECTOR, false)
-                .select(REPLACES_SELECTOR, false)
-                .select(REPLACED_BY_SELECTOR, false)
-                .where(prefLabelEquals(label).or(altLabelEquals(label)))
-                .interpreter(new AodnTermResultInterpreter())
-                .build();
-
-            return getTerms(query);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public boolean hasRelatedTerms(AodnTerm aodnTerm, SkosRelation relation) {
-        return getRelatedTerms(aodnTerm, relation).size() > 0;
-    }
-
-    public List<AodnTerm> getRelatedTerms(AodnTerm aodnTerm, SkosRelation relationshipType) {
-        Query<AodnTerm> query = QueryBuilder.builder()
-            .distinct(true)
-            .select(Selectors.ID, true)
-            .select(relatedToTermSelector(aodnTerm, relationshipType), true)
-            .select(PREF_LABEL_SELECTOR, false)
-            .select(DISPLAY_LABEL_SELECTOR, false)
-            .interpreter(new AodnTermResultInterpreter())
-            .build();
-
-        return getTerms(query);
-    }
-
-    private List<AodnTerm> getTerms(Query<AodnTerm> query) {
-        try {
-            List<AodnTerm> result = new ArrayList<AodnTerm>();
-
-            // Add alternate labels to terms
-
-            for (AodnTerm term: query.execute(thesaurus)) {
-                List<String> altLabels = getAltLabels(term.getUri());
-                term.setAltLabels(altLabels);
-                result.add(term);
-            }
-
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private List<String> getAltLabels(String uri) throws java.io.IOException, org.openrdf.sesame.query.MalformedQueryException, org.openrdf.sesame.query.QueryEvaluationException, org.openrdf.sesame.config.AccessDeniedException {
-        Query<String> altLabelQuery = QueryBuilder.builder()
-            .distinct(true)
-            .select(Selectors.ID, true)
-            .select(ALT_LABEL_SELECTOR, false)
-            .where(idEquals(uri).and(ALT_LABEL_BOUND))
-            .interpreter(new AltLabelResultInterpreter())
-            .build();
-
-        return altLabelQuery.execute(thesaurus);
     }
 
     /* SERQL selectors */

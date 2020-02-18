@@ -2,7 +2,6 @@ package au.org.emii.classifier;
 
 import org.apache.lucene.facet.taxonomy.CategoryPath;
 import org.fao.geonet.kernel.ThesaurusFinder;
-import org.fao.geonet.kernel.search.classifier.Classifier;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -20,7 +19,7 @@ public class LabelClassifierTest {
     private final String indexKey = "";
     private static ThesaurusFinder thesaurusFinder;
 
-    private Classifier labelClassifier;
+    private LabelClassifier labelClassifier;
 
     @BeforeClass
     static public void loadThesauri() {
