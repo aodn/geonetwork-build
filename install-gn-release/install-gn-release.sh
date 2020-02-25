@@ -12,10 +12,10 @@ mvn deploy:deploy-file -Dfile=geonetwork.war \
  -Durl=${mavenUrl}
 
 included_artifacts="common core domain"
-for artifactId in \${included_artifacts}; do
+for artifactId in ${included_artifacts}; do
     filename="${artifactId}-${version}.jar"
     unzip -j "geonetwork.war" "WEB-INF/lib/${filename}" -d "geonetwork"
-    mvn deploy:deploy-file -Dfile="geonetwork/\${filename}" \
+    mvn deploy:deploy-file -Dfile="geonetwork/${filename}" \
      -DgroupId=${groupId} -DartifactId=${artifactId} -Dversion=${version} -DgeneratePom=true \
      -Durl=${mavenUrl}
 done
