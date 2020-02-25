@@ -7,11 +7,8 @@ ENV HOME /home/builder
 ENV JAVA_TOOL_OPTIONS -Duser.home=/home/builder
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    git-core \
-    libxml2-utils \
-    libnetcdf11 \
-    libgsl2 \
-    libudunits2-0 \
+    git \
+    unzip \
     openjdk-8-jdk \
     maven \
     && rm -rf /var/lib/apt/lists/*
