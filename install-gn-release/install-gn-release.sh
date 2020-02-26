@@ -1,5 +1,7 @@
 #!/bin/bash    
 
+set -ex
+
 # Read groupId, artifactId and version from the pom.properties file
 unzip -j "geonetwork.war" "META-INF/maven/*.properties" -d "geonetwork"
 groupId=`grep groupId geonetwork/pom.properties | cut -d'=' -f2`
