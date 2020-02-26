@@ -19,7 +19,7 @@
     </modules>
 
     <properties>
-        <geonetwork.version>3.10.0-0</geonetwork.version>
+        <geonetwork.version>3.10.1-0</geonetwork.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.resources.sourceEncoding>${project.build.sourceEncoding}</project.resources.sourceEncoding>
     </properties>
@@ -27,16 +27,8 @@
     <repositories>
         <repository>
             <id>aodn</id>
-            <url>https://s3-ap-southeast-2.amazonaws.com/content.dev.aodn.org.au/repo/maven/</url>
+            <url>https://s3-ap-southeast-2.amazonaws.com/imos-artifacts/repo/maven/</url>
         </repository>
     </repositories>
-
-    <distributionManagement>
-        <repository>
-            <id>maven-s3-repo</id>
-            <name>AODN Repository</name>
-            <url>s3://content.dev.aodn.org.au/repo/maven</url>
-        </repository>
-    </distributionManagement>
 
 </project>
