@@ -1,0 +1,49 @@
+<overrides>
+
+    <!-- add additional csw search filters -->
+
+    <file name=".*WEB-INF/config-csw\.xml">
+        <addXml xpath="operations/operation[@name='GetRecords']/parameters">
+            <parameter name="PointOfTruth" field="pointOfTruth" type="AdditionalQueryables" />
+            <parameter name="Category" field="_cat" type="AdditionalQueryables" />
+        </addXml>
+    </file>
+
+    <file name=".*WEB-INF/config/config-service-search\.xml">
+        <addXml xpath="services">
+            <service name="xml.search.imos">
+                <class name=".services.main.XmlSearch">
+                    <param name="maxRecords" value="100" />
+                    <param name="maxSummaryKeys" value="100" />
+                    <param name="maxHitsInSummary" value="100000" />
+                    <param name="resultType" value="portal_hierarchical_summary" />
+                </class>
+            </service>
+        </addXml>
+    </file>
+
+    <spring>
+        <import file="/home/cmrose/git/geonetwork-build/main/src/main/webapp/WEB-INF/classes/config-classifiers.xml"/>
+    </spring>
+
+    <spring>
+        <import file="/home/cmrose/git/geonetwork-build/main/src/main/webapp/WEB-INF/classes/config-facets.xml"/>
+    </spring>
+
+    <file name=".*WEB-INF/config-lucene\.xml">
+        <addXml xpath="search/dumpFields">
+            <field name="thesaurus-external.theme.aodn_aodn-parameter-category-vocabulary" tagName="parameter"/>
+            <field name="thesaurus-external.theme.aodn_aodn-discovery-parameter-vocabulary" tagName="parameter"/>
+            <field name="thesaurus-external.theme.aodn_aodn-platform-category-vocabulary" tagName="platform"/>
+            <field name="thesaurus-external.theme.aodn_aodn-platform-vocabulary" tagName="platform"/>
+            <field name="thesaurus-external.theme.aodn_aodn-organisation-category-vocabulary" tagName="organisation"/>
+            <field name="thesaurus-external.theme.aodn_aodn-organisation-vocabulary" tagName="organisation"/>
+            <field name="orgName" tagName="organisation"/>
+        </addXml>
+    </file>
+
+    <file name=".*WEB-INF/config/config-service-xml-api\.xml">
+        <replaceAtt xpath="services/service[@name='xml.search']/class[@name='.services.main.XmlSearch']/param[@name='maxRecords']" attName="value" value="1000"/>
+    </file>
+
+</overrides>
