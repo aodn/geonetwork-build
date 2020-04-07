@@ -17,7 +17,7 @@ public class AodnThesaurusFactory {
 
         Thesaurus thesaurus = thesaurusFinder.getThesaurusByConceptScheme(scheme);
         if (thesaurus == null) {
-            logger.info(String.format("Thesaurus not found for scheme='%s'", scheme));
+            logger.warn(String.format("Thesaurus not found for scheme='%s'", scheme));
             return new NullThesaurus();
         } else {
             return new AodnTermsThesaurus(thesaurus);

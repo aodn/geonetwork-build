@@ -55,6 +55,9 @@
                         <overlay>
                             <groupId>org.geonetwork-opensource</groupId>
                             <artifactId>web-app</artifactId>
+                            <excludes>
+                                <exclude>WEB-INF/classes/log4j-*.xml</exclude>
+                            </excludes>
                         </overlay>
                     </overlays>
                     <warName>geonetwork-imos-${project.version}</warName>
