@@ -24,5 +24,6 @@ public class AodnRecordDeletedListener extends AodnMetadataEventListener impleme
     @Override
     public void onApplicationEvent(RecordDeletedEvent event) {
         // Delete event is not supported
+        logEvent(event);
     }
 }
