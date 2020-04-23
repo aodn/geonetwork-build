@@ -17,7 +17,7 @@ mvn deploy:deploy-file -Dfile=geonetwork.war \
  -Durl=${mavenUrl}
 
 # deploy included artifacts to s3 maven repo
-included_artifacts="common core domain"
+included_artifacts="common core domain events"
 for artifactId in ${included_artifacts}; do
     filename="${artifactId}-${version}.jar"
     unzip -j "geonetwork.war" "WEB-INF/lib/${filename}" -d "geonetwork"
