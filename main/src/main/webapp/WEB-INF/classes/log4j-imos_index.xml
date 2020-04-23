@@ -219,7 +219,7 @@
   </logger>
 
   <logger name="au.org.emii.listeners.history.AodnMetadataEventListener" additivity="false">
-    <level value="TRACE"/>
+    <level value="INFO"/>
     <appender-ref ref="consoleAppender"/>
     <appender-ref ref="fileAppender"/>
   </logger>

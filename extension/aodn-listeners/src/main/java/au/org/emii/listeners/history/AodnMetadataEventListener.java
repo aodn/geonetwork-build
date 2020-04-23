@@ -18,7 +18,10 @@ public abstract class AodnMetadataEventListener {
      * @param event
      */
     public final void logEvent(AbstractHistoryEvent event) {
-        logger.trace("Event ("+event.toString()+") occurred in metadata record with ID: "+ event.getMdId());
+
+        logger.info("Event:: "+event.toString());
+        logger.info("Before:: \n"+event.getPreviousState());
+        logger.info("After:: \n"+event.getCurrentState());
     }
     
 }
