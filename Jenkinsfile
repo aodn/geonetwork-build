@@ -32,7 +32,7 @@ pipeline {
                 }
                 stage('build') {
                     steps {
-                        sh 'mvn -B -DskipTests clean compile'
+                        sh 'mvn -U -B -DskipTests clean compile'
                     }
                 }
                 stage('test') {

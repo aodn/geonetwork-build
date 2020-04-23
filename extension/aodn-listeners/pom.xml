@@ -8,7 +8,6 @@
         <artifactId>geonetwork-extension</artifactId>
         <groupId>au.org.emii</groupId>
         <version>1.0.11</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <name>AODN Listeners (jar)</name>
@@ -20,7 +19,12 @@
             <groupId>org.geonetwork-opensource</groupId>
             <artifactId>core</artifactId>
             <version>${geonetwork.version}</version>
-            <scope>compile</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.servlet</groupId>
+                    <artifactId>javax.servlet-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.geonetwork-opensource</groupId>
