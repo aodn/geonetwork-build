@@ -48,7 +48,7 @@ pipeline {
             }
             post {
                 success {
-                    archiveArtifacts artifacts: '**/geonetwork-imos-*.war,**/aodn-classifier-*.jar', fingerprint: true, onlyIfSuccessful: true
+                    archiveArtifacts artifacts: '**/geonetwork-imos-*.war,**/aodn-classifier-*.jar,**/aodn-listeners-*.jar', fingerprint: true, onlyIfSuccessful: true
                 }
             }
         }
