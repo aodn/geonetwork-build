@@ -7,10 +7,6 @@ import org.fao.geonet.events.history.AbstractHistoryEvent;
 public abstract class AodnMetadataEventListener {
 
     private static Logger logger = Logger.getLogger(AodnMetadataEventListener.class);
-    
-    public abstract String getChangeMessage();
-
-    public abstract String getEventType();
 
     /**
      * Event handler

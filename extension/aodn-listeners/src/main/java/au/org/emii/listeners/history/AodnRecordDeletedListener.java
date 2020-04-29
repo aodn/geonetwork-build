@@ -8,19 +8,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class AodnRecordDeletedListener extends AodnMetadataEventListener implements ApplicationListener<RecordDeletedEvent> {
 
-    private String changeMessage = "";
-    private String eventType = StatusValue.Events.RECORDDELETED;
-
-    @Override
-    public String getChangeMessage() {
-        return changeMessage;
-    }
-
-    @Override
-    public String getEventType() {
-        return eventType;
-    }
-
     @Override
     public void onApplicationEvent(RecordDeletedEvent event) {
         // Delete event is not supported

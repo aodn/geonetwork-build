@@ -8,19 +8,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class AodnAttachmentAddedListener extends AodnMetadataEventListener implements ApplicationListener<AttachmentAddedEvent> {
 
-    private String changeMessage = "";
-    private String eventType = StatusValue.Events.ATTACHMENTADDED;
-
-    @Override
-    public String getChangeMessage() {
-        return changeMessage;
-    }
-
-    @Override
-    public String getEventType() {
-        return eventType;
-    }
-
     @Override
     public void onApplicationEvent(AttachmentAddedEvent event) {
         logEvent(event);

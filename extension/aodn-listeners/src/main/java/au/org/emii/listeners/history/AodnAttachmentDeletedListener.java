@@ -30,19 +30,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class AodnAttachmentDeletedListener extends AodnMetadataEventListener implements ApplicationListener<AttachmentDeletedEvent> {
 
-    private String changeMessage = "";
-    private String eventType = StatusValue.Events.ATTACHMENTDELETED;
-
-    @Override
-    public String getChangeMessage() {
-        return changeMessage;
-    }
-
-    @Override
-    public String getEventType() {
-        return eventType;
-    }
-
     @Override
     public void onApplicationEvent(AttachmentDeletedEvent event) {
         logEvent(event);

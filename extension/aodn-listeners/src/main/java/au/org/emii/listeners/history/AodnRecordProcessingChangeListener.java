@@ -9,19 +9,6 @@ import org.springframework.stereotype.Component;
 public class AodnRecordProcessingChangeListener extends AodnMetadataEventListener
         implements ApplicationListener<RecordProcessingChangeEvent> {
 
-    private String changeMessage = "";
-    private String eventType = StatusValue.Events.RECORDPROCESSINGCHANGE;
-
-    @Override
-    public String getChangeMessage() {
-        return changeMessage;
-    }
-
-    @Override
-    public String getEventType() {
-        return eventType;
-    }
-
     @Override
     public void onApplicationEvent(RecordProcessingChangeEvent event) {
         logEvent(event);

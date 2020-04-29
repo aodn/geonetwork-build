@@ -8,19 +8,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class AodnRecordOwnerChangeListener extends AodnMetadataEventListener implements ApplicationListener<RecordOwnerChangeEvent> {
 
-    private String changeMessage = "";
-    private String eventType = StatusValue.Events.RECORDOWNERCHANGE;
-
-    @Override
-    public String getChangeMessage() {
-        return changeMessage;
-    }
-
-    @Override
-    public String getEventType() {
-        return eventType;
-    }
-
     @Override
     public void onApplicationEvent(RecordOwnerChangeEvent event) {
         logEvent(event);
