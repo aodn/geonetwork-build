@@ -7,7 +7,7 @@
     <groupId>au.org.emii</groupId>
     <artifactId>geonetwork</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.12</version>
+    <version>1.0.13</version>
 
     <name>AODN GeoNetwork (pom)</name>
     <description>AODN/IMOS Geonetwork v${project.version} with Classifier plugin.</description>
