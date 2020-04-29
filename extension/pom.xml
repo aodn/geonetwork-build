@@ -18,6 +18,7 @@
     <name>GeoNetwork Extensions (pom)</name>
     <modules>
         <module>aodn-classifier</module>
+        <module>aodn-listeners</module>
     </modules>
 
 

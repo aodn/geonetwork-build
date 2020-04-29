@@ -218,6 +218,12 @@
     <appender-ref ref="fileAppender"/>
   </logger>
 
+  <logger name="au.org.emii.listeners.history.AodnMetadataEventListener" additivity="false">
+    <level value="INFO"/>
+    <appender-ref ref="consoleAppender"/>
+    <appender-ref ref="fileAppender"/>
+  </logger>
+
   <!-- Turn off logging except when explicitly declared below -->
   <root>
     <level value="OFF"></level>
