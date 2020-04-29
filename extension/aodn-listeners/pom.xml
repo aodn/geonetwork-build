@@ -7,7 +7,7 @@
     <parent>
         <artifactId>geonetwork-extension</artifactId>
         <groupId>au.org.emii</groupId>
-        <version>1.0.11</version>
+        <version>1.0.12</version>
     </parent>
 
     <name>AODN Listeners (jar)</name>
@@ -25,11 +25,6 @@
                     <artifactId>javax.servlet-api</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.geonetwork-opensource</groupId>
-            <artifactId>domain</artifactId>
-            <version>${geonetwork.version}</version>
         </dependency>
         <dependency>
             <groupId>org.geonetwork-opensource</groupId>
