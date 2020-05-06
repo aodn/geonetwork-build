@@ -19,7 +19,7 @@
     </modules>
 
     <properties>
-        <geonetwork.version>3.10.1-0</geonetwork.version>
+        <geonetwork.version>3.10.2-0</geonetwork.version>
         <spring.version>4.3.0.RELEASE</spring.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.resources.sourceEncoding>${project.build.sourceEncoding}</project.resources.sourceEncoding>
