@@ -19,7 +19,134 @@
     <modules>
         <module>aodn-classifier</module>
         <module>aodn-listeners</module>
+        <module>aodn-xsl</module>
     </modules>
 
+    <!-- Ensure we are using the same versions of dependencies across extensions -->
+    <!-- these should match whats included by GeoNetwork where applicable -->
+    <!-- Geonetwork versions should come from the geonetwork pom when -->
+    <!-- the developers eventually publish their artifacts to the osgeo repository -->
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- dependencies provided by geonetwork - only used for compilation here -->
+            <dependency>
+                <groupId>org.geonetwork-opensource</groupId>
+                <artifactId>core</artifactId>
+                <version>${geonetwork.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.geonetwork-opensource</groupId>
+                <artifactId>common</artifactId>
+                <version>${geonetwork.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.geonetwork-opensource</groupId>
+                <artifactId>domain</artifactId>
+                <version>${geonetwork.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.geonetwork-opensource</groupId>
+                <artifactId>events</artifactId>
+                <version>${geonetwork.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.openrdf</groupId>
+                <artifactId>sesame</artifactId>
+                <version>1.2.7</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>1.2.17</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-facet</artifactId>
+                <version>4.9.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>2.10.2</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jdom</groupId>
+                <artifactId>jdom</artifactId>
+                <version>1.1.2</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>jaxen</groupId>
+                        <artifactId>jaxen</artifactId>
+                    </exclusion>
+                </exclusions>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <artifactId>guava</artifactId>
+                <groupId>com.google.guava</groupId>
+                <type>jar</type>
+                <version>18.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>jaxen</groupId>
+                <artifactId>jaxen</artifactId>
+                <version>1.1.4</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>20080701</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.vividsolutions</groupId>
+                <artifactId>jts</artifactId>
+                <version>1.13</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.geotools</groupId>
+                <artifactId>gt-api</artifactId>
+                <version>${geotools.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.geotools.xsd</groupId>
+                <artifactId>gt-xsd-gml3</artifactId>
+                <version>${geotools.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- required for testing only -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.10</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>xerces</groupId>
+                <artifactId>xercesImpl</artifactId>
+                <version>2.11.0</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
