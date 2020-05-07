@@ -37,6 +37,10 @@
             <id>osgeo</id>
             <url>https://repo.osgeo.org/repository/geotools-releases/</url>
         </repository>
+        <repository>
+            <id>geo-solutions</id>
+            <url>http://maven.geo-solutions.it/</url>
+        </repository>
     </repositories>
 
 </project>
