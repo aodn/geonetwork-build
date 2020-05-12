@@ -7,12 +7,11 @@
     <parent>
         <artifactId>geonetwork-extension</artifactId>
         <groupId>au.org.emii</groupId>
-        <version>1.0.14</version>
+        <version>1.0.13</version>
     </parent>
 
-    <name>AODN Listeners (jar)</name>
-    <artifactId>aodn-listeners</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>aodn-xsl</artifactId>
+    <name>AODN XSL Extensions (jar)</name>
 
     <dependencies>
         <dependency>
@@ -20,17 +19,29 @@
             <artifactId>core</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.geonetwork-opensource</groupId>
-            <artifactId>events</artifactId>
+            <groupId>com.vividsolutions</groupId>
+            <artifactId>jts</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-api</artifactId>
+            <version>${geotools.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools.xsd</groupId>
+            <artifactId>gt-xsd-gml3</artifactId>
         </dependency>
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
         </dependency>
     </dependencies>
 

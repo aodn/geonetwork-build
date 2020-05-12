@@ -39,6 +39,13 @@
             <scope>runtime</scope>
             <type>jar</type>
         </dependency>
+        <dependency>
+            <groupId>au.org.emii</groupId>
+            <artifactId>aodn-xsl</artifactId>
+            <version>${project.version}</version>
+            <scope>runtime</scope>
+            <type>jar</type>
+        </dependency>
     </dependencies>
 
     <build>
