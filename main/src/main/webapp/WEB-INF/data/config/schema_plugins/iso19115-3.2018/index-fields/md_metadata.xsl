@@ -33,7 +33,7 @@
 
     <!-- Index point of truth link for use as an additional CSW queryable and as a link for portal usage-->
     <xsl:template mode="index" match="mdb:metadataLinkage[1]/cit:CI_OnlineResource">
-        <Field name="pointOfTruthLink" string="{cit:linkage/*/text()}" store="true" index="false"/>
+        <Field name="pointOfTruthLink" string="{cit:linkage/*/text()}" store="true" index="true"/>
         <Field name="link" string="{concat(cit:name/*/text(), '|', cit:description/*/text(), '|', cit:linkage/*/text(),'|', cit:protocol/*/text(),'|1')}" store="true" index="false"/>
     </xsl:template>
 

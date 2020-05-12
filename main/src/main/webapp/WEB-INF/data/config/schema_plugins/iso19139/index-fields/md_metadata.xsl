@@ -29,7 +29,7 @@
 
     <!-- Index point of truth link for use as an additional CSW queryable -->
     <xsl:template mode="index" match="gmd:CI_OnlineResource[gmd:protocol/*/text()='WWW:LINK-1.0-http--metadata-URL']/gmd:linkage/gmd:URL">
-        <Field name="pointOfTruthLink" string="{text()}" store="true" index="false"/>
+        <Field name="pointOfTruthLink" string="{text()}" store="true" index="true"/>
     </xsl:template>
 
 </xsl:stylesheet>
