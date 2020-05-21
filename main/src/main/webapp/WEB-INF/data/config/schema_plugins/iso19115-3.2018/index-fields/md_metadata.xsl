@@ -41,6 +41,8 @@
     <!-- Index creative commons licensing information for display when downloading data -->
 
     <xsl:template mode="index" match="mco:MD_LegalConstraints[contains(mco:reference/*/cit:citedResponsibleParty//cit:linkage/*/text(), 'http://creativecommons.org')]">
+        <Field name="MD_LegalConstraintsOtherConstraints" string="{mco:reference/*/cit:title/*/text()}" store="true" index="false" />
+        <Field name="MD_LegalConstraintsOtherConstraints" string="{mco:reference/*/cit:onlineResource//cit:linkage/*/text()}" store="true" index="false" />
         <Field name="jurisdictionLink" string="{mco:reference/*/cit:citedResponsibleParty//cit:linkage/*/text()}" store="true" index="false" />
         <Field name="licenseName" string="{mco:reference/*/cit:title/*/text()}" store="true" index="false" />
         <Field name="licenseLink" string="{mco:reference/*/cit:onlineResource//cit:linkage/*/text()}" store="true" index="false" />
