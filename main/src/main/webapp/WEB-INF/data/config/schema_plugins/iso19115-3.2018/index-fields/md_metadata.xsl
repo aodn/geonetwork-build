@@ -5,6 +5,7 @@
             xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
             xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
             xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
+            xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0"
             xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0"
             xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0"
             xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0"
@@ -37,13 +38,33 @@
         <Field name="link" string="{concat(cit:name/*/text(), '|', cit:description/*/text(), '|', cit:linkage/*/text(),'|', cit:protocol/*/text(),'|1')}" store="true" index="false"/>
     </xsl:template>
 
-    <!-- Index creative commons licensing information -->
+    <!-- Index creative commons licensing information for display when downloading data -->
 
     <xsl:template mode="index" match="mco:MD_LegalConstraints[contains(mco:reference/*/cit:citedResponsibleParty//cit:linkage/*/text(), 'http://creativecommons.org')]">
         <Field name="jurisdictionLink" string="{mco:reference/*/cit:citedResponsibleParty//cit:linkage/*/text()}" store="true" index="false" />
         <Field name="licenseName" string="{mco:reference/*/cit:title/*/text()}" store="true" index="false" />
         <Field name="licenseLink" string="{mco:reference/*/cit:onlineResource//cit:linkage/*/text()}" store="true" index="false" />
         <Field name="imageLink" string="{mco:graphic//cit:linkage/*/text()}" store="true" index="false" />
+        <!-- index any other constraints such as accessConstraints or otherConstraints -->
+        <xsl:apply-templates mode="index" select="@*|node()"/>
+    </xsl:template>
+
+    <!-- Index constraints for display when downloading data -->
+
+    <xsl:template mode="index" match="mri:resourceConstraints/*/mco:accessConstraints/mco:MD_RestrictionCode/@codeListValue">
+        <Field name="accessConstr" string="{string(.)}" store="true" index="false"/>
+    </xsl:template>
+
+    <xsl:template mode="index" match="mri:resourceConstraints/*/mco:otherConstraints/gco:CharacterString">
+        <Field name="otherConstr" string="{string(.)}" store="true" index="false"/>
+    </xsl:template>
+
+    <xsl:template mode="index" match="mri:resourceConstraints/*/mco:classification/mco:MD_ClassificationCode/@codeListValue">
+        <Field name="classif" string="{string(.)}" store="true" index="false"/>
+    </xsl:template>
+
+    <xsl:template mode="index" match="mri:resourceConstraints/*/mco:useLimitation/gco:CharacterString">
+        <Field name="useLimitation" string="{string(.)}" store="true" index="false"/>
     </xsl:template>
 
 </xsl:stylesheet>

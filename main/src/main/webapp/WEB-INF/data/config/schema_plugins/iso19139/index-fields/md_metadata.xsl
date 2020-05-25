@@ -32,4 +32,22 @@
         <Field name="pointOfTruthLink" string="{text()}" store="true" index="true"/>
     </xsl:template>
 
+    <!-- Index constraints for display when downloading data -->
+
+    <xsl:template mode="index" match="gmd:resourceConstraints/*/gmd:accessConstraints/gmd:MD_RestrictionCode/@codeListValue">
+        <Field name="accessConstr" string="{string(.)}" store="true" index="false"/>
+    </xsl:template>
+
+    <xsl:template mode="index" match="gmd:resourceConstraints/*/gmd:otherConstraints/gco:CharacterString">
+        <Field name="otherConstr" string="{string(.)}" store="true" index="false"/>
+    </xsl:template>
+
+    <xsl:template mode="index" match="gmd:resourceConstraints/*/gmd:classification/gmd:MD_ClassificationCode/@codeListValue">
+        <Field name="classif" string="{string(.)}" store="true" index="false"/>
+    </xsl:template>
+
+    <xsl:template mode="index" match="gmd:resourceConstraints/*/gmd:useLimitation/gco:CharacterString">
+        <Field name="useLimitation" string="{string(.)}" store="true" index="false"/>
+    </xsl:template>
+
 </xsl:stylesheet>
