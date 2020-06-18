@@ -50,4 +50,13 @@
         <Field name="useLimitation" string="{string(.)}" store="true" index="false"/>
     </xsl:template>
 
+    <!-- Index unique organisation names used in resource point of contacts/citation cited responsible parties  -->
+
+    <xsl:template mode="index" match="gmd:MD_DataIdentification">
+        <xsl:for-each-group select="(gmd:pointOfContact|gmd:citation/*/gmd:citedResponsibleParty)/gmd:CI_ResponsibleParty/gmd:organisationName/*/text()" group-by=".">
+            <Field name="uniqueOrgName" string="{string(current-grouping-key())}" store="true" index="true"/>
+        </xsl:for-each-group>
+        <!-- continue indexing children -->
+        <xsl:apply-templates mode="index" select="@*|node()"/>
+    </xsl:template>
 </xsl:stylesheet>
