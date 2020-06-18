@@ -5,7 +5,7 @@
     <parent>
         <artifactId>geonetwork</artifactId>
         <groupId>au.org.emii</groupId>
-        <version>1.0.17</version>
+        <version>1.0.18</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
