@@ -46,6 +46,24 @@
             <scope>runtime</scope>
             <type>jar</type>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.saxon</groupId>
+            <artifactId>Saxon-HE</artifactId>
+            <version>10.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -58,6 +76,18 @@
                 </includes>
             </resource>
         </resources>
+
+        <testResources>
+            <testResource>
+                <directory>${basedir}/src/test/resources</directory>
+            </testResource>
+            <testResource>
+                <directory>${basedir}/src/main/webapp/WEB-INF/data/config/schema_plugins</directory>
+                <includes>
+                    <include>iso19115-3.2018/process/*</include>
+                </includes>
+            </testResource>
+        </testResources>
 
         <plugins>
             <plugin>
