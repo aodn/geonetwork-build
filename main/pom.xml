@@ -67,7 +67,6 @@
     </dependencies>
 
     <build>
-
         <resources>
             <resource>
                 <directory>${basedir}/src/main/java</directory>
@@ -90,6 +89,69 @@
         </testResources>
 
         <plugins>
+            <!-- Take a copy of templates to be overridden to ${project.build.directory}/renamed-templates -->
+            <!-- directory.  Adds -core suffix to copied templates.  These templates can then be imported   -->
+            <!-- into overriding templates to include core template processing -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.1.2</version>
+                <executions>
+                    <execution>
+                        <id>unpack</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.geonetwork-opensource</groupId>
+                                    <artifactId>web-app</artifactId>
+                                    <type>war</type>
+                                    <outputDirectory>${project.build.directory}/renamed-templates</outputDirectory>
+                                    <includes>
+                                        **/iso19115-3.2018/**/subtemplate-transformation.xsl,
+                                        **/iso19115-3.2018/**/index-subtemplate.xsl,
+                                        **/iso19115-3.2018/**/suggest.xsl,
+                                        **/iso19115-3.2018/schema-ident.xml
+                                    </includes>
+                                    <fileMappers>
+                                        <org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
+                                            <pattern>\.xsl$</pattern>
+                                            <replacement>-core.xsl</replacement>
+                                        </org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
+                                    </fileMappers>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Add required extensions to xml files -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>xml-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>transform</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <transformationSets>
+                        <transformationSet>
+                            <dir>${project.build.directory}/renamed-templates</dir>
+                            <outputDir>${project.build.directory}/transformed-files</outputDir>
+                            <includes>**/iso19115-3.2018/schema-ident.xml</includes>
+                            <stylesheet>src/main/transforms/schema-ident.xsl</stylesheet>
+                        </transformationSet>
+                    </transformationSets>
+                </configuration>
+            </plugin>
+            <!-- Build the imos war by overlaying extensions included in this project on the core geonetwork war-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
@@ -105,6 +167,15 @@
                         </overlay>
                     </overlays>
                     <warName>geonetwork-imos-${project.version}</warName>
+                    <!-- Include core templates copied and renamed above -->
+                    <webResources>
+                        <resource>
+                            <directory>${project.build.directory}/transformed-files</directory>
+                        </resource>
+                        <resource>
+                            <directory>${project.build.directory}/renamed-templates</directory>
+                        </resource>
+                    </webResources>
                 </configuration>
             </plugin>
         </plugins>
