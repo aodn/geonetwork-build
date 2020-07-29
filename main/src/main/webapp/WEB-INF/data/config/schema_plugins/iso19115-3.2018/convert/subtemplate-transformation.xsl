@@ -8,6 +8,14 @@
 
   <!-- Allow elements wrapping gml elements to be used as sub-templates-->
   <xsl:template name="remove-top-element">
-    <xsl:apply-templates select="*" mode="from19139to19115-3.2018"/>
+    <xsl:apply-templates select="*" mode="copy-all"/>
   </xsl:template>
+
+  <!-- copy everything mode - identity transform-->
+  <xsl:template match="@*|node()" mode="copy-all">
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()" mode="copy-all"/>
+    </xsl:copy>
+  </xsl:template>
+
 </xsl:stylesheet>
