@@ -7,7 +7,7 @@
     <parent>
         <artifactId>geonetwork-extension</artifactId>
         <groupId>au.org.emii</groupId>
-        <version>1.0.23</version>
+        <version>1.0.24</version>
     </parent>
 
     <name>AODN Listeners (jar)</name>
