@@ -7,7 +7,7 @@
     <parent>
         <artifactId>geonetwork-extension</artifactId>
         <groupId>au.org.emii</groupId>
-        <version>1.0.25</version>
+        <version>1.0.26</version>
     </parent>
 
     <artifactId>aodn-xsl</artifactId>
