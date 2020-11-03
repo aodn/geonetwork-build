@@ -4,12 +4,14 @@
             xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
             xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
             xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
+            xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
             xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
             xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0"
             xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0"
             xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0"
             xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0"
             xmlns:converter="java:au.org.emii.xsl.GmlWktConverter"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
             xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
             xmlns:saxon="http://saxon.sf.net/"
             exclude-result-prefixes="#all">
@@ -79,4 +81,28 @@
         <xsl:apply-templates mode="index" select="@*|node()"/>
     </xsl:template>
 
+    <!-- Index keyword anchors for a thesaurus to allow facets to be configured using them (IMAS GCMD keywords) -->
+    
+    <xsl:template mode="index" match="mri:MD_Keywords">
+        <xsl:variable name="thesaurusTitle"
+                      select="replace(mri:thesaurusName/*/cit:title/gco:CharacterString/text(), ' ', '')"/>
+        <xsl:variable name="thesaurusIdentifier"
+                      select="mri:thesaurusName/*/cit:identifier/*/mcc:code/*/text()"/>
+
+        <xsl:variable name="fieldName"
+                      select="if ($thesaurusIdentifier != '')
+                              then $thesaurusIdentifier
+                              else $thesaurusTitle"/>
+        <xsl:variable name="fieldNameTemp"
+                      select="if (starts-with($fieldName, 'geonetwork.thesaurus'))
+                                then substring-after($fieldName, 'geonetwork.thesaurus.')
+                                else $fieldName"/>
+
+        <xsl:for-each select="mri:keyword/gcx:Anchor/@xlink:href[normalize-space()!='']">
+            <xsl:if test="$fieldNameTemp != ''">
+                <!-- Index field thesaurus-{{thesaurusIdentifier}}-anchor={{anchor}} -->
+                <Field name="{concat('thesaurus-', $fieldNameTemp, '.anchor')}" string="{string(.)}" store="true" index="true"/>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
 </xsl:stylesheet>
