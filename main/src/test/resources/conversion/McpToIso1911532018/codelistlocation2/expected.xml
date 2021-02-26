@@ -1,0 +1,1550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdb:MD_Metadata xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0"
+                 xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
+                 xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+                 xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0"
+                 xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0"
+                 xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0"
+                 xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0"
+                 xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0"
+                 xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
+                 xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0"
+                 xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/1.0"
+                 xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
+                 xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0"
+                 xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0"
+                 xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0"
+                 xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0"
+                 xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0"
+                 xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0"
+                 xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0"
+                 xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
+                 xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0"
+                 xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0"
+                 xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0"
+                 xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0"
+                 xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.1"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://standards.iso.org/iso/19115/-3/cat/1.0 http://standards.iso.org/iso/19115/-3/cat/1.0/cat.xsd http://standards.iso.org/iso/19115/-3/cit/2.0 http://standards.iso.org/iso/19115/-3/cit/2.0/cit.xsd http://standards.iso.org/iso/19115/-3/gcx/1.0 http://standards.iso.org/iso/19115/-3/gcx/1.0/gcx.xsd http://standards.iso.org/iso/19115/-3/gex/1.0 http://standards.iso.org/iso/19115/-3/gex/1.0/gex.xsd http://standards.iso.org/iso/19115/-3/lan/1.0 http://standards.iso.org/iso/19115/-3/lan/1.0/lan.xsd http://standards.iso.org/iso/19115/-3/srv/2.0 http://standards.iso.org/iso/19115/-3/srv/2.0/srv.xsd http://standards.iso.org/iso/19115/-3/mas/1.0 http://standards.iso.org/iso/19115/-3/mas/1.0/mas.xsd http://standards.iso.org/iso/19115/-3/mcc/1.0 http://standards.iso.org/iso/19115/-3/mcc/1.0/mcc.xsd http://standards.iso.org/iso/19115/-3/mco/1.0 http://standards.iso.org/iso/19115/-3/mco/1.0/mco.xsd http://standards.iso.org/iso/19115/-3/mda/2.0 http://standards.iso.org/iso/19115/-3/mda/2.0/mda.xsd http://standards.iso.org/iso/19115/-3/mdb/2.0 http://standards.iso.org/iso/19115/-3/mdb/2.0/mdb.xsd http://standards.iso.org/iso/19115/-3/mds/2.0 http://standards.iso.org/iso/19115/-3/mds/2.0/mds.xsd http://standards.iso.org/iso/19115/-3/mdt/2.0 http://standards.iso.org/iso/19115/-3/mdt/2.0/mdt.xsd http://standards.iso.org/iso/19115/-3/mex/1.0 http://standards.iso.org/iso/19115/-3/mex/1.0/mex.xsd http://standards.iso.org/iso/19115/-3/mmi/1.0 http://standards.iso.org/iso/19115/-3/mmi/1.0/mmi.xsd http://standards.iso.org/iso/19115/-3/mpc/1.0 http://standards.iso.org/iso/19115/-3/mpc/1.0/mpc.xsd http://standards.iso.org/iso/19115/-3/mrc/2.0 http://standards.iso.org/iso/19115/-3/mrc/2.0/mrc.xsd http://standards.iso.org/iso/19115/-3/mrd/1.0 http://standards.iso.org/iso/19115/-3/mrd/1.0/mrd.xsd http://standards.iso.org/iso/19115/-3/mri/1.0 http://standards.iso.org/iso/19115/-3/mri/1.0/mri.xsd http://standards.iso.org/iso/19115/-3/mrl/2.0 http://standards.iso.org/iso/19115/-3/mrl/2.0/mrl.xsd http://standards.iso.org/iso/19115/-3/mrs/1.0 http://standards.iso.org/iso/19115/-3/mrs/1.0/mrs.xsd http://standards.iso.org/iso/19115/-3/msr/2.0 http://standards.iso.org/iso/19115/-3/msr/2.0/msr.xsd http://standards.iso.org/iso/19157/-2/mdq/1.0 http://standards.iso.org/iso/19157/-2/mdq/1.0/mdq.xsd http://standards.iso.org/iso/19115/-3/mac/2.0 http://standards.iso.org/iso/19115/-3/mac/2.0/mac.xsd http://standards.iso.org/iso/19115/-3/gco/1.0 http://standards.iso.org/iso/19115/-3/gco/1.0/gco.xsd http://standards.iso.org/iso/19115/-3/gmw/1.0 http://standards.iso.org/iso/19115/-3/gmw/1.0/gmw.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.w3.org/1999/xlink http://www.w3.org/1999/xlink.xsd">
+   <mdb:metadataIdentifier>
+      <mcc:MD_Identifier>
+         <mcc:code>
+            <gco:CharacterString>4a97bd11-e821-4682-8b20-cb69201f3223</gco:CharacterString>
+         </mcc:code>
+      </mcc:MD_Identifier>
+   </mdb:metadataIdentifier>
+   <mdb:defaultLocale>
+      <lan:PT_Locale>
+         <lan:language>
+            <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
+         </lan:language>
+         <lan:characterEncoding>
+            <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode"
+                                     codeListValue="utf8"/>
+         </lan:characterEncoding>
+      </lan:PT_Locale>
+   </mdb:defaultLocale>
+   <mdb:parentMetadata uuidref="a35d02d7-3bd2-40f8-b982-a0e30b64dc40"/>
+   <mdb:metadataScope>
+      <mdb:MD_MetadataScope>
+         <mdb:resourceScope>
+            <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode"
+                              codeListValue="dataset"/>
+         </mdb:resourceScope>
+         <mdb:name>
+            <gco:CharacterString>AATAMS Aggregated Data Access Page</gco:CharacterString>
+         </mdb:name>
+      </mdb:MD_MetadataScope>
+   </mdb:metadataScope>
+   <mdb:contact>
+      <cit:CI_Responsibility>
+         <cit:role>
+            <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode"
+                             codeListValue="distributor"/>
+         </cit:role>
+         <cit:party>
+            <cit:CI_Organisation>
+               <cit:name>
+                  <gco:CharacterString>Integrated Marine Observing System (IMOS)</gco:CharacterString>
+               </cit:name>
+               <cit:contactInfo>
+                  <cit:CI_Contact>
+                     <cit:phone>
+                        <cit:CI_Telephone>
+                           <cit:number>
+                              <gco:CharacterString>61 3 6226 7488</gco:CharacterString>
+                           </cit:number>
+                           <cit:numberType>
+                              <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                        codeListValue="voice"/>
+                           </cit:numberType>
+                        </cit:CI_Telephone>
+                     </cit:phone>
+                     <cit:phone>
+                        <cit:CI_Telephone>
+                           <cit:number>
+                              <gco:CharacterString>61 3 6226 2107</gco:CharacterString>
+                           </cit:number>
+                           <cit:numberType>
+                              <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                        codeListValue="facsimile"/>
+                           </cit:numberType>
+                        </cit:CI_Telephone>
+                     </cit:phone>
+                     <cit:address>
+                        <cit:CI_Address>
+                           <cit:deliveryPoint>
+                              <gco:CharacterString>University of Tasmania</gco:CharacterString>
+                           </cit:deliveryPoint>
+                           <cit:deliveryPoint>
+                              <gco:CharacterString>Private Bag 110</gco:CharacterString>
+                           </cit:deliveryPoint>
+                           <cit:city>
+                              <gco:CharacterString>Hobart</gco:CharacterString>
+                           </cit:city>
+                           <cit:administrativeArea>
+                              <gco:CharacterString>Tasmania</gco:CharacterString>
+                           </cit:administrativeArea>
+                           <cit:postalCode>
+                              <gco:CharacterString>7001</gco:CharacterString>
+                           </cit:postalCode>
+                           <cit:country>
+                              <gco:CharacterString>Australia</gco:CharacterString>
+                           </cit:country>
+                           <cit:electronicMailAddress>
+                              <gco:CharacterString>info@aodn.org.au</gco:CharacterString>
+                           </cit:electronicMailAddress>
+                        </cit:CI_Address>
+                     </cit:address>
+                     <cit:onlineResource>
+                        <cit:CI_OnlineResource>
+                           <cit:linkage>
+                              <gco:CharacterString>http://imos.org.au/aodn.html</gco:CharacterString>
+                           </cit:linkage>
+                           <cit:protocol>
+                              <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                           </cit:protocol>
+                           <cit:name>
+                              <gco:CharacterString>Website of the Australian Ocean Data Network (AODN)</gco:CharacterString>
+                           </cit:name>
+                        </cit:CI_OnlineResource>
+                     </cit:onlineResource>
+                  </cit:CI_Contact>
+               </cit:contactInfo>
+               <cit:individual>
+                  <cit:CI_Individual>
+                     <cit:positionName>
+                        <gco:CharacterString>Data Officer</gco:CharacterString>
+                     </cit:positionName>
+                  </cit:CI_Individual>
+               </cit:individual>
+            </cit:CI_Organisation>
+         </cit:party>
+      </cit:CI_Responsibility>
+   </mdb:contact>
+   <mdb:dateInfo>
+      <cit:CI_Date>
+         <cit:date>
+            <gco:DateTime>2020-04-02T20:34:35</gco:DateTime>
+         </cit:date>
+         <cit:dateType>
+            <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                 codeListValue="creation"/>
+         </cit:dateType>
+      </cit:CI_Date>
+   </mdb:dateInfo>
+   <mdb:dateInfo>
+      <cit:CI_Date>
+         <cit:date>
+            <gco:DateTime>2020-04-02T20:34:35</gco:DateTime>
+         </cit:date>
+         <cit:dateType>
+            <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                 codeListValue="revision"/>
+         </cit:dateType>
+      </cit:CI_Date>
+   </mdb:dateInfo>
+   <mdb:metadataStandard>
+      <cit:CI_Citation>
+         <cit:title>
+            <gco:CharacterString>ISO 19115-3:2018</gco:CharacterString>
+         </cit:title>
+      </cit:CI_Citation>
+   </mdb:metadataStandard>
+   <mdb:metadataLinkage>
+      <cit:CI_OnlineResource>
+         <cit:linkage>
+            <gco:CharacterString>https://catalogue-imos.aodn.org.au:443/geonetwork/srv/api/records/4a97bd11-e821-4682-8b20-cb69201f3223</gco:CharacterString>
+         </cit:linkage>
+         <cit:protocol>
+            <gco:CharacterString>WWW:LINK-1.0-http--metadata-URL</gco:CharacterString>
+         </cit:protocol>
+         <cit:description>
+            <gco:CharacterString>Point of truth URL of this metadata record</gco:CharacterString>
+         </cit:description>
+      </cit:CI_OnlineResource>
+   </mdb:metadataLinkage>
+   <mdb:referenceSystemInfo>
+      <mrs:MD_ReferenceSystem>
+         <mrs:referenceSystemIdentifier>
+            <mcc:MD_Identifier>
+               <mcc:code>
+                  <gco:CharacterString>WGS84</gco:CharacterString>
+               </mcc:code>
+               <mcc:codeSpace gco:nilReason="missing">
+                  <gco:CharacterString/>
+               </mcc:codeSpace>
+            </mcc:MD_Identifier>
+         </mrs:referenceSystemIdentifier>
+      </mrs:MD_ReferenceSystem>
+   </mdb:referenceSystemInfo>
+   <mdb:identificationInfo>
+      <mri:MD_DataIdentification>
+         <mri:citation>
+            <cit:CI_Citation>
+               <cit:title>
+                  <gco:CharacterString>IMOS - AATAMS Facility - Acoustic Receiver Locations</gco:CharacterString>
+               </cit:title>
+               <cit:alternateTitle>
+                  <gco:CharacterString>Acoustic Receiver Locations</gco:CharacterString>
+               </cit:alternateTitle>
+               <cit:date>
+                  <cit:CI_Date>
+                     <cit:date>
+                        <gco:DateTime>2009-01-29T12:04:00</gco:DateTime>
+                     </cit:date>
+                     <cit:dateType>
+                        <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                             codeListValue="publication"/>
+                     </cit:dateType>
+                  </cit:CI_Date>
+               </cit:date>
+               <cit:citedResponsibleParty>
+                  <cit:CI_Responsibility>
+                     <cit:role>
+                        <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode"
+                                         codeListValue="resourceProvider"/>
+                     </cit:role>
+                     <cit:party>
+                        <cit:CI_Organisation>
+                           <cit:name>
+                              <gco:CharacterString>Integrated Marine Observing System (IMOS)</gco:CharacterString>
+                           </cit:name>
+                           <cit:contactInfo>
+                              <cit:CI_Contact>
+                                 <cit:phone>
+                                    <cit:CI_Telephone>
+                                       <cit:number>
+                                          <gco:CharacterString>61 3 6226 7549</gco:CharacterString>
+                                       </cit:number>
+                                       <cit:numberType>
+                                          <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                                    codeListValue="voice"/>
+                                       </cit:numberType>
+                                    </cit:CI_Telephone>
+                                 </cit:phone>
+                                 <cit:phone>
+                                    <cit:CI_Telephone>
+                                       <cit:number>
+                                          <gco:CharacterString>61 3 6226 2107</gco:CharacterString>
+                                       </cit:number>
+                                       <cit:numberType>
+                                          <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                                    codeListValue="facsimile"/>
+                                       </cit:numberType>
+                                    </cit:CI_Telephone>
+                                 </cit:phone>
+                                 <cit:address>
+                                    <cit:CI_Address>
+                                       <cit:deliveryPoint>
+                                          <gco:CharacterString>Private Bag 110</gco:CharacterString>
+                                       </cit:deliveryPoint>
+                                       <cit:city>
+                                          <gco:CharacterString>Hobart</gco:CharacterString>
+                                       </cit:city>
+                                       <cit:administrativeArea>
+                                          <gco:CharacterString>Tasmania</gco:CharacterString>
+                                       </cit:administrativeArea>
+                                       <cit:postalCode>
+                                          <gco:CharacterString>7001</gco:CharacterString>
+                                       </cit:postalCode>
+                                       <cit:country>
+                                          <gco:CharacterString>Australia</gco:CharacterString>
+                                       </cit:country>
+                                       <cit:electronicMailAddress>
+                                          <gco:CharacterString>imos@imos.org.au</gco:CharacterString>
+                                       </cit:electronicMailAddress>
+                                    </cit:CI_Address>
+                                 </cit:address>
+                                 <cit:onlineResource>
+                                    <cit:CI_OnlineResource>
+                                       <cit:linkage>
+                                          <gco:CharacterString>www.imos.org.au/html</gco:CharacterString>
+                                       </cit:linkage>
+                                       <cit:protocol>
+                                          <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                                       </cit:protocol>
+                                       <cit:name>
+                                          <gco:CharacterString>Website for the Integrated Marine Observing System</gco:CharacterString>
+                                       </cit:name>
+                                    </cit:CI_OnlineResource>
+                                 </cit:onlineResource>
+                              </cit:CI_Contact>
+                           </cit:contactInfo>
+                        </cit:CI_Organisation>
+                     </cit:party>
+                  </cit:CI_Responsibility>
+               </cit:citedResponsibleParty>
+               <cit:otherCitationDetails>
+                  <gco:CharacterString>The citation in a list of references is: "IMOS. [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access]".</gco:CharacterString>
+               </cit:otherCitationDetails>
+            </cit:CI_Citation>
+         </mri:citation>
+         <mri:abstract>
+            <gco:CharacterString>The Australian Animal Tracking And Monitoring System (AATAMS) is a coordinated marine animal tagging project. The project has deployed a network of acoustic receivers to detect the movements of tagged marine animals in coastal waters around Australia. Animals can be monitored over scales of hundreds of metres to hundreds of kilometres. An array or network consists of a series of acoustic receivers that can be left on the sea floor for up to 7 years with the ability to upload data from the receivers as often as needed. AATAMS and IMOS have worked together to create a readily accessible data search page which displays: - installations of AATAMS receiver arrays/curtains - all AATAMS acoustic receiver deployments - all AATAMS acoustic tagging activity - all detections of tagged animals Data can be viewed or downloaded in .xml, .csv or .http formats. The data page is hosted by IMOS and is updated by AATAMS collaborators.</gco:CharacterString>
+         </mri:abstract>
+         <mri:purpose>
+            <gco:CharacterString>The AATAMS Data Access and Search Page provides a simple data access interface for scientists, researchers and interested members of the public.</gco:CharacterString>
+         </mri:purpose>
+         <mri:credit>
+            <gco:CharacterString>Integrated Marine Observing System (IMOS). IMOS is a national collaborative research infrastructure, supported by Australian Government.</gco:CharacterString>
+         </mri:credit>
+         <mri:credit>
+            <gco:CharacterString>Ocean Tracking Network (OTN): in-kind support</gco:CharacterString>
+         </mri:credit>
+         <mri:status>
+            <mcc:MD_ProgressCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ProgressCode"
+                                 codeListValue="onGoing"/>
+         </mri:status>
+         <mri:pointOfContact>
+            <cit:CI_Responsibility>
+               <cit:role>
+                  <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode"
+                                   codeListValue="pointOfContact"/>
+               </cit:role>
+               <cit:party>
+                  <cit:CI_Organisation>
+                     <cit:name>
+                        <gco:CharacterString>Sydney Institute of Marine Science (SIMS)</gco:CharacterString>
+                     </cit:name>
+                     <cit:contactInfo>
+                        <cit:CI_Contact>
+                           <cit:phone>
+                              <cit:CI_Telephone>
+                                 <cit:number>
+                                    <gco:CharacterString>61 2 9969 2664</gco:CharacterString>
+                                 </cit:number>
+                                 <cit:numberType>
+                                    <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                              codeListValue="voice"/>
+                                 </cit:numberType>
+                              </cit:CI_Telephone>
+                           </cit:phone>
+                           <cit:phone>
+                              <cit:CI_Telephone>
+                                 <cit:number>
+                                    <gco:CharacterString>61 2 9969 8664</gco:CharacterString>
+                                 </cit:number>
+                                 <cit:numberType>
+                                    <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                              codeListValue="facsimile"/>
+                                 </cit:numberType>
+                              </cit:CI_Telephone>
+                           </cit:phone>
+                           <cit:address>
+                              <cit:CI_Address>
+                                 <cit:deliveryPoint>
+                                    <gco:CharacterString>Sydney Institute of Marine Science</gco:CharacterString>
+                                 </cit:deliveryPoint>
+                                 <cit:deliveryPoint>
+                                    <gco:CharacterString>Building 22</gco:CharacterString>
+                                 </cit:deliveryPoint>
+                                 <cit:deliveryPoint>
+                                    <gco:CharacterString>Chowder Bay Road</gco:CharacterString>
+                                 </cit:deliveryPoint>
+                                 <cit:city>
+                                    <gco:CharacterString>Mosman</gco:CharacterString>
+                                 </cit:city>
+                                 <cit:administrativeArea>
+                                    <gco:CharacterString>New South Wales</gco:CharacterString>
+                                 </cit:administrativeArea>
+                                 <cit:postalCode>
+                                    <gco:CharacterString>2088</gco:CharacterString>
+                                 </cit:postalCode>
+                                 <cit:country>
+                                    <gco:CharacterString>Australia</gco:CharacterString>
+                                 </cit:country>
+                                 <cit:electronicMailAddress>
+                                    <gco:CharacterString>andrew.boomer@sims.org.au</gco:CharacterString>
+                                 </cit:electronicMailAddress>
+                              </cit:CI_Address>
+                           </cit:address>
+                        </cit:CI_Contact>
+                     </cit:contactInfo>
+                     <cit:individual>
+                        <cit:CI_Individual>
+                           <cit:name>
+                              <gco:CharacterString>Boomer, Andrew</gco:CharacterString>
+                           </cit:name>
+                           <cit:positionName>
+                              <gco:CharacterString>AATAMS Technical Officer</gco:CharacterString>
+                           </cit:positionName>
+                        </cit:CI_Individual>
+                     </cit:individual>
+                  </cit:CI_Organisation>
+               </cit:party>
+            </cit:CI_Responsibility>
+         </mri:pointOfContact>
+         <mri:pointOfContact>
+            <cit:CI_Responsibility>
+               <cit:role>
+                  <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode"
+                                   codeListValue="principalInvestigator"/>
+               </cit:role>
+               <cit:party>
+                  <cit:CI_Organisation>
+                     <cit:name>
+                        <gco:CharacterString>Department of Biological Sciences, Macquarie University</gco:CharacterString>
+                     </cit:name>
+                     <cit:contactInfo>
+                        <cit:CI_Contact>
+                           <cit:address>
+                              <cit:CI_Address>
+                                 <cit:deliveryPoint>
+                                    <gco:CharacterString>Marine Predator Research Group, Department of Biological Sciences</gco:CharacterString>
+                                 </cit:deliveryPoint>
+                                 <cit:deliveryPoint>
+                                    <gco:CharacterString>Macquarie University</gco:CharacterString>
+                                 </cit:deliveryPoint>
+                                 <cit:deliveryPoint>
+                                    <gco:CharacterString>North Ryde</gco:CharacterString>
+                                 </cit:deliveryPoint>
+                                 <cit:city>
+                                    <gco:CharacterString>Sydney</gco:CharacterString>
+                                 </cit:city>
+                                 <cit:administrativeArea>
+                                    <gco:CharacterString>New South Wales</gco:CharacterString>
+                                 </cit:administrativeArea>
+                                 <cit:postalCode>
+                                    <gco:CharacterString>2109</gco:CharacterString>
+                                 </cit:postalCode>
+                                 <cit:country>
+                                    <gco:CharacterString>Australia</gco:CharacterString>
+                                 </cit:country>
+                                 <cit:electronicMailAddress>
+                                    <gco:CharacterString>robert.harcourt@mq.edu.au</gco:CharacterString>
+                                 </cit:electronicMailAddress>
+                              </cit:CI_Address>
+                           </cit:address>
+                           <cit:onlineResource>
+                              <cit:CI_OnlineResource>
+                                 <cit:linkage>
+                                    <gco:CharacterString>http://web.science.mq.edu.au/directory/listing/person.htm?id=rharcour</gco:CharacterString>
+                                 </cit:linkage>
+                                 <cit:protocol>
+                                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                                 </cit:protocol>
+                                 <cit:name>
+                                    <gco:CharacterString>Macquarie University staff profile for Rob Harcourt</gco:CharacterString>
+                                 </cit:name>
+                              </cit:CI_OnlineResource>
+                           </cit:onlineResource>
+                        </cit:CI_Contact>
+                     </cit:contactInfo>
+                     <cit:individual>
+                        <cit:CI_Individual>
+                           <cit:name>
+                              <gco:CharacterString>Harcourt, Rob</gco:CharacterString>
+                           </cit:name>
+                           <cit:positionName>
+                              <gco:CharacterString>AATAMS Project Leader</gco:CharacterString>
+                           </cit:positionName>
+                        </cit:CI_Individual>
+                     </cit:individual>
+                  </cit:CI_Organisation>
+               </cit:party>
+            </cit:CI_Responsibility>
+         </mri:pointOfContact>
+         <mri:topicCategory>
+            <mri:MD_TopicCategoryCode>oceans</mri:MD_TopicCategoryCode>
+         </mri:topicCategory>
+         <mri:extent>
+            <gex:EX_Extent>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon26" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">124 -20 124 -18 122 -18 122 -16 126 -16 126 -20 124 -20</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon25" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">146 -20 146 -18 148 -18 148 -20 146 -20</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon24" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">148 -22 148 -20 150 -20 150 -22 148 -22</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon23" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">148 -38 148 -36 150 -36 150 -32 152 -32 152 -24 150 -24 150 -22 154 -22 154 -34 152 -34 152 -38 148 -38</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon22" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">112 -24 112 -20 116 -20 116 -24 112 -24</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon21" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">132 -16 132 -14 136 -14 136 -16 132 -16</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon20" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">120 -16 120 -12 122 -12 122 -16 120 -16</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon19" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">144 -18 144 -14 146 -14 146 -18 144 -18</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon18" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">144 -12 144 -14 140 -14 140 -10 146 -10 146 -12 144 -12</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon17" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">146 -14 146 -12 148 -12 148 -14 146 -14</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon16" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">136 -14 136 -12 138 -12 138 -14 136 -14</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon15" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">152 24 152 28 154 28 154 24 152 24</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon14" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">150 34 150 36 152 36 152 34 150 34</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon13" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">134 34 134 36 138 36 138 34 134 34</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon12" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">166 28 166 30 168 30 168 28 166 28</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon11" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">140 10 140 14 142 14 142 10 140 10</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon10" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">134 6 134 8 136 8 136 6 134 6</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon9" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">118 -18 118 -16 120 -16 120 -18 118 -18</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon8" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">136 -34 140 -34 140 -36 132 -36 132 -34 134 -34 134 -32 136 -32 136 -34</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon7" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">144 -40 144 -36 146 -36 146 -38 148 -38 148 -40 144 -40</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon6" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">118 -34 120 -34 120 -36 116 -36 116 -34 118 -34</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon5" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">114 -34 114 -30 116 -30 116 -34 114 -34</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon4" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">158 -32 158 -30 160 -30 160 -32 158 -32</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon3" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">140 -40 140 -38 142 -38 142 -40 140 -40</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon2" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">146 -44 146 -42 148 -42 148 -40 150 -40 150 -44 146 -44</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="polygon1" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">168 -48 168 -46 170 -46 170 -48 168 -48</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:temporalElement>
+                  <gex:EX_TemporalExtent>
+                     <gex:extent>
+                        <gml:TimePeriod gml:id="d143e533a1049886">
+                           <gml:beginPosition>2007-11-15T16:24:00</gml:beginPosition>
+                           <gml:endPosition/>
+                        </gml:TimePeriod>
+                     </gex:extent>
+                  </gex:EX_TemporalExtent>
+               </gex:temporalElement>
+               <gex:verticalElement>
+                  <gex:EX_VerticalExtent>
+                     <gex:minimumValue>
+                        <gco:Real>0</gco:Real>
+                     </gex:minimumValue>
+                     <gex:maximumValue>
+                        <gco:Real>150</gco:Real>
+                     </gex:maximumValue>
+                     <gex:verticalCRS>
+                        <gml:VerticalCRS gml:id="d225e625a1049886">
+                           <gml:identifier codeSpace="unknown">vertical coordinate reference system not used</gml:identifier>
+                           <gml:scope>Australia</gml:scope>
+                           <gml:usesVerticalCS>
+                              <gml:VerticalCS gml:id="d225e631a1049886">
+                                 <gml:identifier codeSpace="unknown">vertical coordinate reference system not used</gml:identifier>
+                                 <gml:axis>
+                                    <gml:CoordinateSystemAxis gml:id="d225e635a1049886" uom="metre">
+                                       <gml:identifier codeSpace="unknown">metre</gml:identifier>
+                                       <gml:name>Depth</gml:name>
+                                       <gml:axisAbbrev>D</gml:axisAbbrev>
+                                       <gml:axisDirection codeSpace="unknown">down</gml:axisDirection>
+                                    </gml:CoordinateSystemAxis>
+                                 </gml:axis>
+                              </gml:VerticalCS>
+                           </gml:usesVerticalCS>
+                           <gml:verticalDatum>
+                              <gml:VerticalDatum gml:id="d225e645a1049886">
+                                 <gml:identifier codeSpace="unknown">vertical datum not used</gml:identifier>
+                                 <gml:scope>Australia</gml:scope>
+                              </gml:VerticalDatum>
+                           </gml:verticalDatum>
+                        </gml:VerticalCRS>
+                     </gex:verticalCRS>
+                  </gex:EX_VerticalExtent>
+               </gex:verticalElement>
+            </gex:EX_Extent>
+         </mri:extent>
+         <mri:resourceMaintenance>
+            <mmi:MD_MaintenanceInformation>
+               <mmi:maintenanceAndUpdateFrequency>
+                  <mmi:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_MaintenanceFrequencyCode"
+                                                   codeListValue="asNeeded"/>
+               </mmi:maintenanceAndUpdateFrequency>
+            </mmi:MD_MaintenanceInformation>
+         </mri:resourceMaintenance>
+         <mri:graphicOverview>
+            <mcc:MD_BrowseGraphic>
+               <mcc:fileName gco:nilReason="missing">
+                  <gco:CharacterString/>
+               </mcc:fileName>
+            </mcc:MD_BrowseGraphic>
+         </mri:graphicOverview>
+         <mri:resourceFormat>
+            <mrd:MD_Format>
+               <mrd:formatSpecificationCitation>
+                  <cit:CI_Citation>
+                     <cit:title>
+                        <gco:CharacterString>Web Feature Service</gco:CharacterString>
+                     </cit:title>
+                     <cit:date gco:nilReason="unknown"/>
+                     <cit:edition gco:nilReason="missing">
+                        <gco:CharacterString/>
+                     </cit:edition>
+                  </cit:CI_Citation>
+               </mrd:formatSpecificationCitation>
+            </mrd:MD_Format>
+         </mri:resourceFormat>
+         <mri:descriptiveKeywords>
+            <mri:MD_Keywords>
+               <mri:keyword>
+                  <gco:CharacterString>Biosphere | Ecological Dynamics | Migratory Rates/routes</gco:CharacterString>
+               </mri:keyword>
+               <mri:keyword>
+                  <gco:CharacterString>Oceans | Marine Biology | Fish</gco:CharacterString>
+               </mri:keyword>
+               <mri:thesaurusName>
+                  <cit:CI_Citation>
+                     <cit:title>
+                        <gco:CharacterString>NASA/Global Change Master Directory Earth Science Keywords Version 5.3.8</gco:CharacterString>
+                     </cit:title>
+                     <cit:alternateTitle>
+                        <gco:CharacterString>GCMD</gco:CharacterString>
+                     </cit:alternateTitle>
+                     <cit:date>
+                        <cit:CI_Date>
+                           <cit:date>
+                              <gco:Date>2006-01-01</gco:Date>
+                           </cit:date>
+                           <cit:dateType>
+                              <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                                   codeListValue="revision"/>
+                           </cit:dateType>
+                        </cit:CI_Date>
+                     </cit:date>
+                     <cit:citedResponsibleParty>
+                        <cit:CI_Responsibility>
+                           <cit:role>
+                              <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode"
+                                               codeListValue="owner"/>
+                           </cit:role>
+                           <cit:party>
+                              <cit:CI_Organisation>
+                                 <cit:name>
+                                    <gco:CharacterString>National Aeronautics and Space Administration (NASA)</gco:CharacterString>
+                                 </cit:name>
+                              </cit:CI_Organisation>
+                           </cit:party>
+                        </cit:CI_Responsibility>
+                     </cit:citedResponsibleParty>
+                  </cit:CI_Citation>
+               </mri:thesaurusName>
+            </mri:MD_Keywords>
+         </mri:descriptiveKeywords>
+         <mri:descriptiveKeywords>
+            <mri:MD_Keywords>
+               <mri:keyword>
+                  <gco:CharacterString>Acoustic Telemetry Sub-Facility, Integrated Marine Observing System (IMOS)</gco:CharacterString>
+               </mri:keyword>
+               <mri:type>
+                  <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_KeywordTypeCode"
+                                          codeListValue="discipline"/>
+               </mri:type>
+               <mri:thesaurusName>
+                  <cit:CI_Citation>
+                     <cit:title>
+                        <gco:CharacterString>AODN Organisation Vocabulary</gco:CharacterString>
+                     </cit:title>
+                     <cit:date>
+                        <cit:CI_Date>
+                           <cit:date>
+                              <gco:DateTime>2018-07-13T13:45:00</gco:DateTime>
+                           </cit:date>
+                           <cit:dateType>
+                              <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                                   codeListValue="publication"/>
+                           </cit:dateType>
+                        </cit:CI_Date>
+                     </cit:date>
+                     <cit:identifier>
+                        <mcc:MD_Identifier>
+                           <mcc:code>
+                              <gcx:Anchor xlink:href="https://catalogue-imos.aodn.org.au:443/geonetwork/srv/eng/thesaurus.download?ref=external.discipline.aodnorganisationvocabulary_unpublished_for_IMOS_keywords">geonetwork.thesaurus.external.discipline.aodnorganisationvocabulary_unpublished_for_IMOS_keywords</gcx:Anchor>
+                           </mcc:code>
+                        </mcc:MD_Identifier>
+                     </cit:identifier>
+                  </cit:CI_Citation>
+               </mri:thesaurusName>
+            </mri:MD_Keywords>
+         </mri:descriptiveKeywords>
+         <mri:descriptiveKeywords>
+            <mri:MD_Keywords>
+               <mri:keyword>
+                  <gco:CharacterString>Tags and Tracking Devices</gco:CharacterString>
+               </mri:keyword>
+               <mri:type>
+                  <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_KeywordTypeCode"
+                                          codeListValue="theme"/>
+               </mri:type>
+               <mri:thesaurusName>
+                  <cit:CI_Citation>
+                     <cit:title>
+                        <gco:CharacterString>Marine Community Profile of ISO19115 v1.4 Collection Methods Vocabulary (Annex C.1.3)</gco:CharacterString>
+                     </cit:title>
+                     <cit:date>
+                        <cit:CI_Date>
+                           <cit:date>
+                              <gco:Date>2008-10-30</gco:Date>
+                           </cit:date>
+                           <cit:dateType>
+                              <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                                   codeListValue="revision"/>
+                           </cit:dateType>
+                        </cit:CI_Date>
+                     </cit:date>
+                     <cit:citedResponsibleParty>
+                        <cit:CI_Responsibility>
+                           <cit:role>
+                              <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode"
+                                               codeListValue="owner"/>
+                           </cit:role>
+                           <cit:party>
+                              <cit:CI_Organisation>
+                                 <cit:name>
+                                    <gco:CharacterString>Australian Ocean Data Centre Joint Facility (AODCJF)</gco:CharacterString>
+                                 </cit:name>
+                              </cit:CI_Organisation>
+                           </cit:party>
+                        </cit:CI_Responsibility>
+                     </cit:citedResponsibleParty>
+                  </cit:CI_Citation>
+               </mri:thesaurusName>
+            </mri:MD_Keywords>
+         </mri:descriptiveKeywords>
+         <mri:descriptiveKeywords>
+            <mri:MD_Keywords>
+               <mri:keyword>
+                  <gco:CharacterString>Acoustic Tag</gco:CharacterString>
+               </mri:keyword>
+               <mri:keyword>
+                  <gco:CharacterString>Acoustic Receiver</gco:CharacterString>
+               </mri:keyword>
+               <mri:keyword>
+                  <gco:CharacterString>Acoustic Curtain</gco:CharacterString>
+               </mri:keyword>
+               <mri:keyword>
+                  <gco:CharacterString>Acoustic Array</gco:CharacterString>
+               </mri:keyword>
+               <mri:thesaurusName>
+                  <cit:CI_Citation>
+                     <cit:title>
+                        <gco:CharacterString>IMOS Keywords Thesaurus</gco:CharacterString>
+                     </cit:title>
+                     <cit:alternateTitle>
+                        <gco:CharacterString>IMOS</gco:CharacterString>
+                     </cit:alternateTitle>
+                     <cit:date>
+                        <cit:CI_Date>
+                           <cit:date>
+                              <gco:Date>2008-10-30</gco:Date>
+                           </cit:date>
+                           <cit:dateType gco:nilReason="missing"/>
+                        </cit:CI_Date>
+                     </cit:date>
+                     <cit:citedResponsibleParty>
+                        <cit:CI_Responsibility>
+                           <cit:role>
+                              <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode"
+                                               codeListValue="owner"/>
+                           </cit:role>
+                           <cit:party>
+                              <cit:CI_Organisation>
+                                 <cit:name>
+                                    <gco:CharacterString>Integrated Marine Observing System (IMOS)</gco:CharacterString>
+                                 </cit:name>
+                              </cit:CI_Organisation>
+                           </cit:party>
+                        </cit:CI_Responsibility>
+                     </cit:citedResponsibleParty>
+                  </cit:CI_Citation>
+               </mri:thesaurusName>
+            </mri:MD_Keywords>
+         </mri:descriptiveKeywords>
+         <mri:descriptiveKeywords>
+            <mri:MD_Keywords>
+               <mri:keyword>
+                  <gco:CharacterString>Global / Oceans | Indian Ocean</gco:CharacterString>
+               </mri:keyword>
+               <mri:keyword>
+                  <gco:CharacterString>Global / Oceans | Pacific Ocean</gco:CharacterString>
+               </mri:keyword>
+               <mri:keyword>
+                  <gco:CharacterString>Marine Features (Australia) | Great Australian Bight, SA/WA</gco:CharacterString>
+               </mri:keyword>
+               <mri:keyword>
+                  <gco:CharacterString>Regional Seas | Tasman Sea</gco:CharacterString>
+               </mri:keyword>
+               <mri:type>
+                  <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_KeywordTypeCode"
+                                          codeListValue="place"/>
+               </mri:type>
+               <mri:thesaurusName>
+                  <cit:CI_Citation>
+                     <cit:title>
+                        <gco:CharacterString>AODN Geographic Extents Vocabulary</gco:CharacterString>
+                     </cit:title>
+                     <cit:date>
+                        <cit:CI_Date>
+                           <cit:date>
+                              <gco:Date>2017-06-15</gco:Date>
+                           </cit:date>
+                           <cit:dateType>
+                              <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                                   codeListValue="revision"/>
+                           </cit:dateType>
+                        </cit:CI_Date>
+                     </cit:date>
+                     <cit:otherCitationDetails>
+                        <gco:CharacterString>https://vocabs.ands.org.au/aodn-geographic-extents-vocabulary</gco:CharacterString>
+                     </cit:otherCitationDetails>
+                  </cit:CI_Citation>
+               </mri:thesaurusName>
+            </mri:MD_Keywords>
+         </mri:descriptiveKeywords>
+         <mri:descriptiveKeywords>
+            <mri:MD_Keywords>
+               <mri:keyword>
+                  <gco:CharacterString>Countries | Australia</gco:CharacterString>
+               </mri:keyword>
+               <mri:keyword>
+                  <gco:CharacterString>States, Territories (Australia) | Western Australia</gco:CharacterString>
+               </mri:keyword>
+               <mri:keyword>
+                  <gco:CharacterString>States, Territories (Australia) | New South Wales</gco:CharacterString>
+               </mri:keyword>
+               <mri:keyword>
+                  <gco:CharacterString>States, Territories (Australia) | South Australia</gco:CharacterString>
+               </mri:keyword>
+               <mri:type>
+                  <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_KeywordTypeCode"
+                                          codeListValue="place"/>
+               </mri:type>
+               <mri:thesaurusName>
+                  <cit:CI_Citation>
+                     <cit:title>
+                        <gco:CharacterString>AODN Geographic Extents Vocabulary</gco:CharacterString>
+                     </cit:title>
+                     <cit:date>
+                        <cit:CI_Date>
+                           <cit:date>
+                              <gco:Date>2017-06-15</gco:Date>
+                           </cit:date>
+                           <cit:dateType>
+                              <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                                   codeListValue="revision"/>
+                           </cit:dateType>
+                        </cit:CI_Date>
+                     </cit:date>
+                     <cit:otherCitationDetails>
+                        <gco:CharacterString>https://vocabs.ands.org.au/aodn-geographic-extents-vocabulary</gco:CharacterString>
+                     </cit:otherCitationDetails>
+                  </cit:CI_Citation>
+               </mri:thesaurusName>
+            </mri:MD_Keywords>
+         </mri:descriptiveKeywords>
+         <mri:descriptiveKeywords>
+            <mri:MD_Keywords>
+               <mri:keyword>
+                  <gcx:Anchor xlink:href="http://vocab.nerc.ac.uk/collection/L06/current/70">organism</gcx:Anchor>
+               </mri:keyword>
+               <mri:type>
+                  <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_KeywordTypeCode"
+                                          codeListValue="platform"/>
+               </mri:type>
+               <mri:thesaurusName>
+                  <cit:CI_Citation>
+                     <cit:title>
+                        <gcx:Anchor>AODN Platform Vocabulary</gcx:Anchor>
+                     </cit:title>
+                     <cit:date>
+                        <cit:CI_Date>
+                           <cit:date>
+                              <gco:Date>2020-03-03</gco:Date>
+                           </cit:date>
+                           <cit:dateType>
+                              <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                                   codeListValue="publication"/>
+                           </cit:dateType>
+                        </cit:CI_Date>
+                     </cit:date>
+                     <cit:identifier>
+                        <mcc:MD_Identifier>
+                           <mcc:code>
+                              <gcx:Anchor xlink:href="https://catalogue-imos.aodn.org.au:443/geonetwork/srv/eng/thesaurus.download?ref=external.theme.aodn_aodn-platform-vocabulary">geonetwork.thesaurus.external.theme.aodn_aodn-platform-vocabulary</gcx:Anchor>
+                           </mcc:code>
+                        </mcc:MD_Identifier>
+                     </cit:identifier>
+                  </cit:CI_Citation>
+               </mri:thesaurusName>
+            </mri:MD_Keywords>
+         </mri:descriptiveKeywords>
+         <mri:descriptiveKeywords>
+            <mri:MD_Keywords>
+               <mri:keyword>
+                  <gcx:Anchor xlink:href="http://vocab.aodn.org.au/def/discovery_parameter/entity/489">Biotic taxonomic identification</gcx:Anchor>
+               </mri:keyword>
+               <mri:keyword>
+                  <gcx:Anchor xlink:href="http://vocab.aodn.org.au/def/discovery_parameter/entity/596">Detection of acoustic tag</gcx:Anchor>
+               </mri:keyword>
+               <mri:type>
+                  <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_KeywordTypeCode"
+                                          codeListValue="theme"/>
+               </mri:type>
+               <mri:thesaurusName>
+                  <cit:CI_Citation>
+                     <cit:title>
+                        <gcx:Anchor>AODN Discovery Parameter Vocabulary</gcx:Anchor>
+                     </cit:title>
+                     <cit:date>
+                        <cit:CI_Date>
+                           <cit:date>
+                              <gco:Date>2020-03-03</gco:Date>
+                           </cit:date>
+                           <cit:dateType>
+                              <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                                   codeListValue="publication"/>
+                           </cit:dateType>
+                        </cit:CI_Date>
+                     </cit:date>
+                     <cit:identifier>
+                        <mcc:MD_Identifier>
+                           <mcc:code>
+                              <gcx:Anchor xlink:href="https://catalogue-imos.aodn.org.au:443/geonetwork/srv/eng/thesaurus.download?ref=external.theme.aodn_aodn-discovery-parameter-vocabulary">geonetwork.thesaurus.external.theme.aodn_aodn-discovery-parameter-vocabulary</gcx:Anchor>
+                           </mcc:code>
+                        </mcc:MD_Identifier>
+                     </cit:identifier>
+                  </cit:CI_Citation>
+               </mri:thesaurusName>
+            </mri:MD_Keywords>
+         </mri:descriptiveKeywords>
+         <mri:resourceConstraints>
+            <mco:MD_Constraints>
+               <mco:useLimitation>
+                  <gco:CharacterString>Data, products and services from IMOS are provided "as is" without any warranty as to fitness for a particular purpose.</gco:CharacterString>
+               </mco:useLimitation>
+            </mco:MD_Constraints>
+         </mri:resourceConstraints>
+         <mri:resourceConstraints>
+            <mco:MD_LegalConstraints>
+               <mco:accessConstraints>
+                  <mco:MD_RestrictionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_RestrictionCode"
+                                          codeListValue="restricted"/>
+               </mco:accessConstraints>
+            </mco:MD_LegalConstraints>
+         </mri:resourceConstraints>
+         <mri:resourceConstraints>
+            <mco:MD_LegalConstraints>
+               <mco:graphic>
+                  <mcc:MD_BrowseGraphic>
+                     <mcc:fileName gco:nilReason="inapplicable"/>
+                     <mcc:linkage>
+                        <cit:CI_OnlineResource>
+                           <cit:linkage>
+                              <gco:CharacterString>https://licensebuttons.net/l/by/4.0/88x31.png</gco:CharacterString>
+                           </cit:linkage>
+                           <cit:protocol>
+                              <gco:CharacterString>WWW:LINK-1.0-http--related</gco:CharacterString>
+                           </cit:protocol>
+                           <cit:description>
+                              <gco:CharacterString>License Graphic</gco:CharacterString>
+                           </cit:description>
+                        </cit:CI_OnlineResource>
+                     </mcc:linkage>
+                  </mcc:MD_BrowseGraphic>
+               </mco:graphic>
+               <mco:reference>
+                  <cit:CI_Citation>
+                     <cit:title>
+                        <gco:CharacterString>Creative Commons Attribution 4.0 International License</gco:CharacterString>
+                     </cit:title>
+                     <cit:citedResponsibleParty>
+                        <cit:CI_Responsibility>
+                           <cit:role>
+                              <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode"
+                                               codeListValue=""/>
+                           </cit:role>
+                           <cit:party>
+                              <cit:CI_Organisation>
+                                 <cit:name gco:nilReason="missing">
+                                    <gco:CharacterString/>
+                                 </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                       <cit:onlineResource>
+                                          <cit:CI_OnlineResource>
+                                             <cit:linkage>
+                                                <gco:CharacterString>http://creativecommons.org/international/</gco:CharacterString>
+                                             </cit:linkage>
+                                             <cit:protocol>
+                                                <gco:CharacterString>WWW:LINK-1.0-http--related</gco:CharacterString>
+                                             </cit:protocol>
+                                             <cit:name gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:name>
+                                             <cit:description gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:description>
+                                          </cit:CI_OnlineResource>
+                                       </cit:onlineResource>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
+                              </cit:CI_Organisation>
+                           </cit:party>
+                        </cit:CI_Responsibility>
+                     </cit:citedResponsibleParty>
+                     <cit:onlineResource>
+                        <cit:CI_OnlineResource>
+                           <cit:linkage>
+                              <gco:CharacterString>http://creativecommons.org/licenses/by/4.0/</gco:CharacterString>
+                           </cit:linkage>
+                           <cit:protocol>
+                              <gco:CharacterString>WWW:LINK-1.0-http--related</gco:CharacterString>
+                           </cit:protocol>
+                           <cit:description>
+                              <gco:CharacterString>License Text</gco:CharacterString>
+                           </cit:description>
+                        </cit:CI_OnlineResource>
+                     </cit:onlineResource>
+                  </cit:CI_Citation>
+               </mco:reference>
+               <mco:otherConstraints>
+                  <gco:CharacterString>The citation in a list of references is: "IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access]."</gco:CharacterString>
+               </mco:otherConstraints>
+               <mco:otherConstraints>
+                  <gco:CharacterString>Any users of IMOS data are required to clearly acknowledge the source of the material derived from IMOS in the format: "Data was sourced from the Integrated Marine Observing System (IMOS) - IMOS is a national collaborative research infrastructure, supported by the Australian Government." If relevant, also credit other organisations involved in collection of this particular datastream (as listed in 'credit' in the metadata record).</gco:CharacterString>
+               </mco:otherConstraints>
+            </mco:MD_LegalConstraints>
+         </mri:resourceConstraints>
+         <mri:defaultLocale>
+            <lan:PT_Locale>
+               <lan:language>
+                  <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
+               </lan:language>
+               <lan:characterEncoding>
+                  <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode"
+                                           codeListValue="utf8"/>
+               </lan:characterEncoding>
+            </lan:PT_Locale>
+         </mri:defaultLocale>
+         <mri:supplementalInformation>
+            <gco:CharacterString>AATAMS are making all of their acoustic receiver detections public through the AATAMS data search and access page. In the future, this data will become available through the AODN data portal (see https://portal.aodn.org.au).</gco:CharacterString>
+         </mri:supplementalInformation>
+      </mri:MD_DataIdentification>
+   </mdb:identificationInfo>
+   <mdb:contentInfo>
+      <mrc:MD_CoverageDescription>
+         <mrc:attributeDescription gco:nilReason="inapplicable"/>
+         <mrc:attributeGroup>
+            <mrc:MD_AttributeGroup>
+               <mrc:contentType>
+                  <mrc:MD_CoverageContentTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CoverageContentTypeCode"
+                                                  codeListValue="physicalMeasurement"/>
+               </mrc:contentType>
+               <mrc:attribute>
+                  <mrc:MD_SampleDimension>
+                     <mrc:name>
+                        <mcc:MD_Identifier>
+                           <mcc:code>
+                              <gcx:Anchor xlink:href="http://vocab.aodn.org.au/def/discovery_parameter/entity/489">Biotic taxonomic identification</gcx:Anchor>
+                           </mcc:code>
+                        </mcc:MD_Identifier>
+                     </mrc:name>
+                     <mrc:units>
+                        <gml:BaseUnit gml:id="d32e675">
+                           <gml:identifier codeSpace="unknown"/>
+                           <gml:name/>
+                           <gml:unitsSystem/>
+                        </gml:BaseUnit>
+                     </mrc:units>
+                  </mrc:MD_SampleDimension>
+               </mrc:attribute>
+               <mrc:attribute>
+                  <mrc:MD_SampleDimension>
+                     <mrc:name>
+                        <mcc:MD_Identifier>
+                           <mcc:code>
+                              <gcx:Anchor xlink:href="http://vocab.aodn.org.au/def/discovery_parameter/entity/596">Detection of acoustic tag</gcx:Anchor>
+                           </mcc:code>
+                        </mcc:MD_Identifier>
+                     </mrc:name>
+                     <mrc:units>
+                        <gml:BaseUnit gml:id="d32e706">
+                           <gml:identifier codeSpace="unknown"/>
+                           <gml:name/>
+                           <gml:unitsSystem/>
+                        </gml:BaseUnit>
+                     </mrc:units>
+                  </mrc:MD_SampleDimension>
+               </mrc:attribute>
+            </mrc:MD_AttributeGroup>
+         </mrc:attributeGroup>
+      </mrc:MD_CoverageDescription>
+   </mdb:contentInfo>
+   <mdb:distributionInfo>
+      <mrd:MD_Distribution>
+         <mrd:distributionFormat>
+            <mrd:MD_Format>
+               <mrd:formatSpecificationCitation>
+                  <cit:CI_Citation>
+                     <cit:title>
+                        <gco:CharacterString>Web Feature Service</gco:CharacterString>
+                     </cit:title>
+                     <cit:date gco:nilReason="unknown"/>
+                     <cit:edition gco:nilReason="missing">
+                        <gco:CharacterString/>
+                     </cit:edition>
+                  </cit:CI_Citation>
+               </mrd:formatSpecificationCitation>
+            </mrd:MD_Format>
+         </mrd:distributionFormat>
+         <mrd:transferOptions>
+            <mrd:MD_DigitalTransferOptions>
+               <mrd:onLine>
+                  <cit:CI_OnlineResource>
+                     <cit:linkage>
+                        <gco:CharacterString>http://imos.org.au/acoustictelemetry.html</gco:CharacterString>
+                     </cit:linkage>
+                     <cit:protocol>
+                        <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                     </cit:protocol>
+                     <cit:name>
+                        <gco:CharacterString>Acoustic page on IMOS website</gco:CharacterString>
+                     </cit:name>
+                  </cit:CI_OnlineResource>
+               </mrd:onLine>
+               <mrd:onLine>
+                  <cit:CI_OnlineResource>
+                     <cit:linkage>
+                        <gco:CharacterString>https://catalogue-imos.aodn.org.au:443/geonetwork/srv/api/records/4a97bd11-e821-4682-8b20-cb69201f3223/attachments/Ocean_Tracking_Network_Movie.mov</gco:CharacterString>
+                     </cit:linkage>
+                     <cit:protocol>
+                        <gco:CharacterString>WWW:DOWNLOAD-1.0-http--downloadother</gco:CharacterString>
+                     </cit:protocol>
+                     <cit:name>
+                        <gcx:MimeFileType type="video/quicktime">Ocean_Tracking_Network_Movie.mov</gcx:MimeFileType>
+                     </cit:name>
+                     <cit:description>
+                        <gco:CharacterString>Ocean Tracking Network promotional movie (quicktime)</gco:CharacterString>
+                     </cit:description>
+                  </cit:CI_OnlineResource>
+               </mrd:onLine>
+               <mrd:onLine>
+                  <cit:CI_OnlineResource>
+                     <cit:linkage>
+                        <gco:CharacterString>https://portal.aodn.org.au/search?uuid=4a97bd11-e821-4682-8b20-cb69201f3223</gco:CharacterString>
+                     </cit:linkage>
+                     <cit:protocol>
+                        <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                     </cit:protocol>
+                     <cit:name>
+                        <gco:CharacterString>View and download data though the AODN Portal</gco:CharacterString>
+                     </cit:name>
+                  </cit:CI_OnlineResource>
+               </mrd:onLine>
+               <mrd:onLine>
+                  <cit:CI_OnlineResource>
+                     <cit:linkage>
+                        <gco:CharacterString>http://aatams.emii.org.au/aatams/</gco:CharacterString>
+                     </cit:linkage>
+                     <cit:protocol>
+                        <gco:CharacterString>WWW:LINK-1.0-http--downloaddata</gco:CharacterString>
+                     </cit:protocol>
+                     <cit:name>
+                        <gco:CharacterString>AATAMS (Australian Animal Tracking and Monitoring System) Data Access URL. This page is a point of access for all publicly accessible data collected by the IMOS AATAMS Facility as well as the data entry and upload point for facility members.</gco:CharacterString>
+                     </cit:name>
+                  </cit:CI_OnlineResource>
+               </mrd:onLine>
+               <mrd:onLine>
+                  <cit:CI_OnlineResource>
+                     <cit:linkage>
+                        <gco:CharacterString>http://geoserver-123.aodn.org.au/geoserver/wms</gco:CharacterString>
+                     </cit:linkage>
+                     <cit:protocol>
+                        <gco:CharacterString>OGC:WMS-1.1.1-http-get-map</gco:CharacterString>
+                     </cit:protocol>
+                     <cit:name>
+                        <gco:CharacterString>imos:installation_summary_map</gco:CharacterString>
+                     </cit:name>
+                     <cit:description>
+                        <gco:CharacterString>Installation Summary</gco:CharacterString>
+                     </cit:description>
+                  </cit:CI_OnlineResource>
+               </mrd:onLine>
+               <mrd:onLine>
+                  <cit:CI_OnlineResource>
+                     <cit:linkage>
+                        <gco:CharacterString>http://geoserver-123.aodn.org.au/geoserver/ows</gco:CharacterString>
+                     </cit:linkage>
+                     <cit:protocol>
+                        <gco:CharacterString>OGC:WFS-1.0.0-http-get-capabilities</gco:CharacterString>
+                     </cit:protocol>
+                     <cit:name>
+                        <gco:CharacterString>imos:installation_summary_map</gco:CharacterString>
+                     </cit:name>
+                     <cit:description>
+                        <gco:CharacterString>This OGC WFS service returns filtered geographic information. The returned data is available in multiple formats including CSV.</gco:CharacterString>
+                     </cit:description>
+                  </cit:CI_OnlineResource>
+               </mrd:onLine>
+            </mrd:MD_DigitalTransferOptions>
+         </mrd:transferOptions>
+      </mrd:MD_Distribution>
+   </mdb:distributionInfo>
+   <mdb:resourceLineage>
+      <mrl:LI_Lineage>
+         <mrl:statement>
+            <gco:CharacterString>Data available through the AATAMS Data Access and Search Page has been supplied by AATAMS participants. Receiver deployment information is provided via a regularly updated Microsoft ACCESS field database. ACCESS database records are imported to an Oracle database built to the Pacific Ocean Shelf Tracking (POST) Schema, with some modifications. The data is made available online through a customised "deegree" Web Feature Service. Tag detection data is supplied in raw VEMCO data files which are converted to XML and made available through the Web Feature Service.</gco:CharacterString>
+         </mrl:statement>
+         <mrl:scope>
+            <mcc:MD_Scope>
+               <mcc:level>
+                  <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode"
+                                    codeListValue="dataset"/>
+               </mcc:level>
+            </mcc:MD_Scope>
+         </mrl:scope>
+         <mrl:source>
+            <mrl:LI_Source>
+               <mrl:description>
+                  <gco:CharacterString>AATAMS Data Handling Procedure Manual version 1.0</gco:CharacterString>
+               </mrl:description>
+            </mrl:LI_Source>
+         </mrl:source>
+      </mrl:LI_Lineage>
+   </mdb:resourceLineage>
+   <mdb:acquisitionInformation>
+      <mac:MI_AcquisitionInformation>
+         <mac:scope>
+            <mcc:MD_Scope>
+               <mcc:level>
+                  <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode"
+                                    codeListValue="dataset"/>
+               </mcc:level>
+            </mcc:MD_Scope>
+         </mac:scope>
+         <mac:platform>
+            <mac:MI_Platform>
+               <mac:identifier>
+                  <mcc:MD_Identifier>
+                     <mcc:code>
+                        <gcx:Anchor xlink:href="http://vocab.nerc.ac.uk/collection/L06/current/70">organism</gcx:Anchor>
+                     </mcc:code>
+                  </mcc:MD_Identifier>
+               </mac:identifier>
+               <mac:description gco:nilReason="missing"/>
+               <mac:instrument gco:nilReason="missing"/>
+            </mac:MI_Platform>
+         </mac:platform>
+      </mac:MI_AcquisitionInformation>
+   </mdb:acquisitionInformation>
+</mdb:MD_Metadata>

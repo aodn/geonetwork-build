@@ -1,0 +1,29 @@
+<config>
+    <excludedParameters>
+        <term>Height above bed in the water body</term>
+        <term>Speed (over ground) of measurement platform</term>
+        <term>Flow rate through instrument</term>
+        <term>Depth below surface of the water body</term>
+    </excludedParameters>
+
+    <samplingParameters>
+        <term>Latitude north</term>
+        <term>Longitude east</term>
+    </samplingParameters>
+
+    <thesauri>
+        <thesaurus id="platform"
+                   title="AODN Platform Vocabulary"
+                   fileName="external.theme.aodn_aodn-platform-vocabulary"/>
+        <thesaurus id="instrument"
+                   title="AODN Instrument Vocabulary"
+                   fileName="external.theme.aodn_aodn-instrument-vocabulary"/>
+        <thesaurus id="parameter"
+                   title="AODN Discovery Parameter Vocabulary"
+                   fileName="external.theme.aodn_aodn-discovery-parameter-vocabulary"/>
+        <thesaurus id="sampling-parameter"
+                   title="AODN Sampling Parameter Vocabulary"
+                   fileName="external.theme.aodn_aodn-sampling-parameter-vocabulary"/>
+    </thesauri>
+</config>
+

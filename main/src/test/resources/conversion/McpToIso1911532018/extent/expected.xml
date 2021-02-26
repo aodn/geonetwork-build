@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdb:MD_Metadata xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0"
+                 xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
+                 xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+                 xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0"
+                 xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0"
+                 xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0"
+                 xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0"
+                 xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0"
+                 xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
+                 xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0"
+                 xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/1.0"
+                 xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
+                 xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0"
+                 xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0"
+                 xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0"
+                 xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0"
+                 xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0"
+                 xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0"
+                 xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0"
+                 xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
+                 xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0"
+                 xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0"
+                 xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0"
+                 xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0"
+                 xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.1"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://standards.iso.org/iso/19115/-3/cat/1.0 http://standards.iso.org/iso/19115/-3/cat/1.0/cat.xsd http://standards.iso.org/iso/19115/-3/cit/2.0 http://standards.iso.org/iso/19115/-3/cit/2.0/cit.xsd http://standards.iso.org/iso/19115/-3/gcx/1.0 http://standards.iso.org/iso/19115/-3/gcx/1.0/gcx.xsd http://standards.iso.org/iso/19115/-3/gex/1.0 http://standards.iso.org/iso/19115/-3/gex/1.0/gex.xsd http://standards.iso.org/iso/19115/-3/lan/1.0 http://standards.iso.org/iso/19115/-3/lan/1.0/lan.xsd http://standards.iso.org/iso/19115/-3/srv/2.0 http://standards.iso.org/iso/19115/-3/srv/2.0/srv.xsd http://standards.iso.org/iso/19115/-3/mas/1.0 http://standards.iso.org/iso/19115/-3/mas/1.0/mas.xsd http://standards.iso.org/iso/19115/-3/mcc/1.0 http://standards.iso.org/iso/19115/-3/mcc/1.0/mcc.xsd http://standards.iso.org/iso/19115/-3/mco/1.0 http://standards.iso.org/iso/19115/-3/mco/1.0/mco.xsd http://standards.iso.org/iso/19115/-3/mda/2.0 http://standards.iso.org/iso/19115/-3/mda/2.0/mda.xsd http://standards.iso.org/iso/19115/-3/mdb/2.0 http://standards.iso.org/iso/19115/-3/mdb/2.0/mdb.xsd http://standards.iso.org/iso/19115/-3/mds/2.0 http://standards.iso.org/iso/19115/-3/mds/2.0/mds.xsd http://standards.iso.org/iso/19115/-3/mdt/2.0 http://standards.iso.org/iso/19115/-3/mdt/2.0/mdt.xsd http://standards.iso.org/iso/19115/-3/mex/1.0 http://standards.iso.org/iso/19115/-3/mex/1.0/mex.xsd http://standards.iso.org/iso/19115/-3/mmi/1.0 http://standards.iso.org/iso/19115/-3/mmi/1.0/mmi.xsd http://standards.iso.org/iso/19115/-3/mpc/1.0 http://standards.iso.org/iso/19115/-3/mpc/1.0/mpc.xsd http://standards.iso.org/iso/19115/-3/mrc/2.0 http://standards.iso.org/iso/19115/-3/mrc/2.0/mrc.xsd http://standards.iso.org/iso/19115/-3/mrd/1.0 http://standards.iso.org/iso/19115/-3/mrd/1.0/mrd.xsd http://standards.iso.org/iso/19115/-3/mri/1.0 http://standards.iso.org/iso/19115/-3/mri/1.0/mri.xsd http://standards.iso.org/iso/19115/-3/mrl/2.0 http://standards.iso.org/iso/19115/-3/mrl/2.0/mrl.xsd http://standards.iso.org/iso/19115/-3/mrs/1.0 http://standards.iso.org/iso/19115/-3/mrs/1.0/mrs.xsd http://standards.iso.org/iso/19115/-3/msr/2.0 http://standards.iso.org/iso/19115/-3/msr/2.0/msr.xsd http://standards.iso.org/iso/19157/-2/mdq/1.0 http://standards.iso.org/iso/19157/-2/mdq/1.0/mdq.xsd http://standards.iso.org/iso/19115/-3/mac/2.0 http://standards.iso.org/iso/19115/-3/mac/2.0/mac.xsd http://standards.iso.org/iso/19115/-3/gco/1.0 http://standards.iso.org/iso/19115/-3/gco/1.0/gco.xsd http://standards.iso.org/iso/19115/-3/gmw/1.0 http://standards.iso.org/iso/19115/-3/gmw/1.0/gmw.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.w3.org/1999/xlink http://www.w3.org/1999/xlink.xsd">
+   <mdb:metadataIdentifier>
+      <mcc:MD_Identifier>
+         <mcc:code>
+            <gco:CharacterString>8af21108-c535-43bf-8dab-c1f45a26088c</gco:CharacterString>
+         </mcc:code>
+      </mcc:MD_Identifier>
+   </mdb:metadataIdentifier>
+   <mdb:contact gco:nilReason="missing"/>
+   <mdb:dateInfo gco:nilReason="missing"/>
+   <mdb:metadataStandard>
+      <cit:CI_Citation>
+         <cit:title>
+            <gco:CharacterString>ISO 19115-3:2018</gco:CharacterString>
+         </cit:title>
+      </cit:CI_Citation>
+   </mdb:metadataStandard>
+   <mdb:identificationInfo>
+      <mri:MD_DataIdentification>
+         <mri:citation gco:nilReason="missing"/>
+         <mri:abstract gco:nilReason="missing"/>
+         <mri:extent>
+            <gex:EX_Extent>
+               <gex:description>
+                  <gco:CharacterString>Data are available on a geographic grid within the area that corresponds to the union of the regions of coverage of the Cape Wiles and Cape Spencer radar stations.  This is an irregular polygon within which is located a geographic grid with a nominal grid spacing of 4 Km.</gco:CharacterString>
+               </gex:description>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="idm423" srsName="CRS:84">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">148 -21 148 -20 147 -20 146 -20 146 -19 146 -18 145 -18 145 -17 145 -16 145 -15 144 -15 143 -15 143 -14 143 -13 143 -12 142 -12 142 -11 143 -11 144 -11 145 -11 145 -12 145 -13 146 -13 147 -13 147 -14 147 -15 147 -16 148 -16 148 -17 149 -17 149 -18 148 -18 148 -19 149 -19 150 -19 151 -19 151 -20 152 -20 153 -20 153 -21 154 -21 154 -22 153 -22 153 -23 153 -24 152 -24 151 -24 150 -24 150 -23 150 -22 149 -22 149 -21 148 -21</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_BoundingPolygon>
+                     <gex:polygon>
+                        <gml:Polygon gml:id="idm430">
+                           <gml:exterior>
+                              <gml:LinearRing>
+                                 <gml:posList srsDimension="2">127 -14 127 -15 126 -15 126 -16 125 -16 125 -17 124 -17 123 -17 123 -18 123 -19 122 -19 121 -19 120 -19 120 -20 119 -20 118 -20 118 -21 117 -21 116 -21 116 -22 115 -22 114 -22 114 -23 114 -24 114 -25 114 -26 114 -27 114 -28 115 -28 115 -29 114 -29 113 -29 113 -28 113 -27 112 -27 112 -26 112 -25 113 -25 113 -24 113 -23 113 -22 113 -21 114 -21 114 -20 114 -19 115 -19 116 -19 116 -18 117 -18 118 -18 118 -17 119 -17 119 -16 120 -16 120 -15 121 -15 121 -14 121 -13 122 -13 122 -12 123 -12 123 -11 124 -11 125 -11 125 -10 125 -9 124 -9 124 -8 125 -8 126 -8 127 -8 128 -8 128 -9 129 -9 129 -10 130 -10 130 -11 131 -11 131 -10 132 -10 133 -10 134 -10 135 -10 135 -11 136 -11 137 -11 137 -12 138 -12 138 -13 137 -13 137 -14 136 -14 136 -13 136 -12 135 -12 134 -12 133 -12 133 -13 132 -13 131 -13 131 -14 130 -14 130 -15 129 -15 129 -14 128 -14 127 -14</gml:posList>
+                              </gml:LinearRing>
+                           </gml:exterior>
+                        </gml:Polygon>
+                     </gex:polygon>
+                  </gex:EX_BoundingPolygon>
+               </gex:geographicElement>
+               <gex:geographicElement>
+                  <gex:EX_GeographicDescription>
+                     <gex:geographicIdentifier>
+                        <mcc:MD_Identifier>
+                           <mcc:authority>
+                              <cit:CI_Citation>
+                                 <cit:title>
+                                    <gco:CharacterString>NASA/GCMD Earth Science Keywords</gco:CharacterString>
+                                 </cit:title>
+                                 <cit:alternateTitle>
+                                    <gco:CharacterString>Locations</gco:CharacterString>
+                                 </cit:alternateTitle>
+                                 <cit:date>
+                                    <cit:CI_Date>
+                                       <cit:date>
+                                          <gco:Date>2012-10-16</gco:Date>
+                                       </cit:date>
+                                       <cit:dateType>
+                                          <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                                               codeListValue="revision"/>
+                                       </cit:dateType>
+                                    </cit:CI_Date>
+                                 </cit:date>
+                              </cit:CI_Citation>
+                           </mcc:authority>
+                           <mcc:code>
+                              <gco:CharacterString>OCEAN &gt; SOUTHERN OCEAN</gco:CharacterString>
+                           </mcc:code>
+                        </mcc:MD_Identifier>
+                     </gex:geographicIdentifier>
+                  </gex:EX_GeographicDescription>
+               </gex:geographicElement>
+               <gex:temporalElement>
+                  <gex:EX_TemporalExtent>
+                     <gex:extent>
+                        <gml:TimePeriod gml:id="N67290">
+                           <gml:beginPosition>2009-04-21T00:00:00</gml:beginPosition>
+                           <gml:endPosition/>
+                        </gml:TimePeriod>
+                     </gex:extent>
+                  </gex:EX_TemporalExtent>
+               </gex:temporalElement>
+               <gex:verticalElement>
+                  <gex:EX_VerticalExtent>
+                     <gex:minimumValue>
+                        <gco:Real>0</gco:Real>
+                     </gex:minimumValue>
+                     <gex:maximumValue>
+                        <gco:Real>200</gco:Real>
+                     </gex:maximumValue>
+                     <gex:verticalCRS>
+                        <gml:VerticalCRS gml:id="balderdash">
+                           <gml:identifier codeSpace="urn:ogc:def:cs:EPSG::">5712</gml:identifier>
+                           <gml:scope>Australia</gml:scope>
+                           <gml:usesVerticalCS>
+                              <gml:VerticalCS gml:id="d24e207a1049886">
+                                 <gml:identifier codeSpace="urn:ogc:def:cs:EPSG::">6499</gml:identifier>
+                                 <gml:axis>
+                                    <gml:CoordinateSystemAxis gml:id="d24e210a1049886" uom="m">
+                                       <gml:identifier codeSpace="urn:ogc:def:axis:EPSG::">5711</gml:identifier>
+                                       <gml:axisAbbrev>AHD</gml:axisAbbrev>
+                                       <gml:axisDirection codeSpace="urn:ogc:def:axisDirection:EPSG::">up</gml:axisDirection>
+                                    </gml:CoordinateSystemAxis>
+                                 </gml:axis>
+                              </gml:VerticalCS>
+                           </gml:usesVerticalCS>
+                           <gml:usesVerticalDatum nilReason="missing"/>
+                        </gml:VerticalCRS>
+                     </gex:verticalCRS>
+                  </gex:EX_VerticalExtent>
+               </gex:verticalElement>
+               <gex:verticalElement>
+                  <gex:EX_VerticalExtent>
+                     <gex:minimumValue gco:nilReason="missing"/>
+                     <gex:maximumValue gco:nilReason="missing"/>
+                     <gex:verticalCRS gco:nilReason="missing"/>
+                  </gex:EX_VerticalExtent>
+               </gex:verticalElement>
+            </gex:EX_Extent>
+         </mri:extent>
+         <mri:defaultLocale>
+            <lan:PT_Locale>
+               <lan:language>
+                  <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
+               </lan:language>
+               <lan:characterEncoding gco:nilReason="unknown"/>
+            </lan:PT_Locale>
+         </mri:defaultLocale>
+      </mri:MD_DataIdentification>
+   </mdb:identificationInfo>
+</mdb:MD_Metadata>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mcp:MD_Metadata xmlns:mcp="http://schemas.aodn.org.au/mcp-2.0" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gml="http://www.opengis.net/gml" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gco:isoType="gmd:MD_Metadata" xsi:schemaLocation="http://schemas.aodn.org.au/mcp-2.0 http://schemas.aodn.org.au/mcp-2.0/schema.xsd http://www.isotc211.org/2005/srv http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd http://www.isotc211.org/2005/gmx http://www.isotc211.org/2005/gmx/gmx.xsd http://rs.tdwg.org/dwc/terms/ http://schemas.aodn.org.au/mcp-2.0/mcpDwcTerms.xsd">
+  <gmd:fileIdentifier>
+    <gco:CharacterString>8af21108-c535-43bf-8dab-c1f45a26088c</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:contact gco:nilReason="missing">
+  </gmd:contact>
+  <gmd:dateStamp gco:nilReason="missing">
+  </gmd:dateStamp>
+  <gmd:identificationInfo>
+    <mcp:MD_DataIdentification gco:isoType="gmd:MD_DataIdentification">
+      <gmd:citation gco:nilReason="missing"/>
+      <gmd:abstract gco:nilReason="missing"/>
+      <gmd:resourceConstraints>
+        <mcp:MD_Commons gco:isoType="gmd:MD_Constraints" mcp:commonsType="Creative Commons">
+          <gmd:useLimitation>
+            <gco:CharacterString>Use limitation</gco:CharacterString>
+          </gmd:useLimitation>
+          <mcp:jurisdictionLink>
+            <gmd:URL>http://creativecommons.org/international/</gmd:URL>
+          </mcp:jurisdictionLink>
+          <mcp:licenseLink>
+            <gmd:URL>http://creativecommons.org/licenses/by/4.0/</gmd:URL>
+          </mcp:licenseLink>
+          <mcp:imageLink>
+            <gmd:URL>https://licensebuttons.net/l/by/4.0/88x31.png</gmd:URL>
+          </mcp:imageLink>
+          <mcp:licenseName>
+            <gco:CharacterString>Attribution 4.0 International</gco:CharacterString>
+          </mcp:licenseName>
+          <mcp:attributionConstraints>
+            <gco:CharacterString>The citation in a list of references is: "IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access]."</gco:CharacterString>
+          </mcp:attributionConstraints>
+          <mcp:attributionConstraints>
+            <gco:CharacterString>Any users of IMOS data are required to clearly acknowledge the source of the material derived from IMOS in the format: "Data was sourced from the Integrated Marine Observing System (IMOS) - IMOS is a national collaborative research infrastructure, supported by the Australian Government." If relevant, also credit other organisations involved in collection of this particular datastream (as listed in 'credit' in the metadata record).</gco:CharacterString>
+          </mcp:attributionConstraints>
+          <mcp:derivativeConstraints>
+            <gco:CharacterString>Derivative constraints</gco:CharacterString>
+          </mcp:derivativeConstraints>
+          <mcp:commercialUseConstraints>
+            <gco:CharacterString>Commercial use constraints</gco:CharacterString>
+          </mcp:commercialUseConstraints>
+          <mcp:collectiveWorksConstraints>
+            <gco:CharacterString>Collective Works constraints</gco:CharacterString>
+          </mcp:collectiveWorksConstraints>
+          <mcp:otherConstraints>
+            <gco:CharacterString>Please refer to http://www.bom.gov.au/other/disclaimer.shtml for Bureau disclaimer details.</gco:CharacterString>
+          </mcp:otherConstraints>
+          <mcp:otherConstraints>
+            <gco:CharacterString>The Dept of Transport [W.A] provides this data with the following disclaimer: "The Dept of Transport does not provide any warranty as to the accuracy of the Information nor as to its reliability. No person or corporation should act solely on the Information without considering, and, if necessary, seeking verification of the Information from an alternative information supplier. Neither Transport nor any member officer or employee undertakes responsibility in any way whatsoever to any person or corporation in respect of the Information including any errors or omissions therein however caused, whether through negligence or otherwise. (Dept of) Transport and all its member officers and employees expressly disclaim all and any liability to any person or corporation into whose hands the Information may come whether as purchased or otherwise, in respect of anything and of the consequences of anything done or omitted to be done by any such person or corporation in reliance in whole or part upon the whole or any part of the Information."</gco:CharacterString>
+          </mcp:otherConstraints>
+          <mcp:otherConstraints>
+            <gco:CharacterString>The Coastal Impacts Unit, DES disclaims all responsibility for the information provided, and all liability (including without limitation, liability in negligence) for all expenses, losses, damages, and costs that may be incurred as a result of the information being inaccurate or incomplete in any way for any reason</gco:CharacterString>
+          </mcp:otherConstraints>
+        </mcp:MD_Commons>
+      </gmd:resourceConstraints>
+      <gmd:resourceConstraints>
+        <gmd:MD_Constraints>
+          <gmd:useLimitation>
+            <gco:CharacterString>Data, products and services from IMOS are provided "as is" without any warranty as to fitness for a particular purpose.</gco:CharacterString>
+          </gmd:useLimitation>
+        </gmd:MD_Constraints>
+      </gmd:resourceConstraints>
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          <gmd:useLimitation>
+            <gco:CharacterString>The data are near real time and have not be quality assured.</gco:CharacterString>
+          </gmd:useLimitation>
+          <gmd:accessConstraints>
+            <gmd:MD_RestrictionCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.4/schema/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="restricted">restricted</gmd:MD_RestrictionCode>
+          </gmd:accessConstraints>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          <gmd:useConstraints>
+            <gmd:MD_RestrictionCode codeList="http://schemas.aodn.org.au/mcp-2.0/schema/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+          </gmd:useConstraints>
+          <gmd:otherConstraints>
+            <gco:CharacterString>This data set conforms to the PICCCBY Attribution License
+              (http://creativecommons.org/licenses/by/3.0/).
+
+              Please follow instructions listed in the citation reference provided at http://data.aad.gov.au/aadc/metadata/citation.cfm?entry_id=AADC-00099 when using these data.
+
+              Please contact the investigators before using these data, as some explanation may be required.
+
+              These data were sourced from the Scientific Committee on Antarctic Research (SCAR) sponsored Southern Ocean CPR (SO-CPR) Survey Database, hosted by the Australian Antarctic Data Centre (AADC).  The AADC is part of the Australian Antarctic Division (AAD, a division of the Department of Sustainability, Environment, Water, Population and Communities (SEWPaC)). The SO-CPR Survey and database are also funded, supported and populated by the Australian Government through the SEWPaC-AAD approved AAS project 4107 and the Integrated Marine Observing System (IMOS) funded by the Australian Government National Collaborative Research Infrastructure Strategy and the Super Science Initiative, the Japanese National Institute of Polar Research (NIPR), the NZ National Institute of Water and Atmospheric Research (NIWA), the German Alfred Wegener Institute (AWI), the United States of America - Antarctic Marine Living Resources programme (NOAA US-AMLR), the Russian Arctic and Antarctic Research Institute (AARI), the Brazilian Programa Antartico Brasileiro (PROANTAR), the Chilean Instituto Antartico Chileno (INACH), the South African Departmental of Environmental Affairs (DEA) and the French Institut polaire francais - Paul-Emile Victor (IPEV) and Universite Pierre-et-Marie-Curie (UPMC).</gco:CharacterString>
+          </gmd:otherConstraints>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:resourceConstraints>
+        <gmd:MD_SecurityConstraints>
+          <gmd:classification>
+            <gmd:MD_ClassificationCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.4/schema/resources/Codelist/gmxCodelists.xml#MD_ClassificationCode" codeListValue="unclassified">unclassified</gmd:MD_ClassificationCode>
+          </gmd:classification>
+        </gmd:MD_SecurityConstraints>
+      </gmd:resourceConstraints>
+      <gmd:language>
+        <gco:CharacterString xmlns:srv="http://www.isotc211.org/2005/srv">eng</gco:CharacterString>
+      </gmd:language>
+    </mcp:MD_DataIdentification>
+  </gmd:identificationInfo>
+</mcp:MD_Metadata>
