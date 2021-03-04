@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdb:MD_Metadata xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0"
+                 xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
+                 xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+                 xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0"
+                 xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0"
+                 xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0"
+                 xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0"
+                 xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0"
+                 xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
+                 xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0"
+                 xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/1.0"
+                 xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
+                 xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0"
+                 xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0"
+                 xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0"
+                 xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0"
+                 xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0"
+                 xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0"
+                 xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0"
+                 xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
+                 xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0"
+                 xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0"
+                 xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0"
+                 xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0"
+                 xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.1"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://standards.iso.org/iso/19115/-3/cat/1.0 http://standards.iso.org/iso/19115/-3/cat/1.0/cat.xsd http://standards.iso.org/iso/19115/-3/cit/2.0 http://standards.iso.org/iso/19115/-3/cit/2.0/cit.xsd http://standards.iso.org/iso/19115/-3/gcx/1.0 http://standards.iso.org/iso/19115/-3/gcx/1.0/gcx.xsd http://standards.iso.org/iso/19115/-3/gex/1.0 http://standards.iso.org/iso/19115/-3/gex/1.0/gex.xsd http://standards.iso.org/iso/19115/-3/lan/1.0 http://standards.iso.org/iso/19115/-3/lan/1.0/lan.xsd http://standards.iso.org/iso/19115/-3/srv/2.0 http://standards.iso.org/iso/19115/-3/srv/2.0/srv.xsd http://standards.iso.org/iso/19115/-3/mas/1.0 http://standards.iso.org/iso/19115/-3/mas/1.0/mas.xsd http://standards.iso.org/iso/19115/-3/mcc/1.0 http://standards.iso.org/iso/19115/-3/mcc/1.0/mcc.xsd http://standards.iso.org/iso/19115/-3/mco/1.0 http://standards.iso.org/iso/19115/-3/mco/1.0/mco.xsd http://standards.iso.org/iso/19115/-3/mda/2.0 http://standards.iso.org/iso/19115/-3/mda/2.0/mda.xsd http://standards.iso.org/iso/19115/-3/mdb/2.0 http://standards.iso.org/iso/19115/-3/mdb/2.0/mdb.xsd http://standards.iso.org/iso/19115/-3/mds/2.0 http://standards.iso.org/iso/19115/-3/mds/2.0/mds.xsd http://standards.iso.org/iso/19115/-3/mdt/2.0 http://standards.iso.org/iso/19115/-3/mdt/2.0/mdt.xsd http://standards.iso.org/iso/19115/-3/mex/1.0 http://standards.iso.org/iso/19115/-3/mex/1.0/mex.xsd http://standards.iso.org/iso/19115/-3/mmi/1.0 http://standards.iso.org/iso/19115/-3/mmi/1.0/mmi.xsd http://standards.iso.org/iso/19115/-3/mpc/1.0 http://standards.iso.org/iso/19115/-3/mpc/1.0/mpc.xsd http://standards.iso.org/iso/19115/-3/mrc/2.0 http://standards.iso.org/iso/19115/-3/mrc/2.0/mrc.xsd http://standards.iso.org/iso/19115/-3/mrd/1.0 http://standards.iso.org/iso/19115/-3/mrd/1.0/mrd.xsd http://standards.iso.org/iso/19115/-3/mri/1.0 http://standards.iso.org/iso/19115/-3/mri/1.0/mri.xsd http://standards.iso.org/iso/19115/-3/mrl/2.0 http://standards.iso.org/iso/19115/-3/mrl/2.0/mrl.xsd http://standards.iso.org/iso/19115/-3/mrs/1.0 http://standards.iso.org/iso/19115/-3/mrs/1.0/mrs.xsd http://standards.iso.org/iso/19115/-3/msr/2.0 http://standards.iso.org/iso/19115/-3/msr/2.0/msr.xsd http://standards.iso.org/iso/19157/-2/mdq/1.0 http://standards.iso.org/iso/19157/-2/mdq/1.0/mdq.xsd http://standards.iso.org/iso/19115/-3/mac/2.0 http://standards.iso.org/iso/19115/-3/mac/2.0/mac.xsd http://standards.iso.org/iso/19115/-3/gco/1.0 http://standards.iso.org/iso/19115/-3/gco/1.0/gco.xsd http://standards.iso.org/iso/19115/-3/gmw/1.0 http://standards.iso.org/iso/19115/-3/gmw/1.0/gmw.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.w3.org/1999/xlink http://www.w3.org/1999/xlink.xsd">
+   <mdb:metadataIdentifier>
+      <mcc:MD_Identifier>
+         <mcc:code>
+            <gco:CharacterString>c1344979-f701-0916-e044-00144f7bc0f4</gco:CharacterString>
+         </mcc:code>
+      </mcc:MD_Identifier>
+   </mdb:metadataIdentifier>
+   <mdb:contact gco:nilReason="missing"/>
+   <mdb:dateInfo gco:nilReason="missing"/>
+   <mdb:metadataStandard>
+      <cit:CI_Citation>
+         <cit:title>
+            <gco:CharacterString>ISO 19115-3:2018</gco:CharacterString>
+         </cit:title>
+      </cit:CI_Citation>
+   </mdb:metadataStandard>
+   <mdb:identificationInfo gco:nilReason="missing"/>
+   <mdb:dataQualityInfo>
+      <mdq:DQ_DataQuality>
+         <mdq:scope>
+            <mcc:MD_Scope>
+               <mcc:level>
+                  <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode"
+                                    codeListValue="dataset"/>
+               </mcc:level>
+            </mcc:MD_Scope>
+         </mdq:scope>
+         <mdq:report>
+            <mdq:DQ_AbsoluteExternalPositionalAccuracy>
+               <mdq:result>
+                  <mdq:DQ_ConformanceResult>
+                     <mdq:specification>
+                        <cit:CI_Citation>
+                           <cit:title gco:nilReason="missing">
+                              <gco:CharacterString/>
+                           </cit:title>
+                           <cit:date>
+                              <cit:CI_Date>
+                                 <cit:date gco:nilReason="missing"/>
+                                 <cit:dateType>
+                                    <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                                         codeListValue="publication"/>
+                                 </cit:dateType>
+                              </cit:CI_Date>
+                           </cit:date>
+                        </cit:CI_Citation>
+                     </mdq:specification>
+                     <mdq:explanation>
+                        <gco:CharacterString>15m</gco:CharacterString>
+                     </mdq:explanation>
+                     <mdq:pass>
+                        <gco:Boolean>false</gco:Boolean>
+                     </mdq:pass>
+                  </mdq:DQ_ConformanceResult>
+               </mdq:result>
+            </mdq:DQ_AbsoluteExternalPositionalAccuracy>
+         </mdq:report>
+         <mdq:report>
+            <mdq:DQ_ConceptualConsistency>
+               <mdq:result>
+                  <mdq:DQ_ConformanceResult>
+                     <mdq:specification>
+                        <cit:CI_Citation>
+                           <cit:title gco:nilReason="missing">
+                              <gco:CharacterString/>
+                           </cit:title>
+                           <cit:date>
+                              <cit:CI_Date>
+                                 <cit:date gco:nilReason="missing"/>
+                                 <cit:dateType>
+                                    <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                                         codeListValue="publication"/>
+                                 </cit:dateType>
+                              </cit:CI_Date>
+                           </cit:date>
+                        </cit:CI_Citation>
+                     </mdq:specification>
+                     <mdq:explanation>
+                        <gco:CharacterString>Data are managed in a relational database, and values are logically consistent.</gco:CharacterString>
+                     </mdq:explanation>
+                     <mdq:pass>
+                        <gco:Boolean>false</gco:Boolean>
+                     </mdq:pass>
+                  </mdq:DQ_ConformanceResult>
+               </mdq:result>
+            </mdq:DQ_ConceptualConsistency>
+         </mdq:report>
+         <mdq:report>
+            <mdq:DQ_CompletenessOmission>
+               <mdq:result>
+                  <mdq:DQ_ConformanceResult>
+                     <mdq:specification>
+                        <cit:CI_Citation>
+                           <cit:title gco:nilReason="missing">
+                              <gco:CharacterString/>
+                           </cit:title>
+                           <cit:date>
+                              <cit:CI_Date>
+                                 <cit:date gco:nilReason="missing"/>
+                                 <cit:dateType>
+                                    <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode"
+                                                         codeListValue="publication"/>
+                                 </cit:dateType>
+                              </cit:CI_Date>
+                           </cit:date>
+                        </cit:CI_Citation>
+                     </mdq:specification>
+                     <mdq:explanation>
+                        <gco:CharacterString>Dataset collection is in progress.</gco:CharacterString>
+                     </mdq:explanation>
+                     <mdq:pass>
+                        <gco:Boolean>false</gco:Boolean>
+                     </mdq:pass>
+                  </mdq:DQ_ConformanceResult>
+               </mdq:result>
+            </mdq:DQ_CompletenessOmission>
+         </mdq:report>
+         <mdq:report>
+            <mdq:DQ_AccuracyOfATimeMeasurement>
+               <mdq:measure>
+                  <mdq:DQ_MeasureReference>
+                     <mdq:nameOfMeasure>
+                        <gco:CharacterString>Temporal Resolution</gco:CharacterString>
+                     </mdq:nameOfMeasure>
+                  </mdq:DQ_MeasureReference>
+               </mdq:measure>
+               <mdq:result>
+                  <mdq:DQ_QuantitativeResult>
+                     <mdq:value>
+                        <gco:Record>12</gco:Record>
+                     </mdq:value>
+                     <mdq:valueUnit>
+                        <gml:DerivedUnit gml:id="IDARE02">
+                           <gml:identifier codeSpace=""/>
+                           <gml:derivationUnitTerm uom="hr"/>
+                        </gml:DerivedUnit>
+                     </mdq:valueUnit>
+                  </mdq:DQ_QuantitativeResult>
+               </mdq:result>
+            </mdq:DQ_AccuracyOfATimeMeasurement>
+         </mdq:report>
+      </mdq:DQ_DataQuality>
+   </mdb:dataQualityInfo>
+   <mdb:resourceLineage>
+      <mrl:LI_Lineage>
+         <mrl:statement>
+            <gco:CharacterString>Data sampling is being conducted as part of a larger IMOS monitoring program. The zooplankton samples are analysed at the Plankton Ecology Lab at CSIRO Marine and Atmospheric Research, Queensland. The samples are settled in a 1000 ml measuring cylinder for 24 hours. The top 900ml is siphoned off once settled and the remainder is transferred into a 100ml measuring cyclinder and left to settle for 24 hours. Once settled the top 90 ml is siphoned off from these samples and the remainder is transfered into a sample jar. This is gently agitated and a 1ml sample is taken and transferred into a Segdwick rafter. The whole sample is scanned at 100x magnification to count large cells. The sample is then counted at 200x magnification to count up to 200 cells of one taxa or up to 400 squares of the Sedgwick rafter. Finally, the sample is counted at 640x magnification for small flagellates, up to 200 cells of one taxa or 20 sqaures on the Sedgwick rafter. These counts are then converted to cells / l and ml / l and the analysis data is exported to IMOS.</gco:CharacterString>
+         </mrl:statement>
+         <mrl:scope>
+            <mcc:MD_Scope>
+               <mcc:level>
+                  <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode"
+                                    codeListValue="dataset"/>
+               </mcc:level>
+            </mcc:MD_Scope>
+         </mrl:scope>
+      </mrl:LI_Lineage>
+   </mdb:resourceLineage>
+   <mdb:resourceLineage>
+      <mrl:LI_Lineage>
+         <mrl:statement>
+            <gco:CharacterString>Data sampling is being conducted as part of a larger IMOS monitoring program.  The silk is removed from the CPR cassette and processed as described in Richardson et al 2006. The phytoplankton colour index (PCI) and the phytoplankton data are also analysed as per Richardson et al 2006.  The zooplankton analysis is conducted differently to that described in Richardson et al 2006 as it is counted off the silk in a bogorov tray. This is accomplished by rinsing the silks in water and straining through a 10 micron mesh sieve. The collected plankton is transferred to a bogorov tray and counted under a dissecting scope. This is done to retain the phytoplankton. AusCPR decided to analyse the zooplankton this way as it provides a more accurate analysis of the zooplankton present. It is easy to miss zooplankton when it is still on the silk and it is harder to identify. After counting the zooplankton and phytoplankton are transferred onto a preweighed filter and dried in an oven at 60 degrees C for 24-48 hours. Once dried the sample is reweighed to attain dry weight.</gco:CharacterString>
+         </mrl:statement>
+         <mrl:scope>
+            <mcc:MD_Scope>
+               <mcc:level>
+                  <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode"
+                                    codeListValue="dataset"/>
+               </mcc:level>
+               <mcc:levelDescription>
+                  <mcc:MD_ScopeDescription>
+                     <mcc:other>
+                        <gco:CharacterString>IMOS Platform level record</gco:CharacterString>
+                     </mcc:other>
+                  </mcc:MD_ScopeDescription>
+               </mcc:levelDescription>
+               <mcc:levelDescription>
+                  <mcc:MD_ScopeDescription>
+                     <mcc:dataset>
+                        <gco:CharacterString>IMOS Dataset level record</gco:CharacterString>
+                     </mcc:dataset>
+                  </mcc:MD_ScopeDescription>
+               </mcc:levelDescription>
+            </mcc:MD_Scope>
+         </mrl:scope>
+         <mrl:source>
+            <mrl:LI_Source>
+               <mrl:description>
+                  <gco:CharacterString>Data inputs to this AODN product include the Bureau of Meteorology near real-time wave buoy data, described in their metadata record [see: http://www.bom.gov.au/metadata/19115/ANZCW0503900478 ].</gco:CharacterString>
+               </mrl:description>
+               <mrl:sourceCitation>
+                  <cit:CI_Citation>
+                     <cit:title>
+                        <gco:CharacterString>Wave Buoy Observations, Near Real-Time, Australia</gco:CharacterString>
+                     </cit:title>
+                     <cit:date/>
+                     <cit:otherCitationDetails>
+                        <gco:CharacterString>Metadata record is available from: [ http://www.bom.gov.au/metadata/19115/ANZCW0503900478 ].</gco:CharacterString>
+                     </cit:otherCitationDetails>
+                  </cit:CI_Citation>
+               </mrl:sourceCitation>
+            </mrl:LI_Source>
+         </mrl:source>
+         <mrl:processStep>
+            <mrl:LI_ProcessStep>
+               <mrl:description>
+                  <gco:CharacterString>In order to assign quality control flags to surface current measurement re-processing of the bragg power spectra is necessary.   It is not feasible to transfer power spectra to ACORN real-time.  Re-processing occurs after a station maintenance visit by ACORN during which a station backup disk is swapped with a clean disk.  These visits occur about every 3 months.
+
+                  Re-processing of bragg power spectra, and creating netCDF files, uses a Windows program written by ACORN.  The analysis in this program replaces the real-time analysis used by the manufacturer.  Differences between the real-time and quality controlled data sets can be significant.
+
+                  Quality control flags are
+
+                  0) No quality control
+                  1) Good
+                  2) Probably good
+                  3) Probably bad
+                  4) Bad
+                  5) Changed
+                  6) Undetectable
+                  7) Clipped
+                  8) Interpolated
+                  9) Missing
+                  10) Uncertain
+
+                  Only quality control flags 1-3 should appear in these data sets; data associated with other flags are discarded by ACORN before the netCDF files are written and uploaded to the IMOS staging area.</gco:CharacterString>
+               </mrl:description>
+               <mrl:processor>
+                  <cit:CI_Responsibility>
+                     <cit:role>
+                        <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode"
+                                         codeListValue="processor"/>
+                     </cit:role>
+                     <cit:party>
+                        <cit:CI_Organisation>
+                           <cit:name>
+                              <gco:CharacterString>Australian Coastal Ocean Radar Network</gco:CharacterString>
+                           </cit:name>
+                           <cit:contactInfo>
+                              <cit:CI_Contact>
+                                 <cit:phone>
+                                    <cit:CI_Telephone>
+                                       <cit:number>
+                                          <gco:CharacterString>61 3 9669 4325</gco:CharacterString>
+                                       </cit:number>
+                                       <cit:numberType>
+                                          <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                                    codeListValue="voice"/>
+                                       </cit:numberType>
+                                    </cit:CI_Telephone>
+                                 </cit:phone>
+                                 <cit:address>
+                                    <cit:CI_Address>
+                                       <cit:deliveryPoint>
+                                          <gco:CharacterString>Australian Coastal Ocean Radar Network</gco:CharacterString>
+                                       </cit:deliveryPoint>
+                                       <cit:deliveryPoint>
+                                          <gco:CharacterString>School of Earth and Environmental Sciences</gco:CharacterString>
+                                       </cit:deliveryPoint>
+                                       <cit:deliveryPoint>
+                                          <gco:CharacterString>James Cook University</gco:CharacterString>
+                                       </cit:deliveryPoint>
+                                       <cit:city>
+                                          <gco:CharacterString>Townsville</gco:CharacterString>
+                                       </cit:city>
+                                       <cit:administrativeArea>
+                                          <gco:CharacterString>Queensland</gco:CharacterString>
+                                       </cit:administrativeArea>
+                                       <cit:postalCode>
+                                          <gco:CharacterString>4811</gco:CharacterString>
+                                       </cit:postalCode>
+                                       <cit:country>
+                                          <gco:CharacterString>Australia</gco:CharacterString>
+                                       </cit:country>
+                                       <cit:electronicMailAddress>
+                                          <gco:CharacterString>r.verein@bom.gov.au</gco:CharacterString>
+                                       </cit:electronicMailAddress>
+                                    </cit:CI_Address>
+                                 </cit:address>
+                              </cit:CI_Contact>
+                           </cit:contactInfo>
+                           <cit:individual>
+                              <cit:CI_Individual>
+                                 <cit:name>
+                                    <gco:CharacterString>Arnstein Prytz</gco:CharacterString>
+                                 </cit:name>
+                                 <cit:positionName>
+                                    <gco:CharacterString>IMOS Marine Observations Support Scientist</gco:CharacterString>
+                                 </cit:positionName>
+                              </cit:CI_Individual>
+                           </cit:individual>
+                        </cit:CI_Organisation>
+                     </cit:party>
+                  </cit:CI_Responsibility>
+               </mrl:processor>
+            </mrl:LI_ProcessStep>
+         </mrl:processStep>
+      </mrl:LI_Lineage>
+   </mdb:resourceLineage>
+   <mdb:resourceLineage>
+      <mrl:LI_Lineage>
+         <mrl:statement gco:nilReason="missing">
+            <gco:CharacterString/>
+         </mrl:statement>
+         <mrl:scope/>
+      </mrl:LI_Lineage>
+   </mdb:resourceLineage>
+   <mdb:resourceLineage>
+      <mrl:LI_Lineage>
+         <mrl:statement>
+            <gco:CharacterString>After collection samples for heterotrophic
+              bacteria and viruses were transferred into 2 ml cryovials, fixed with glutaraldehyde (0.5% final concentration)and incubated for 15 min at 4oC (Brussaard, 2004). All samples were then quick frozen in liquid nitrogen, stored at -80oC once returned to the laboratory and analysed within a month of collection.
+
+              Heterotrophic bacteria and virus populations were identified and enumerated by flow cytometry (FCM) using a FACScanto flow cytometer (Becton Dickinson). Prior to FCM analysis, triplicate viral
+              and bacterial samples were quick thawed and diluted 1:10 with 0.2umm filtered TE buffer (10 mM Tris, 1 mM EDTA), stained with SYBR-I Green solution (1:500 dilution; Molecular Probes) and finally incubated in the dark at 80oC for 10 min (Brussaard, 2004). Fluorescent beads with a diameter of 1 umm (Molecular Probes) were added to each sample as an internal size and concentration standard at a final concentration of approximately 10^5 beads per ml (Gasol and del Giorgio, 2000). Phosphate-buffered saline (PBS) solution was added as a sheath fluid, while forward-angle light scatter (FSC), side-angle light scatter (SSC) and green (SYBR-1) fluorescence were recorded for each sample. Data for each sample were collected in list-mode files and analysed using Win MDI 2.8 software ((c) Joseph Trotter).
+
+              Viral and heterotrophic bacterial populations were discriminated based on their differences in cell side scatter, a proxy of cell size, and SYBR Green fluorescence, which indicates the amount of nucleic acid present in each cell (Marie et al., 1997, 1999; Brussaard, 2004). Bacterial populations were then split into high DNA (HDNA) and low DNA (LDNA) groups using the differences in green fluorescence
+              (Li et al., 1995; Gasol et al., 1999, Fig. 2). Viral populations were split into four virus-like particle populations (VLP1, VLP2, VLP3 and VLP4) based on their differences in green fluorescence and SSC. More specifically, VLP1 and VLP2 corresponded to
+              populations widely observed in seawater samples and identified as bacteriophages (e.g. Marie et al., 1999; Brussaard et al., 2005; Seymour et al., 2006). In contrast, populations VLP3 and VLP4 exhibited similar levels of green fluorescence than VLP2 but a higher SSC. This suggests that they represent groups of phytoplankton viruses that are generally characterised by higher side scatter and/or green fluorescence signatures (Brussaard et al., 1999,
+              2005, 2008; Baudoux and Brussaard, 2005; Larsen et al., 2008).</gco:CharacterString>
+         </mrl:statement>
+         <mrl:scope>
+            <mcc:MD_Scope>
+               <mcc:level>
+                  <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode"
+                                    codeListValue="mx_dataset"/>
+               </mcc:level>
+            </mcc:MD_Scope>
+         </mrl:scope>
+      </mrl:LI_Lineage>
+   </mdb:resourceLineage>
+   <mdb:resourceLineage>
+      <mrl:LI_Lineage>
+         <mrl:statement>
+            <gco:CharacterString>At each station, in vivo fluorescence profiles were used to identify the depth of the FM from where we collected seawater with Niskin bottles. These were subsequently homogenized prior to subsampling for nutrients, Chl a concentration, picophytoplankton, bacteria and virus analysis. If no FM could be identify, seawater sampling was done in the surface mixed layer at a depth of 15 m that we previously identified to avoid the effects of photoinhibition.
+
+              Seawater samples of 50 mL were filtered through
+              bonnet syringe filters (0.45 um porosity, Micro Analytix Pty Ltd) and stored at –20oC for nutrient analysis. Nutrient concentrations are not always available for all stations on all cruises. All other
+              samples were analysed according to the Lachat
+              Quickchem methods for phosphate (PO3-,4, detection limit; 0.03 uM), nitrate + nitrite (NO-,x, detection limit; 0.07 uM) and ammonium (NH+,4, detection limit; 0.07 uM) on a QuickChem QC8500 Automated Ion Analyser. Chl a concentrations were determined using triplicate 300 mL seawater samples filtered through fibre glass filters (Whatman GF/C, 1.7 um porosity). Filters were stored at –20oC until analysis. Chl a was extracted by placing each filter in 5 mL of methanol for 24 h in the dark at 4oC (Welschmeyer, 1994). Chl a concentrations in the extracts were determined using a Turner 450 fluorometer previously calibrated with Chl a extracted from Anacystis nidulans (Sigma Chemicals, St Louis, MO, USA).
+
+              Triplicate 1 mL seawater samples were fixed with
+              paraformaldehyde (2% final concentration), frozen in liquid nitrogen and stored at –80oC. Samples were processed by flow cytometry (FacsCanto Becton Dickinson) within a month following each cruise. Prior to analysis, 1 um fluorescent marker beads (Molecular Probes, Eugene, OR, USA) were added to each sample (Marie et al., 1999) and each sample was run for 5 min. For each sample, natural orange fluorescence from phycoerythrin and red fluorescence from chlorophyll, together with forward light scatter and side light scatter (SSC), were recorded. All cytograms were then analysed using the software flowJo (TreeStar) following the method described in Marie et al. (Marie et al., 1999). The three known major picophytoplankton
+              groups, i.e. Synechococcus, Prochlorococcus and picoeukaryotes, could be easily discriminated by their distinct autofluorescence and light scatter properties relative to the beads. Gates or regions around each observed group were drawn such that no adjustment was needed and to maximize cell counts.</gco:CharacterString>
+         </mrl:statement>
+         <mrl:scope>
+            <mcc:MD_Scope>
+               <mcc:level>
+                  <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode"
+                                    codeListValue="dataset"/>
+               </mcc:level>
+            </mcc:MD_Scope>
+         </mrl:scope>
+      </mrl:LI_Lineage>
+   </mdb:resourceLineage>
+   <mdb:resourceLineage>
+      <mrl:LI_Lineage>
+         <mrl:statement gco:nilReason="missing">
+            <gco:CharacterString/>
+         </mrl:statement>
+         <mrl:scope>
+            <mcc:MD_Scope>
+               <mcc:level gco:nilReason="missing"/>
+               <mcc:levelDescription>
+                  <mcc:MD_ScopeDescription>
+                     <mcc:other>
+                        <gco:CharacterString>IMOS Platform level record</gco:CharacterString>
+                     </mcc:other>
+                  </mcc:MD_ScopeDescription>
+               </mcc:levelDescription>
+               <mcc:levelDescription>
+                  <mcc:MD_ScopeDescription>
+                     <mcc:dataset>
+                        <gco:CharacterString>IMOS Dataset level record</gco:CharacterString>
+                     </mcc:dataset>
+                  </mcc:MD_ScopeDescription>
+               </mcc:levelDescription>
+            </mcc:MD_Scope>
+         </mrl:scope>
+      </mrl:LI_Lineage>
+   </mdb:resourceLineage>
+</mdb:MD_Metadata>

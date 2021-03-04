@@ -45,6 +45,11 @@ pipeline {
                         sh 'mvn -B -DskipTests package'
                     }
                 }
+                stage('integration_test') {
+                    steps {
+                        sh 'mvn -B test-compile failsafe:integration-test failsafe:verify'
+                    }
+                }
             }
             post {
                 success {

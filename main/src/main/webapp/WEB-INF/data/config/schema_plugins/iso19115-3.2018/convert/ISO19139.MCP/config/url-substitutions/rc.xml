@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- URL Substitutions to be performed when migrating records from the old GN2 catalogue-rc -->
+<!-- instance to the GN3 catalogue-rc test instance -->
+
+<config>
+    <url>https://catalogue-rc.aodn.org.au:443/geonetwork/srv</url>
+
+    <!-- Instance keyword thesauri links -->
+    <substitution match="https?://catalogue-rc.aodn.org.au(:443)?/geonetwork/srv/eng?/thesaurus"
+            replaceWith="https://catalogue-rc.aodn.org.au:443/geonetwork/srv/eng/thesaurus"/>
+
+    <!-- Instance point of truth links -->
+    <substitution match="https?://catalogue-rc.aodn.org.au(:443)?/geonetwork/srv/eng?/metadata.show\?uuid="
+            replaceWith="https://catalogue-rc.aodn.org.au:443/geonetwork/srv/api/records/"/>
+
+    <!-- Instance download links -->
+    <substitution match="https?://catalogue-rc.aodn.org.au(:443)?/geonetwork/srv/eng?/file.disclaimer\?uuid=(.*)&amp;fname=(.*)&amp;access=private"
+            replaceWith="https://catalogue-rc.aodn.org.au:433/geonetwork/srv/api/records/$2/attachments/$3"/>
+</config>
