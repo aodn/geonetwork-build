@@ -116,78 +116,78 @@
                            <cit:name>
                               <gco:CharacterString>Australian Antarctic Division (AAD)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:phone>
-                                    <cit:CI_Telephone>
-                                       <cit:number>
-                                          <gco:CharacterString>+61 3 6232 3364</gco:CharacterString>
-                                       </cit:number>
-                                       <cit:numberType>
-                                          <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
-                                                                    codeListValue="voice"/>
-                                       </cit:numberType>
-                                    </cit:CI_Telephone>
-                                 </cit:phone>
-                                 <cit:phone>
-                                    <cit:CI_Telephone>
-                                       <cit:number>
-                                          <gco:CharacterString>+61 3 6232 3158</gco:CharacterString>
-                                       </cit:number>
-                                       <cit:numberType>
-                                          <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
-                                                                    codeListValue="facsimile"/>
-                                       </cit:numberType>
-                                    </cit:CI_Telephone>
-                                 </cit:phone>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Australian Antarctic Division</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>203 Channel Highway</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Kingston</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Tasmania</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>7050</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                                 <cit:onlineResource>
-                                    <cit:CI_OnlineResource>
-                                       <cit:linkage gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:linkage>
-                                       <cit:protocol gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:protocol>
-                                       <cit:name gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:name>
-                                       <cit:description gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:description>
-                                    </cit:CI_OnlineResource>
-                                 </cit:onlineResource>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>HOSIE, GRAHAM</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:phone>
+                                          <cit:CI_Telephone>
+                                             <cit:number>
+                                                <gco:CharacterString>+61 3 6232 3364</gco:CharacterString>
+                                             </cit:number>
+                                             <cit:numberType>
+                                                <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                                          codeListValue="voice"/>
+                                             </cit:numberType>
+                                          </cit:CI_Telephone>
+                                       </cit:phone>
+                                       <cit:phone>
+                                          <cit:CI_Telephone>
+                                             <cit:number>
+                                                <gco:CharacterString>+61 3 6232 3158</gco:CharacterString>
+                                             </cit:number>
+                                             <cit:numberType>
+                                                <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                                          codeListValue="facsimile"/>
+                                             </cit:numberType>
+                                          </cit:CI_Telephone>
+                                       </cit:phone>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Australian Antarctic Division</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>203 Channel Highway</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Kingston</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Tasmania</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>7050</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                       <cit:onlineResource>
+                                          <cit:CI_OnlineResource>
+                                             <cit:linkage gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:linkage>
+                                             <cit:protocol gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:protocol>
+                                             <cit:name gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:name>
+                                             <cit:description gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:description>
+                                          </cit:CI_OnlineResource>
+                                       </cit:onlineResource>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>

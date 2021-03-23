@@ -47,60 +47,60 @@
                <cit:name>
                   <gco:CharacterString>CSIRO Oceans and Atmosphere - Information and Data Centre</gco:CharacterString>
                </cit:name>
-               <cit:contactInfo>
-                  <cit:CI_Contact>
-                     <cit:address>
-                        <cit:CI_Address>
-                           <cit:deliveryPoint gco:nilReason="missing">
-                              <gco:CharacterString/>
-                           </cit:deliveryPoint>
-                           <cit:city gco:nilReason="missing">
-                              <gco:CharacterString/>
-                           </cit:city>
-                           <cit:administrativeArea gco:nilReason="missing">
-                              <gco:CharacterString/>
-                           </cit:administrativeArea>
-                           <cit:postalCode gco:nilReason="missing">
-                              <gco:CharacterString/>
-                           </cit:postalCode>
-                           <cit:country gco:nilReason="missing">
-                              <gco:CharacterString/>
-                           </cit:country>
-                           <cit:electronicMailAddress>
-                              <gco:CharacterString>data-requests-hf@csiro.au</gco:CharacterString>
-                           </cit:electronicMailAddress>
-                        </cit:CI_Address>
-                     </cit:address>
-                     <cit:onlineResource>
-                        <cit:CI_OnlineResource>
-                           <cit:linkage>
-                              <gco:CharacterString>https://research.csiro.au/oa-idc/</gco:CharacterString>
-                           </cit:linkage>
-                           <cit:protocol>
-                              <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
-                           </cit:protocol>
-                           <cit:name>
-                              <gco:CharacterString>CSIRO - Oceans and Atmosphere IDC homepage</gco:CharacterString>
-                           </cit:name>
-                           <cit:description>
-                              <gco:CharacterString>Link to CSIRO - Oceans and Atmosphere IDC homepage</gco:CharacterString>
-                           </cit:description>
-                           <cit:function>
-                              <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode"
-                                                         codeListValue="information"/>
-                           </cit:function>
-                        </cit:CI_OnlineResource>
-                     </cit:onlineResource>
-                     <cit:hoursOfService>
-                        <gco:CharacterString>9am to 5pm UTC+10: Monday to Friday</gco:CharacterString>
-                     </cit:hoursOfService>
-                  </cit:CI_Contact>
-               </cit:contactInfo>
                <cit:individual>
                   <cit:CI_Individual>
                      <cit:name>
                         <gco:CharacterString>WIENECKE, BARBARA</gco:CharacterString>
                      </cit:name>
+                     <cit:contactInfo>
+                        <cit:CI_Contact>
+                           <cit:address>
+                              <cit:CI_Address>
+                                 <cit:deliveryPoint gco:nilReason="missing">
+                                    <gco:CharacterString/>
+                                 </cit:deliveryPoint>
+                                 <cit:city gco:nilReason="missing">
+                                    <gco:CharacterString/>
+                                 </cit:city>
+                                 <cit:administrativeArea gco:nilReason="missing">
+                                    <gco:CharacterString/>
+                                 </cit:administrativeArea>
+                                 <cit:postalCode gco:nilReason="missing">
+                                    <gco:CharacterString/>
+                                 </cit:postalCode>
+                                 <cit:country gco:nilReason="missing">
+                                    <gco:CharacterString/>
+                                 </cit:country>
+                                 <cit:electronicMailAddress>
+                                    <gco:CharacterString>data-requests-hf@csiro.au</gco:CharacterString>
+                                 </cit:electronicMailAddress>
+                              </cit:CI_Address>
+                           </cit:address>
+                           <cit:onlineResource>
+                              <cit:CI_OnlineResource>
+                                 <cit:linkage>
+                                    <gco:CharacterString>https://research.csiro.au/oa-idc/</gco:CharacterString>
+                                 </cit:linkage>
+                                 <cit:protocol>
+                                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                                 </cit:protocol>
+                                 <cit:name>
+                                    <gco:CharacterString>CSIRO - Oceans and Atmosphere IDC homepage</gco:CharacterString>
+                                 </cit:name>
+                                 <cit:description>
+                                    <gco:CharacterString>Link to CSIRO - Oceans and Atmosphere IDC homepage</gco:CharacterString>
+                                 </cit:description>
+                                 <cit:function>
+                                    <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode"
+                                                               codeListValue="information"/>
+                                 </cit:function>
+                              </cit:CI_OnlineResource>
+                           </cit:onlineResource>
+                           <cit:hoursOfService>
+                              <gco:CharacterString>9am to 5pm UTC+10: Monday to Friday</gco:CharacterString>
+                           </cit:hoursOfService>
+                        </cit:CI_Contact>
+                     </cit:contactInfo>
                      <cit:positionName gco:nilReason="missing"/>
                   </cit:CI_Individual>
                </cit:individual>

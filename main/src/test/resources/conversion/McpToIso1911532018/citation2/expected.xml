@@ -87,75 +87,75 @@
                            <cit:name>
                               <gco:CharacterString>Integrated Marine Observing System (IMOS)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:phone>
-                                    <cit:CI_Telephone>
-                                       <cit:number>
-                                          <gco:CharacterString>61 3 6226 7549</gco:CharacterString>
-                                       </cit:number>
-                                       <cit:numberType>
-                                          <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
-                                                                    codeListValue="voice"/>
-                                       </cit:numberType>
-                                    </cit:CI_Telephone>
-                                 </cit:phone>
-                                 <cit:phone>
-                                    <cit:CI_Telephone>
-                                       <cit:number>
-                                          <gco:CharacterString>+61 3 6226 2107</gco:CharacterString>
-                                       </cit:number>
-                                       <cit:numberType>
-                                          <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
-                                                                    codeListValue="facsimile"/>
-                                       </cit:numberType>
-                                    </cit:CI_Telephone>
-                                 </cit:phone>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Private Bag 110</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Hobart</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Tasmania</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>7001</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress>
-                                          <gco:CharacterString>imos@imos.org.au</gco:CharacterString>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                                 <cit:onlineResource>
-                                    <cit:CI_OnlineResource>
-                                       <cit:linkage>
-                                          <gco:CharacterString>http://www.imos.org.au</gco:CharacterString>
-                                       </cit:linkage>
-                                       <cit:protocol>
-                                          <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
-                                       </cit:protocol>
-                                       <cit:name>
-                                          <gco:CharacterString>Website of the Integrated Marine Observing System (IMOS)</gco:CharacterString>
-                                       </cit:name>
-                                    </cit:CI_OnlineResource>
-                                 </cit:onlineResource>
-                                 <cit:hoursOfService>
-                                    <gco:CharacterString>9am to 5pm UTC+10: Monday to Friday</gco:CharacterString>
-                                 </cit:hoursOfService>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name gco:nilReason="missing">
                                     <gco:CharacterString/>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:phone>
+                                          <cit:CI_Telephone>
+                                             <cit:number>
+                                                <gco:CharacterString>61 3 6226 7549</gco:CharacterString>
+                                             </cit:number>
+                                             <cit:numberType>
+                                                <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                                          codeListValue="voice"/>
+                                             </cit:numberType>
+                                          </cit:CI_Telephone>
+                                       </cit:phone>
+                                       <cit:phone>
+                                          <cit:CI_Telephone>
+                                             <cit:number>
+                                                <gco:CharacterString>+61 3 6226 2107</gco:CharacterString>
+                                             </cit:number>
+                                             <cit:numberType>
+                                                <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                                          codeListValue="facsimile"/>
+                                             </cit:numberType>
+                                          </cit:CI_Telephone>
+                                       </cit:phone>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Private Bag 110</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Hobart</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Tasmania</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>7001</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress>
+                                                <gco:CharacterString>imos@imos.org.au</gco:CharacterString>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                       <cit:onlineResource>
+                                          <cit:CI_OnlineResource>
+                                             <cit:linkage>
+                                                <gco:CharacterString>http://www.imos.org.au</gco:CharacterString>
+                                             </cit:linkage>
+                                             <cit:protocol>
+                                                <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                                             </cit:protocol>
+                                             <cit:name>
+                                                <gco:CharacterString>Website of the Integrated Marine Observing System (IMOS)</gco:CharacterString>
+                                             </cit:name>
+                                          </cit:CI_OnlineResource>
+                                       </cit:onlineResource>
+                                       <cit:hoursOfService>
+                                          <gco:CharacterString>9am to 5pm UTC+10: Monday to Friday</gco:CharacterString>
+                                       </cit:hoursOfService>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                                  <cit:positionName gco:nilReason="missing">
                                     <gco:CharacterString/>
                                  </cit:positionName>
