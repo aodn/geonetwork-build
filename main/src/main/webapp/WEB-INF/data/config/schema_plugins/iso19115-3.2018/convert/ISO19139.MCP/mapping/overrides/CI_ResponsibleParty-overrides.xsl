@@ -92,26 +92,40 @@
                                 <xsl:with-param name="elementName" select="'cit:name'"/>
                                 <xsl:with-param name="nodeWithStringToWrite" select="gmd:organisationName"/>
                             </xsl:call-template>
-                            <!-- contactInformation comes before indivudual/position -->
-                            <xsl:call-template name="writeContactInformation"/>
-                            <xsl:if test="gmd:individualName | gmd:positionName">
-                                <cit:individual>
-                                    <cit:CI_Individual>
-                                        <xsl:if test="gmd:individualName">
-                                            <xsl:call-template name="writeCharacterStringElement">
-                                                <xsl:with-param name="elementName" select="'cit:name'"/>
-                                                <xsl:with-param name="nodeWithStringToWrite" select="gmd:individualName"/>
-                                            </xsl:call-template>
-                                        </xsl:if>
-                                        <xsl:if test="gmd:positionName">
-                                            <xsl:call-template name="writeCharacterStringElement">
-                                                <xsl:with-param name="elementName" select="'cit:positionName'"/>
-                                                <xsl:with-param name="nodeWithStringToWrite" select="gmd:positionName"/>
-                                            </xsl:call-template>
-                                        </xsl:if>
-                                    </cit:CI_Individual>
-                                </cit:individual>
-                            </xsl:if>
+                            <xsl:variable name="contactIsForIndividual"
+                                          select="ancestor::gmd:citation
+                                                 |ancestor::gmd:pointOfContact
+                                                 |ancestor::gmd:distributorContact
+                                                 |ancestor::gmd:contact[local-name(..)='MD_Metadata']"/>
+                            <xsl:choose>
+                                <xsl:when test="gmd:individualName | gmd:positionName">
+                                    <xsl:if test="not($contactIsForIndividual)">
+                                        <xsl:call-template name="writeContactInformation"/>
+                                    </xsl:if>
+                                    <cit:individual>
+                                        <cit:CI_Individual>
+                                            <xsl:if test="gmd:individualName">
+                                                <xsl:call-template name="writeCharacterStringElement">
+                                                    <xsl:with-param name="elementName" select="'cit:name'"/>
+                                                    <xsl:with-param name="nodeWithStringToWrite" select="gmd:individualName"/>
+                                                </xsl:call-template>
+                                            </xsl:if>
+                                            <xsl:if test="$contactIsForIndividual">
+                                                <xsl:call-template name="writeContactInformation"/>
+                                            </xsl:if>
+                                            <xsl:if test="gmd:positionName">
+                                                <xsl:call-template name="writeCharacterStringElement">
+                                                    <xsl:with-param name="elementName" select="'cit:positionName'"/>
+                                                    <xsl:with-param name="nodeWithStringToWrite" select="gmd:positionName"/>
+                                                </xsl:call-template>
+                                            </xsl:if>
+                                        </cit:CI_Individual>
+                                    </cit:individual>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:call-template name="writeContactInformation"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </cit:CI_Organisation>
                     </xsl:when>
                     <xsl:otherwise>

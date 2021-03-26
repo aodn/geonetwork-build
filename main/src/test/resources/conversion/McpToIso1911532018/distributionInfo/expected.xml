@@ -94,69 +94,69 @@
                            <cit:name>
                               <gco:CharacterString>Australian Institute of Marine Science (AIMS)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:phone>
-                                    <cit:CI_Telephone>
-                                       <cit:number>
-                                          <gco:CharacterString>+61 7 4753 4444</gco:CharacterString>
-                                       </cit:number>
-                                       <cit:numberType>
-                                          <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
-                                                                    codeListValue="voice"/>
-                                       </cit:numberType>
-                                    </cit:CI_Telephone>
-                                 </cit:phone>
-                                 <cit:phone>
-                                    <cit:CI_Telephone>
-                                       <cit:number>
-                                          <gco:CharacterString>+61 7 4772 5852</gco:CharacterString>
-                                       </cit:number>
-                                       <cit:numberType>
-                                          <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
-                                                                    codeListValue="facsimile"/>
-                                       </cit:numberType>
-                                    </cit:CI_Telephone>
-                                 </cit:phone>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>PRIVATE MAIL BAG 3</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>TOWNSVILLE MAIL CENTRE</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Queensland</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>4810</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress>
-                                          <gco:CharacterString>adc@aims.gov.au</gco:CharacterString>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                                 <cit:onlineResource>
-                                    <cit:CI_OnlineResource>
-                                       <cit:linkage>
-                                          <gco:CharacterString>http://www.aims.gov.au/adc</gco:CharacterString>
-                                       </cit:linkage>
-                                       <cit:protocol>
-                                          <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
-                                       </cit:protocol>
-                                    </cit:CI_OnlineResource>
-                                 </cit:onlineResource>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>AADC, DATA OFFICER</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:phone>
+                                          <cit:CI_Telephone>
+                                             <cit:number>
+                                                <gco:CharacterString>+61 7 4753 4444</gco:CharacterString>
+                                             </cit:number>
+                                             <cit:numberType>
+                                                <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                                          codeListValue="voice"/>
+                                             </cit:numberType>
+                                          </cit:CI_Telephone>
+                                       </cit:phone>
+                                       <cit:phone>
+                                          <cit:CI_Telephone>
+                                             <cit:number>
+                                                <gco:CharacterString>+61 7 4772 5852</gco:CharacterString>
+                                             </cit:number>
+                                             <cit:numberType>
+                                                <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                                          codeListValue="facsimile"/>
+                                             </cit:numberType>
+                                          </cit:CI_Telephone>
+                                       </cit:phone>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>PRIVATE MAIL BAG 3</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>TOWNSVILLE MAIL CENTRE</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Queensland</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>4810</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress>
+                                                <gco:CharacterString>adc@aims.gov.au</gco:CharacterString>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                       <cit:onlineResource>
+                                          <cit:CI_OnlineResource>
+                                             <cit:linkage>
+                                                <gco:CharacterString>http://www.aims.gov.au/adc</gco:CharacterString>
+                                             </cit:linkage>
+                                             <cit:protocol>
+                                                <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                                             </cit:protocol>
+                                          </cit:CI_OnlineResource>
+                                       </cit:onlineResource>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                                  <cit:positionName>
                                     <gco:CharacterString>Data Manager, AIMS Data Centre</gco:CharacterString>
                                  </cit:positionName>

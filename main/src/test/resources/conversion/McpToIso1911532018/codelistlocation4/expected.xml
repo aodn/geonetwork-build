@@ -70,72 +70,72 @@
                <cit:name>
                   <gco:CharacterString>Integrated Marine Observing System (IMOS)</gco:CharacterString>
                </cit:name>
-               <cit:contactInfo>
-                  <cit:CI_Contact>
-                     <cit:phone>
-                        <cit:CI_Telephone>
-                           <cit:number>
-                              <gco:CharacterString>61 3 6226 7488</gco:CharacterString>
-                           </cit:number>
-                           <cit:numberType>
-                              <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
-                                                        codeListValue="voice"/>
-                           </cit:numberType>
-                        </cit:CI_Telephone>
-                     </cit:phone>
-                     <cit:phone>
-                        <cit:CI_Telephone>
-                           <cit:number>
-                              <gco:CharacterString>61 3 6226 2107</gco:CharacterString>
-                           </cit:number>
-                           <cit:numberType>
-                              <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
-                                                        codeListValue="facsimile"/>
-                           </cit:numberType>
-                        </cit:CI_Telephone>
-                     </cit:phone>
-                     <cit:address>
-                        <cit:CI_Address>
-                           <cit:deliveryPoint>
-                              <gco:CharacterString>University of Tasmania</gco:CharacterString>
-                           </cit:deliveryPoint>
-                           <cit:deliveryPoint>
-                              <gco:CharacterString>Private Bag 110</gco:CharacterString>
-                           </cit:deliveryPoint>
-                           <cit:city>
-                              <gco:CharacterString>Hobart</gco:CharacterString>
-                           </cit:city>
-                           <cit:administrativeArea>
-                              <gco:CharacterString>Tasmania</gco:CharacterString>
-                           </cit:administrativeArea>
-                           <cit:postalCode>
-                              <gco:CharacterString>7001</gco:CharacterString>
-                           </cit:postalCode>
-                           <cit:country>
-                              <gco:CharacterString>Australia</gco:CharacterString>
-                           </cit:country>
-                           <cit:electronicMailAddress>
-                              <gco:CharacterString>info@aodn.org.au</gco:CharacterString>
-                           </cit:electronicMailAddress>
-                        </cit:CI_Address>
-                     </cit:address>
-                     <cit:onlineResource>
-                        <cit:CI_OnlineResource>
-                           <cit:linkage>
-                              <gco:CharacterString>http://imos.org.au/aodn.html</gco:CharacterString>
-                           </cit:linkage>
-                           <cit:protocol>
-                              <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
-                           </cit:protocol>
-                           <cit:name>
-                              <gco:CharacterString>Website of the Australian Ocean Data Network (AODN)</gco:CharacterString>
-                           </cit:name>
-                        </cit:CI_OnlineResource>
-                     </cit:onlineResource>
-                  </cit:CI_Contact>
-               </cit:contactInfo>
                <cit:individual>
                   <cit:CI_Individual>
+                     <cit:contactInfo>
+                        <cit:CI_Contact>
+                           <cit:phone>
+                              <cit:CI_Telephone>
+                                 <cit:number>
+                                    <gco:CharacterString>61 3 6226 7488</gco:CharacterString>
+                                 </cit:number>
+                                 <cit:numberType>
+                                    <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                              codeListValue="voice"/>
+                                 </cit:numberType>
+                              </cit:CI_Telephone>
+                           </cit:phone>
+                           <cit:phone>
+                              <cit:CI_Telephone>
+                                 <cit:number>
+                                    <gco:CharacterString>61 3 6226 2107</gco:CharacterString>
+                                 </cit:number>
+                                 <cit:numberType>
+                                    <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                              codeListValue="facsimile"/>
+                                 </cit:numberType>
+                              </cit:CI_Telephone>
+                           </cit:phone>
+                           <cit:address>
+                              <cit:CI_Address>
+                                 <cit:deliveryPoint>
+                                    <gco:CharacterString>University of Tasmania</gco:CharacterString>
+                                 </cit:deliveryPoint>
+                                 <cit:deliveryPoint>
+                                    <gco:CharacterString>Private Bag 110</gco:CharacterString>
+                                 </cit:deliveryPoint>
+                                 <cit:city>
+                                    <gco:CharacterString>Hobart</gco:CharacterString>
+                                 </cit:city>
+                                 <cit:administrativeArea>
+                                    <gco:CharacterString>Tasmania</gco:CharacterString>
+                                 </cit:administrativeArea>
+                                 <cit:postalCode>
+                                    <gco:CharacterString>7001</gco:CharacterString>
+                                 </cit:postalCode>
+                                 <cit:country>
+                                    <gco:CharacterString>Australia</gco:CharacterString>
+                                 </cit:country>
+                                 <cit:electronicMailAddress>
+                                    <gco:CharacterString>info@aodn.org.au</gco:CharacterString>
+                                 </cit:electronicMailAddress>
+                              </cit:CI_Address>
+                           </cit:address>
+                           <cit:onlineResource>
+                              <cit:CI_OnlineResource>
+                                 <cit:linkage>
+                                    <gco:CharacterString>http://imos.org.au/aodn.html</gco:CharacterString>
+                                 </cit:linkage>
+                                 <cit:protocol>
+                                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                                 </cit:protocol>
+                                 <cit:name>
+                                    <gco:CharacterString>Website of the Australian Ocean Data Network (AODN)</gco:CharacterString>
+                                 </cit:name>
+                              </cit:CI_OnlineResource>
+                           </cit:onlineResource>
+                        </cit:CI_Contact>
+                     </cit:contactInfo>
                      <cit:positionName>
                         <gco:CharacterString>Data Officer</gco:CharacterString>
                      </cit:positionName>
@@ -326,72 +326,72 @@ The RV Aurora Australis provides data on surface ocean CO2 for the Southern Ocea
                      <cit:name>
                         <gco:CharacterString>Integrated Marine Observing System (IMOS)</gco:CharacterString>
                      </cit:name>
-                     <cit:contactInfo>
-                        <cit:CI_Contact>
-                           <cit:phone>
-                              <cit:CI_Telephone>
-                                 <cit:number>
-                                    <gco:CharacterString>61 3 6226 7488</gco:CharacterString>
-                                 </cit:number>
-                                 <cit:numberType>
-                                    <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
-                                                              codeListValue="voice"/>
-                                 </cit:numberType>
-                              </cit:CI_Telephone>
-                           </cit:phone>
-                           <cit:phone>
-                              <cit:CI_Telephone>
-                                 <cit:number>
-                                    <gco:CharacterString>61 3 6226 2107</gco:CharacterString>
-                                 </cit:number>
-                                 <cit:numberType>
-                                    <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
-                                                              codeListValue="facsimile"/>
-                                 </cit:numberType>
-                              </cit:CI_Telephone>
-                           </cit:phone>
-                           <cit:address>
-                              <cit:CI_Address>
-                                 <cit:deliveryPoint>
-                                    <gco:CharacterString>University of Tasmania</gco:CharacterString>
-                                 </cit:deliveryPoint>
-                                 <cit:deliveryPoint>
-                                    <gco:CharacterString>Private Bag 110</gco:CharacterString>
-                                 </cit:deliveryPoint>
-                                 <cit:city>
-                                    <gco:CharacterString>Hobart</gco:CharacterString>
-                                 </cit:city>
-                                 <cit:administrativeArea>
-                                    <gco:CharacterString>Tasmania</gco:CharacterString>
-                                 </cit:administrativeArea>
-                                 <cit:postalCode>
-                                    <gco:CharacterString>7001</gco:CharacterString>
-                                 </cit:postalCode>
-                                 <cit:country>
-                                    <gco:CharacterString>Australia</gco:CharacterString>
-                                 </cit:country>
-                                 <cit:electronicMailAddress>
-                                    <gco:CharacterString>info@aodn.org.au</gco:CharacterString>
-                                 </cit:electronicMailAddress>
-                              </cit:CI_Address>
-                           </cit:address>
-                           <cit:onlineResource>
-                              <cit:CI_OnlineResource>
-                                 <cit:linkage>
-                                    <gco:CharacterString>http://imos.org.au/aodn.html</gco:CharacterString>
-                                 </cit:linkage>
-                                 <cit:protocol>
-                                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
-                                 </cit:protocol>
-                                 <cit:name>
-                                    <gco:CharacterString>Website of the Australian Ocean Data Network (AODN)</gco:CharacterString>
-                                 </cit:name>
-                              </cit:CI_OnlineResource>
-                           </cit:onlineResource>
-                        </cit:CI_Contact>
-                     </cit:contactInfo>
                      <cit:individual>
                         <cit:CI_Individual>
+                           <cit:contactInfo>
+                              <cit:CI_Contact>
+                                 <cit:phone>
+                                    <cit:CI_Telephone>
+                                       <cit:number>
+                                          <gco:CharacterString>61 3 6226 7488</gco:CharacterString>
+                                       </cit:number>
+                                       <cit:numberType>
+                                          <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                                    codeListValue="voice"/>
+                                       </cit:numberType>
+                                    </cit:CI_Telephone>
+                                 </cit:phone>
+                                 <cit:phone>
+                                    <cit:CI_Telephone>
+                                       <cit:number>
+                                          <gco:CharacterString>61 3 6226 2107</gco:CharacterString>
+                                       </cit:number>
+                                       <cit:numberType>
+                                          <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                                    codeListValue="facsimile"/>
+                                       </cit:numberType>
+                                    </cit:CI_Telephone>
+                                 </cit:phone>
+                                 <cit:address>
+                                    <cit:CI_Address>
+                                       <cit:deliveryPoint>
+                                          <gco:CharacterString>University of Tasmania</gco:CharacterString>
+                                       </cit:deliveryPoint>
+                                       <cit:deliveryPoint>
+                                          <gco:CharacterString>Private Bag 110</gco:CharacterString>
+                                       </cit:deliveryPoint>
+                                       <cit:city>
+                                          <gco:CharacterString>Hobart</gco:CharacterString>
+                                       </cit:city>
+                                       <cit:administrativeArea>
+                                          <gco:CharacterString>Tasmania</gco:CharacterString>
+                                       </cit:administrativeArea>
+                                       <cit:postalCode>
+                                          <gco:CharacterString>7001</gco:CharacterString>
+                                       </cit:postalCode>
+                                       <cit:country>
+                                          <gco:CharacterString>Australia</gco:CharacterString>
+                                       </cit:country>
+                                       <cit:electronicMailAddress>
+                                          <gco:CharacterString>info@aodn.org.au</gco:CharacterString>
+                                       </cit:electronicMailAddress>
+                                    </cit:CI_Address>
+                                 </cit:address>
+                                 <cit:onlineResource>
+                                    <cit:CI_OnlineResource>
+                                       <cit:linkage>
+                                          <gco:CharacterString>http://imos.org.au/aodn.html</gco:CharacterString>
+                                       </cit:linkage>
+                                       <cit:protocol>
+                                          <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                                       </cit:protocol>
+                                       <cit:name>
+                                          <gco:CharacterString>Website of the Australian Ocean Data Network (AODN)</gco:CharacterString>
+                                       </cit:name>
+                                    </cit:CI_OnlineResource>
+                                 </cit:onlineResource>
+                              </cit:CI_Contact>
+                           </cit:contactInfo>
                            <cit:positionName>
                               <gco:CharacterString>Data Officer</gco:CharacterString>
                            </cit:positionName>
@@ -412,37 +412,37 @@ The RV Aurora Australis provides data on surface ocean CO2 for the Southern Ocea
                      <cit:name>
                         <gco:CharacterString>CSIRO Oceans and Atmosphere - Hobart</gco:CharacterString>
                      </cit:name>
-                     <cit:contactInfo>
-                        <cit:CI_Contact>
-                           <cit:address>
-                              <cit:CI_Address>
-                                 <cit:deliveryPoint>
-                                    <gco:CharacterString>GPO Box 1538</gco:CharacterString>
-                                 </cit:deliveryPoint>
-                                 <cit:city>
-                                    <gco:CharacterString>Hobart</gco:CharacterString>
-                                 </cit:city>
-                                 <cit:administrativeArea>
-                                    <gco:CharacterString>Tasmania</gco:CharacterString>
-                                 </cit:administrativeArea>
-                                 <cit:postalCode>
-                                    <gco:CharacterString>7001</gco:CharacterString>
-                                 </cit:postalCode>
-                                 <cit:country>
-                                    <gco:CharacterString>Australia</gco:CharacterString>
-                                 </cit:country>
-                                 <cit:electronicMailAddress>
-                                    <gco:CharacterString>Bronte.Tilbrook@csiro.au</gco:CharacterString>
-                                 </cit:electronicMailAddress>
-                              </cit:CI_Address>
-                           </cit:address>
-                        </cit:CI_Contact>
-                     </cit:contactInfo>
                      <cit:individual>
                         <cit:CI_Individual>
                            <cit:name>
                               <gco:CharacterString>Tilbrook, Bronte</gco:CharacterString>
                            </cit:name>
+                           <cit:contactInfo>
+                              <cit:CI_Contact>
+                                 <cit:address>
+                                    <cit:CI_Address>
+                                       <cit:deliveryPoint>
+                                          <gco:CharacterString>GPO Box 1538</gco:CharacterString>
+                                       </cit:deliveryPoint>
+                                       <cit:city>
+                                          <gco:CharacterString>Hobart</gco:CharacterString>
+                                       </cit:city>
+                                       <cit:administrativeArea>
+                                          <gco:CharacterString>Tasmania</gco:CharacterString>
+                                       </cit:administrativeArea>
+                                       <cit:postalCode>
+                                          <gco:CharacterString>7001</gco:CharacterString>
+                                       </cit:postalCode>
+                                       <cit:country>
+                                          <gco:CharacterString>Australia</gco:CharacterString>
+                                       </cit:country>
+                                       <cit:electronicMailAddress>
+                                          <gco:CharacterString>Bronte.Tilbrook@csiro.au</gco:CharacterString>
+                                       </cit:electronicMailAddress>
+                                    </cit:CI_Address>
+                                 </cit:address>
+                              </cit:CI_Contact>
+                           </cit:contactInfo>
                         </cit:CI_Individual>
                      </cit:individual>
                   </cit:CI_Organisation>
@@ -460,37 +460,37 @@ The RV Aurora Australis provides data on surface ocean CO2 for the Southern Ocea
                      <cit:name>
                         <gco:CharacterString>CSIRO Oceans and Atmosphere - Hobart</gco:CharacterString>
                      </cit:name>
-                     <cit:contactInfo>
-                        <cit:CI_Contact>
-                           <cit:address>
-                              <cit:CI_Address>
-                                 <cit:deliveryPoint>
-                                    <gco:CharacterString>GPO Box 1538</gco:CharacterString>
-                                 </cit:deliveryPoint>
-                                 <cit:city>
-                                    <gco:CharacterString>Hobart</gco:CharacterString>
-                                 </cit:city>
-                                 <cit:administrativeArea>
-                                    <gco:CharacterString>Tasmania</gco:CharacterString>
-                                 </cit:administrativeArea>
-                                 <cit:postalCode>
-                                    <gco:CharacterString>7001</gco:CharacterString>
-                                 </cit:postalCode>
-                                 <cit:country>
-                                    <gco:CharacterString>Australia</gco:CharacterString>
-                                 </cit:country>
-                                 <cit:electronicMailAddress>
-                                    <gco:CharacterString>John.Akl@csiro.au</gco:CharacterString>
-                                 </cit:electronicMailAddress>
-                              </cit:CI_Address>
-                           </cit:address>
-                        </cit:CI_Contact>
-                     </cit:contactInfo>
                      <cit:individual>
                         <cit:CI_Individual>
                            <cit:name>
                               <gco:CharacterString>Akl, John</gco:CharacterString>
                            </cit:name>
+                           <cit:contactInfo>
+                              <cit:CI_Contact>
+                                 <cit:address>
+                                    <cit:CI_Address>
+                                       <cit:deliveryPoint>
+                                          <gco:CharacterString>GPO Box 1538</gco:CharacterString>
+                                       </cit:deliveryPoint>
+                                       <cit:city>
+                                          <gco:CharacterString>Hobart</gco:CharacterString>
+                                       </cit:city>
+                                       <cit:administrativeArea>
+                                          <gco:CharacterString>Tasmania</gco:CharacterString>
+                                       </cit:administrativeArea>
+                                       <cit:postalCode>
+                                          <gco:CharacterString>7001</gco:CharacterString>
+                                       </cit:postalCode>
+                                       <cit:country>
+                                          <gco:CharacterString>Australia</gco:CharacterString>
+                                       </cit:country>
+                                       <cit:electronicMailAddress>
+                                          <gco:CharacterString>John.Akl@csiro.au</gco:CharacterString>
+                                       </cit:electronicMailAddress>
+                                    </cit:CI_Address>
+                                 </cit:address>
+                              </cit:CI_Contact>
+                           </cit:contactInfo>
                         </cit:CI_Individual>
                      </cit:individual>
                   </cit:CI_Organisation>

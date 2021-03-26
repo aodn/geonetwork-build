@@ -69,72 +69,72 @@
                <cit:name>
                   <gco:CharacterString>Integrated Marine Observing System (IMOS)</gco:CharacterString>
                </cit:name>
-               <cit:contactInfo>
-                  <cit:CI_Contact>
-                     <cit:phone>
-                        <cit:CI_Telephone>
-                           <cit:number>
-                              <gco:CharacterString>61 3 6226 7488</gco:CharacterString>
-                           </cit:number>
-                           <cit:numberType>
-                              <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
-                                                        codeListValue="voice"/>
-                           </cit:numberType>
-                        </cit:CI_Telephone>
-                     </cit:phone>
-                     <cit:phone>
-                        <cit:CI_Telephone>
-                           <cit:number>
-                              <gco:CharacterString>61 3 6226 2107</gco:CharacterString>
-                           </cit:number>
-                           <cit:numberType>
-                              <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
-                                                        codeListValue="facsimile"/>
-                           </cit:numberType>
-                        </cit:CI_Telephone>
-                     </cit:phone>
-                     <cit:address>
-                        <cit:CI_Address>
-                           <cit:deliveryPoint>
-                              <gco:CharacterString>University of Tasmania</gco:CharacterString>
-                           </cit:deliveryPoint>
-                           <cit:deliveryPoint>
-                              <gco:CharacterString>Private Bag 110</gco:CharacterString>
-                           </cit:deliveryPoint>
-                           <cit:city>
-                              <gco:CharacterString>Hobart</gco:CharacterString>
-                           </cit:city>
-                           <cit:administrativeArea>
-                              <gco:CharacterString>Tasmania</gco:CharacterString>
-                           </cit:administrativeArea>
-                           <cit:postalCode>
-                              <gco:CharacterString>7001</gco:CharacterString>
-                           </cit:postalCode>
-                           <cit:country>
-                              <gco:CharacterString>Australia</gco:CharacterString>
-                           </cit:country>
-                           <cit:electronicMailAddress>
-                              <gco:CharacterString>info@aodn.org.au</gco:CharacterString>
-                           </cit:electronicMailAddress>
-                        </cit:CI_Address>
-                     </cit:address>
-                     <cit:onlineResource>
-                        <cit:CI_OnlineResource>
-                           <cit:linkage>
-                              <gco:CharacterString>http://imos.org.au/aodn.html</gco:CharacterString>
-                           </cit:linkage>
-                           <cit:protocol>
-                              <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
-                           </cit:protocol>
-                           <cit:name>
-                              <gco:CharacterString>Website of the Australian Ocean Data Network (AODN)</gco:CharacterString>
-                           </cit:name>
-                        </cit:CI_OnlineResource>
-                     </cit:onlineResource>
-                  </cit:CI_Contact>
-               </cit:contactInfo>
                <cit:individual>
                   <cit:CI_Individual>
+                     <cit:contactInfo>
+                        <cit:CI_Contact>
+                           <cit:phone>
+                              <cit:CI_Telephone>
+                                 <cit:number>
+                                    <gco:CharacterString>61 3 6226 7488</gco:CharacterString>
+                                 </cit:number>
+                                 <cit:numberType>
+                                    <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                              codeListValue="voice"/>
+                                 </cit:numberType>
+                              </cit:CI_Telephone>
+                           </cit:phone>
+                           <cit:phone>
+                              <cit:CI_Telephone>
+                                 <cit:number>
+                                    <gco:CharacterString>61 3 6226 2107</gco:CharacterString>
+                                 </cit:number>
+                                 <cit:numberType>
+                                    <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                                              codeListValue="facsimile"/>
+                                 </cit:numberType>
+                              </cit:CI_Telephone>
+                           </cit:phone>
+                           <cit:address>
+                              <cit:CI_Address>
+                                 <cit:deliveryPoint>
+                                    <gco:CharacterString>University of Tasmania</gco:CharacterString>
+                                 </cit:deliveryPoint>
+                                 <cit:deliveryPoint>
+                                    <gco:CharacterString>Private Bag 110</gco:CharacterString>
+                                 </cit:deliveryPoint>
+                                 <cit:city>
+                                    <gco:CharacterString>Hobart</gco:CharacterString>
+                                 </cit:city>
+                                 <cit:administrativeArea>
+                                    <gco:CharacterString>Tasmania</gco:CharacterString>
+                                 </cit:administrativeArea>
+                                 <cit:postalCode>
+                                    <gco:CharacterString>7001</gco:CharacterString>
+                                 </cit:postalCode>
+                                 <cit:country>
+                                    <gco:CharacterString>Australia</gco:CharacterString>
+                                 </cit:country>
+                                 <cit:electronicMailAddress>
+                                    <gco:CharacterString>info@aodn.org.au</gco:CharacterString>
+                                 </cit:electronicMailAddress>
+                              </cit:CI_Address>
+                           </cit:address>
+                           <cit:onlineResource>
+                              <cit:CI_OnlineResource>
+                                 <cit:linkage>
+                                    <gco:CharacterString>http://imos.org.au/aodn.html</gco:CharacterString>
+                                 </cit:linkage>
+                                 <cit:protocol>
+                                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                                 </cit:protocol>
+                                 <cit:name>
+                                    <gco:CharacterString>Website of the Australian Ocean Data Network (AODN)</gco:CharacterString>
+                                 </cit:name>
+                              </cit:CI_OnlineResource>
+                           </cit:onlineResource>
+                        </cit:CI_Contact>
+                     </cit:contactInfo>
                      <cit:positionName>
                         <gco:CharacterString>Data Officer</gco:CharacterString>
                      </cit:positionName>
@@ -243,37 +243,37 @@
                            <cit:name>
                               <gco:CharacterString>School of Biological, Earth and Environmental Sciences (BEES), The University of New South Wales (UNSW)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Randwick</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>New South Wales</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>2052</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress>
-                                          <gco:CharacterString>james.smith@unsw.edu.au</gco:CharacterString>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Smith, James A.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Randwick</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>New South Wales</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>2052</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress>
+                                                <gco:CharacterString>james.smith@unsw.edu.au</gco:CharacterString>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -291,40 +291,40 @@
                            <cit:name>
                               <gco:CharacterString>Wollongong City Council</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Environment and Strategic Planning</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>PO Box 8821</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Wollongong</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>New South Wales</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>2500</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Miskiewicz, Anthony G.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Environment and Strategic Planning</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>PO Box 8821</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Wollongong</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>New South Wales</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>2500</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -342,37 +342,37 @@
                            <cit:name>
                               <gco:CharacterString>School of Veterinary and Life Sciences (VLS), Murdoch University</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>90 South Street</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Murdoch</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Western Australia</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>6150</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Beckley, Lynnath E.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>90 South Street</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Murdoch</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Western Australia</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>6150</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -390,37 +390,37 @@
                            <cit:name>
                               <gco:CharacterString>School of Biological, Earth and Environmental Sciences (BEES), The University of New South Wales (UNSW)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Randwick</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>New South Wales</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>2052</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Everett, Jason D.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Randwick</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>New South Wales</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>2052</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -438,40 +438,40 @@
                            <cit:name>
                               <gco:CharacterString>Department of Aquaculture, Federal University of Santa Catarina (UFSC)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Laboratório de Biologia e Cultivo de Peixes de Água Doce</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Programa de Pós-Graduação em Aquicultura</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Florianópolis</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Santa Catarina</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>88040-900</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Brazil</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Garcia, Valquiria</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Laboratório de Biologia e Cultivo de Peixes de Água Doce</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Programa de Pós-Graduação em Aquicultura</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Florianópolis</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Santa Catarina</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>88040-900</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Brazil</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -489,37 +489,37 @@
                            <cit:name>
                               <gco:CharacterString>School of Biological, Earth and Environmental Sciences (BEES), The University of New South Wales (UNSW)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Randwick</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>New South Wales</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>2052</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Gray, Charles A.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Randwick</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>New South Wales</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>2052</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -537,37 +537,37 @@
                            <cit:name>
                               <gco:CharacterString>School of Veterinary and Life Sciences (VLS), Murdoch University</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>90 South Street</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Murdoch</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Western Australia</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>6150</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Holliday, David</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>90 South Street</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Murdoch</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Western Australia</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>6150</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -585,37 +585,37 @@
                            <cit:name>
                               <gco:CharacterString>Department of Primary Industries (DPI), New South Wales Government</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>PO Box 4297</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Coffs Harbour</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>New South Wales</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>2450</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Jordan, Alan R.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>PO Box 4297</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Coffs Harbour</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>New South Wales</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>2450</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -633,40 +633,40 @@
                            <cit:name>
                               <gco:CharacterString>Institute for Marine and Antarctic Studies (IMAS), University of Tasmania (UTAS)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>University of Tasmania</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Private Bag 129</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Hobart</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Tasmania</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>7001</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Keane, John</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>University of Tasmania</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Private Bag 129</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Hobart</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Tasmania</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>7001</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -684,40 +684,40 @@
                            <cit:name>
                               <gco:CharacterString>Institute for Marine and Antarctic Studies (IMAS), University of Tasmania (UTAS)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>University of Tasmania</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Private Bag 129</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Hobart</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Tasmania</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>7001</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Lara-Lopez, Ana</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>University of Tasmania</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Private Bag 129</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Hobart</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Tasmania</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>7001</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -735,40 +735,40 @@
                            <cit:name>
                               <gco:CharacterString>Institute for Marine and Antarctic Studies (IMAS), University of Tasmania (UTAS)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>University of Tasmania</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Private Bag 129</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Hobart</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Tasmania</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>7001</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Leis, Jeffrey M.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>University of Tasmania</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Private Bag 129</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Hobart</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Tasmania</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>7001</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -786,37 +786,37 @@
                            <cit:name>
                               <gco:CharacterString>School of Biological Sciences, The University of Sydney (USYD)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Level 5, Carslaw Building F07</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Sydney</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>New South Wales</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>2006</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Matis, Paloma A.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Level 5, Carslaw Building F07</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Sydney</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>New South Wales</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>2006</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -834,37 +834,37 @@
                            <cit:name>
                               <gco:CharacterString>School of Veterinary and Life Sciences (VLS), Murdoch University</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>90 South Street</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Murdoch</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Western Australia</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>6150</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Muhling, Barbara A.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>90 South Street</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Murdoch</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Western Australia</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>6150</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -882,34 +882,34 @@
                            <cit:name>
                               <gco:CharacterString>Marscco Marine Sciences Consulting</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:city>
-                                          <gco:CharacterString>Blackmans Bay</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Tasmania</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>7052</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Neira, Francisco J.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:city>
+                                                <gco:CharacterString>Blackmans Bay</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Tasmania</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>7052</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -927,40 +927,40 @@
                            <cit:name>
                               <gco:CharacterString>CSIRO Oceans &amp; Atmosphere - Dutton Park</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>EcoSciences Precinct</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>GPO Box 2583</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Dutton Park</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Queensland</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>4001</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Richardson, Anthony J.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>EcoSciences Precinct</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>GPO Box 2583</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Dutton Park</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Queensland</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>4001</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -978,37 +978,37 @@
                            <cit:name>
                               <gco:CharacterString>Department of Primary Industries and Regional Development, Western Australian Government</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>39 Northside Drive</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Hillarys</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Western Australia</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>6872</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Smith, Kimberley A.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>39 Northside Drive</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Hillarys</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Western Australia</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>6872</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -1026,37 +1026,37 @@
                            <cit:name>
                               <gco:CharacterString>Institute for Marine and Antarctic Studies (IMAS), University of Tasmania (UTAS)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Private Bag 129</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Hobart</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Tasmania</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>7001</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Swadling, Kerrie</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Private Bag 129</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Hobart</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Tasmania</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>7001</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -1074,37 +1074,37 @@
                            <cit:name>
                               <gco:CharacterString>Research Center for Deep Sea, Indonesian Institute of Sciences (LIPI)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>JI. Y. Syaranamual</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Poka</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>Ambon</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>97233</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Indonesia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Syahailatua, Augy</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>JI. Y. Syaranamual</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Poka</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>Ambon</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>97233</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Indonesia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -1122,37 +1122,37 @@
                            <cit:name>
                               <gco:CharacterString>School of Biological, Earth and Environmental Sciences (BEES), The University of New South Wales (UNSW)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Sydney</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>New South Wales</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>2052</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Taylor, Matthew D.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Sydney</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>New South Wales</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>2052</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -1170,37 +1170,37 @@
                            <cit:name>
                               <gco:CharacterString>SARDI Aquatic Sciences, South Australian Research and Development Institute (SARDI)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>PO Box 120</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Henley Beach</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>South Australia</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>5022</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>van Ruth, Paul D.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>PO Box 120</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Henley Beach</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>South Australia</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>5022</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -1218,37 +1218,37 @@
                            <cit:name>
                               <gco:CharacterString>SARDI Aquatic Sciences, South Australian Research and Development Institute (SARDI)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>PO Box 120</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Henley Beach</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>South Australia</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>5022</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress gco:nilReason="missing">
-                                          <gco:CharacterString/>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Ward, Tim M.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>PO Box 120</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Henley Beach</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>South Australia</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>5022</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress gco:nilReason="missing">
+                                                <gco:CharacterString/>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -1266,37 +1266,37 @@
                            <cit:name>
                               <gco:CharacterString>School of Biological, Earth and Environmental Sciences (BEES), The University of New South Wales (UNSW)</gco:CharacterString>
                            </cit:name>
-                           <cit:contactInfo>
-                              <cit:CI_Contact>
-                                 <cit:address>
-                                    <cit:CI_Address>
-                                       <cit:deliveryPoint>
-                                          <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
-                                       </cit:deliveryPoint>
-                                       <cit:city>
-                                          <gco:CharacterString>Sydney</gco:CharacterString>
-                                       </cit:city>
-                                       <cit:administrativeArea>
-                                          <gco:CharacterString>New South Wales</gco:CharacterString>
-                                       </cit:administrativeArea>
-                                       <cit:postalCode>
-                                          <gco:CharacterString>2052</gco:CharacterString>
-                                       </cit:postalCode>
-                                       <cit:country>
-                                          <gco:CharacterString>Australia</gco:CharacterString>
-                                       </cit:country>
-                                       <cit:electronicMailAddress>
-                                          <gco:CharacterString>i.suthers@unsw.edu.au</gco:CharacterString>
-                                       </cit:electronicMailAddress>
-                                    </cit:CI_Address>
-                                 </cit:address>
-                              </cit:CI_Contact>
-                           </cit:contactInfo>
                            <cit:individual>
                               <cit:CI_Individual>
                                  <cit:name>
                                     <gco:CharacterString>Suthers, Ian M.</gco:CharacterString>
                                  </cit:name>
+                                 <cit:contactInfo>
+                                    <cit:CI_Contact>
+                                       <cit:address>
+                                          <cit:CI_Address>
+                                             <cit:deliveryPoint>
+                                                <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
+                                             </cit:deliveryPoint>
+                                             <cit:city>
+                                                <gco:CharacterString>Sydney</gco:CharacterString>
+                                             </cit:city>
+                                             <cit:administrativeArea>
+                                                <gco:CharacterString>New South Wales</gco:CharacterString>
+                                             </cit:administrativeArea>
+                                             <cit:postalCode>
+                                                <gco:CharacterString>2052</gco:CharacterString>
+                                             </cit:postalCode>
+                                             <cit:country>
+                                                <gco:CharacterString>Australia</gco:CharacterString>
+                                             </cit:country>
+                                             <cit:electronicMailAddress>
+                                                <gco:CharacterString>i.suthers@unsw.edu.au</gco:CharacterString>
+                                             </cit:electronicMailAddress>
+                                          </cit:CI_Address>
+                                       </cit:address>
+                                    </cit:CI_Contact>
+                                 </cit:contactInfo>
                               </cit:CI_Individual>
                            </cit:individual>
                         </cit:CI_Organisation>
@@ -1337,37 +1337,37 @@ The ongoing version of this larval fish database will be freely available throug
                      <cit:name>
                         <gco:CharacterString>School of Biological, Earth and Environmental Sciences (BEES), The University of New South Wales (UNSW)</gco:CharacterString>
                      </cit:name>
-                     <cit:contactInfo>
-                        <cit:CI_Contact>
-                           <cit:address>
-                              <cit:CI_Address>
-                                 <cit:deliveryPoint>
-                                    <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
-                                 </cit:deliveryPoint>
-                                 <cit:city>
-                                    <gco:CharacterString>Sydney</gco:CharacterString>
-                                 </cit:city>
-                                 <cit:administrativeArea>
-                                    <gco:CharacterString>New South Wales</gco:CharacterString>
-                                 </cit:administrativeArea>
-                                 <cit:postalCode>
-                                    <gco:CharacterString>2052</gco:CharacterString>
-                                 </cit:postalCode>
-                                 <cit:country>
-                                    <gco:CharacterString>Australia</gco:CharacterString>
-                                 </cit:country>
-                                 <cit:electronicMailAddress>
-                                    <gco:CharacterString>i.suthers@unsw.edu.au</gco:CharacterString>
-                                 </cit:electronicMailAddress>
-                              </cit:CI_Address>
-                           </cit:address>
-                        </cit:CI_Contact>
-                     </cit:contactInfo>
                      <cit:individual>
                         <cit:CI_Individual>
                            <cit:name>
                               <gco:CharacterString>Suthers, Ian M.</gco:CharacterString>
                            </cit:name>
+                           <cit:contactInfo>
+                              <cit:CI_Contact>
+                                 <cit:address>
+                                    <cit:CI_Address>
+                                       <cit:deliveryPoint>
+                                          <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
+                                       </cit:deliveryPoint>
+                                       <cit:city>
+                                          <gco:CharacterString>Sydney</gco:CharacterString>
+                                       </cit:city>
+                                       <cit:administrativeArea>
+                                          <gco:CharacterString>New South Wales</gco:CharacterString>
+                                       </cit:administrativeArea>
+                                       <cit:postalCode>
+                                          <gco:CharacterString>2052</gco:CharacterString>
+                                       </cit:postalCode>
+                                       <cit:country>
+                                          <gco:CharacterString>Australia</gco:CharacterString>
+                                       </cit:country>
+                                       <cit:electronicMailAddress>
+                                          <gco:CharacterString>i.suthers@unsw.edu.au</gco:CharacterString>
+                                       </cit:electronicMailAddress>
+                                    </cit:CI_Address>
+                                 </cit:address>
+                              </cit:CI_Contact>
+                           </cit:contactInfo>
                         </cit:CI_Individual>
                      </cit:individual>
                   </cit:CI_Organisation>
@@ -1385,37 +1385,37 @@ The ongoing version of this larval fish database will be freely available throug
                      <cit:name>
                         <gco:CharacterString>School of Biological, Earth and Environmental Sciences (BEES), The University of New South Wales (UNSW)</gco:CharacterString>
                      </cit:name>
-                     <cit:contactInfo>
-                        <cit:CI_Contact>
-                           <cit:address>
-                              <cit:CI_Address>
-                                 <cit:deliveryPoint>
-                                    <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
-                                 </cit:deliveryPoint>
-                                 <cit:city>
-                                    <gco:CharacterString>Sydney</gco:CharacterString>
-                                 </cit:city>
-                                 <cit:administrativeArea>
-                                    <gco:CharacterString>New South Wales</gco:CharacterString>
-                                 </cit:administrativeArea>
-                                 <cit:postalCode>
-                                    <gco:CharacterString>2052</gco:CharacterString>
-                                 </cit:postalCode>
-                                 <cit:country>
-                                    <gco:CharacterString>Australia</gco:CharacterString>
-                                 </cit:country>
-                                 <cit:electronicMailAddress>
-                                    <gco:CharacterString>james.smith@unsw.edu.au</gco:CharacterString>
-                                 </cit:electronicMailAddress>
-                              </cit:CI_Address>
-                           </cit:address>
-                        </cit:CI_Contact>
-                     </cit:contactInfo>
                      <cit:individual>
                         <cit:CI_Individual>
                            <cit:name>
                               <gco:CharacterString>Smith, James A.</gco:CharacterString>
                            </cit:name>
+                           <cit:contactInfo>
+                              <cit:CI_Contact>
+                                 <cit:address>
+                                    <cit:CI_Address>
+                                       <cit:deliveryPoint>
+                                          <gco:CharacterString>Biological Sciences Building</gco:CharacterString>
+                                       </cit:deliveryPoint>
+                                       <cit:city>
+                                          <gco:CharacterString>Sydney</gco:CharacterString>
+                                       </cit:city>
+                                       <cit:administrativeArea>
+                                          <gco:CharacterString>New South Wales</gco:CharacterString>
+                                       </cit:administrativeArea>
+                                       <cit:postalCode>
+                                          <gco:CharacterString>2052</gco:CharacterString>
+                                       </cit:postalCode>
+                                       <cit:country>
+                                          <gco:CharacterString>Australia</gco:CharacterString>
+                                       </cit:country>
+                                       <cit:electronicMailAddress>
+                                          <gco:CharacterString>james.smith@unsw.edu.au</gco:CharacterString>
+                                       </cit:electronicMailAddress>
+                                    </cit:CI_Address>
+                                 </cit:address>
+                              </cit:CI_Contact>
+                           </cit:contactInfo>
                         </cit:CI_Individual>
                      </cit:individual>
                   </cit:CI_Organisation>
