@@ -128,12 +128,18 @@
                                         **/iso19115-3.2018/**/index-fields/common.xsl,
                                         **/iso19115-3.2018/**/suggest.xsl,
                                         **/iso19115-3.2018/**/layout.xsl,
-                                        **/iso19115-3.2018/schema-ident.xml
+                                        **/iso19115-3.2018/schema-ident.xml,
+                                        **/iso19115-3.2018/loc/eng/strings.xml,
+                                        **/iso19139/loc/eng/strings.xml
                                     </includes>
                                     <fileMappers>
                                         <org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
                                             <pattern>\.xsl$</pattern>
                                             <replacement>-core.xsl</replacement>
+                                        </org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
+                                        <org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
+                                            <pattern>\.xml$</pattern>
+                                            <replacement>-core.xml</replacement>
                                         </org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
                                     </fileMappers>
                                 </artifactItem>
@@ -182,8 +188,14 @@
                         <transformationSet>
                             <dir>${project.build.directory}/renamed-templates</dir>
                             <outputDir>${project.build.directory}/transformed-files</outputDir>
-                            <includes>**/iso19115-3.2018/schema-ident.xml</includes>
+                            <includes>**/iso19115-3.2018/schema-ident-core.xml</includes>
                             <stylesheet>src/main/transforms/schema-ident.xsl</stylesheet>
+                        </transformationSet>
+                        <transformationSet>
+                            <dir>${project.build.directory}/renamed-templates</dir>
+                            <outputDir>${project.build.directory}/transformed-files</outputDir>
+                            <includes>**/iso19115-3.2018/loc/eng/strings-core.xml, **/iso19139/loc/eng/strings-core.xml</includes>
+                            <stylesheet>src/main/transforms/schema-loc.xsl</stylesheet>
                         </transformationSet>
                     </transformationSets>
                 </configuration>
