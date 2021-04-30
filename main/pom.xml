@@ -132,14 +132,11 @@
                                         **/iso19115-3.2018/loc/eng/strings.xml,
                                         **/iso19139/loc/eng/strings.xml
                                     </includes>
+                                    <!-- Some files are not mapped to *-out because xml-maven-plugin does not rename file on output -->
                                     <fileMappers>
                                         <org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
                                             <pattern>\.xsl$</pattern>
                                             <replacement>-core.xsl</replacement>
-                                        </org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
-                                        <org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
-                                            <pattern>\.xml$</pattern>
-                                            <replacement>-core.xml</replacement>
                                         </org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
                                     </fileMappers>
                                 </artifactItem>
@@ -188,13 +185,13 @@
                         <transformationSet>
                             <dir>${project.build.directory}/renamed-templates</dir>
                             <outputDir>${project.build.directory}/transformed-files</outputDir>
-                            <includes>**/iso19115-3.2018/schema-ident-core.xml</includes>
+                            <includes>**/iso19115-3.2018/schema-ident.xml</includes>
                             <stylesheet>src/main/transforms/schema-ident.xsl</stylesheet>
                         </transformationSet>
                         <transformationSet>
                             <dir>${project.build.directory}/renamed-templates</dir>
                             <outputDir>${project.build.directory}/transformed-files</outputDir>
-                            <includes>**/iso19115-3.2018/loc/eng/strings-core.xml, **/iso19139/loc/eng/strings-core.xml</includes>
+                            <includes>**/iso19115-3.2018/loc/eng/strings.xml, **/iso19139/loc/eng/strings.xml</includes>
                             <stylesheet>src/main/transforms/schema-loc.xsl</stylesheet>
                         </transformationSet>
                     </transformationSets>
