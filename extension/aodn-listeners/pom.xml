@@ -18,19 +18,44 @@
         <dependency>
             <groupId>org.geonetwork-opensource</groupId>
             <artifactId>core</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>edu.ucar</groupId>
+                    <artifactId>netcdf</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>net.arnx.jsonic</groupId>
+                    <artifactId>jsonic</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.geonetwork-opensource</groupId>
             <artifactId>events</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>edu.ucar</groupId>
+                    <artifactId>netcdf</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>net.arnx.jsonic</groupId>
+                    <artifactId>jsonic</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>edu.ucar</groupId>
+                    <artifactId>netcdf</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>net.arnx.jsonic</groupId>
+                    <artifactId>jsonic</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
