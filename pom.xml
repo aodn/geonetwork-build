@@ -29,10 +29,10 @@
     </properties>
 
     <repositories>
-        <!--repository>
+        <repository>
             <id>aodn</id>
             <url>https://s3-ap-southeast-2.amazonaws.com/imos-artifacts/repo/maven/</url>
-        </repository-->
+        </repository>
         <repository>
             <id>osgeo-geonetwork</id>
             <url>https://repo.osgeo.org/repository/geonetwork-releases/</url>
@@ -45,6 +45,10 @@
             <id>geo-solutions</id>
             <url>http://maven.geo-solutions.it/</url>
         </repository>
+        <!--repository>
+            <id>maven-central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository-->
     </repositories>
 
 </project>

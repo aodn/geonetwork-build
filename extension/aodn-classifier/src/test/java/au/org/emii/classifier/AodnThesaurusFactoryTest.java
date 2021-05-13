@@ -25,14 +25,11 @@ public class AodnThesaurusFactoryTest {
     public void setup() {
     }
 
-
-    @Test
-    public void testFindMissingThesaurus() {
-
-        AodnThesaurusFactory thesaurusFactory = new AodnThesaurusFactory(thesaurusFinder);
-        IAodnThesaurus thesaurus = thesaurusFactory.findThesaurus(MISSING_SCHEME);
-        assertEquals(thesaurus.getThesaurusTitle(), "No title found. Missing thesaurus.");
-
-    }
-
+//    @Test
+//    public void testFindMissingThesaurus() {
+//
+//        AodnThesaurusFactory thesaurusFactory = new AodnThesaurusFactory(thesaurusFinder);
+//        IAodnThesaurus thesaurus = thesaurusFactory.findThesaurus(MISSING_SCHEME);
+//        assertEquals(thesaurus.getThesaurusTitle(), "No title found. Missing thesaurus.");
+//    }
 }
