@@ -17,6 +17,13 @@
         <dependency>
             <groupId>org.geonetwork-opensource</groupId>
             <artifactId>core</artifactId>
+            <!-- test -->
+            <exclusions>
+                <exclusion>
+                    <groupId>com.vividsolutions</groupId>
+                    <artifactId>jts-jar</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!-- removed because replaced with locationtech JTS-->
         <!--dependency>
