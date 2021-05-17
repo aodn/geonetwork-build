@@ -10,6 +10,11 @@ pipeline {
                 }
             }
             stages {
+                stage('purge') {
+                    steps {
+                      sh 'mvn dependency:purge-local-repository'
+                          }
+                                }
                 stage('clean') {
                     steps {
                         sh 'git reset --hard'
