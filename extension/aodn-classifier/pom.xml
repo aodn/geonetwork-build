@@ -17,6 +17,17 @@
         <dependency>
             <groupId>org.geonetwork-opensource</groupId>
             <artifactId>core</artifactId>
+            <!-- fixes  Could not resolve dependencies for project au.org.emii:aodn-classifier:jar:1.0.36: The following artifacts could not be resolved: edu.ucar:netcdf:jar:4.3.23, net.arnx.jsonic:jsonic:jar:1.2.0 -->
+            <exclusions>
+                <exclusion>
+                    <groupId>edu.ucar</groupId>
+                    <artifactId>netcdf</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>net.arnx.jsonic</groupId>
+                    <artifactId>jsonic</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.geonetwork-opensource</groupId>
@@ -84,5 +95,13 @@
             </plugin>
         </plugins>
     </build>
+
+    <!-- fixes Could not resolve dependencies for project au.org.emii:aodn-classifier:jar:1.0.36: Failed to collect dependencies at org.geonetwork-opensource:core:jar:3.12.0 -->
+    <repositories>
+        <repository>
+            <id>osgeo-geonetwork</id>
+            <url>https://repo.osgeo.org/repository/geonetwork-core</url>
+        </repository>
+    </repositories>
 
 </project>
