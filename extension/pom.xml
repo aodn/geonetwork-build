@@ -126,17 +126,23 @@
                 <version>20080701</version>
                 <scope>provided</scope>
             </dependency>
-            <dependency>
+            <!--dependency>
                 <groupId>com.vividsolutions</groupId>
                 <artifactId>jts</artifactId>
                 <version>1.13</version>
                 <scope>provided</scope>
-            </dependency>
+            </dependency-->
             <dependency>
                 <groupId>org.geotools</groupId>
                 <artifactId>gt-api</artifactId>
                 <version>${geotools.version}</version>
-                <scope>provided</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.geotools</groupId>
+                        <artifactId>gt-main</artifactId>
+                    </exclusion>
+                </exclusions>
+                <!--scope>provided</scope-->
             </dependency>
             <dependency>
                 <groupId>org.geotools.xsd</groupId>

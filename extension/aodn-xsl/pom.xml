@@ -20,8 +20,8 @@
             <!-- test -->
             <exclusions>
                 <exclusion>
-                    <groupId>com.vividsolutions</groupId>
-                    <artifactId>jts-jar</artifactId>
+                    <groupId>org.geotools</groupId>
+                    <artifactId>gt-main</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -34,6 +34,11 @@
             <groupId>org.geotools</groupId>
             <artifactId>gt-api</artifactId>
             <version>${geotools.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-main</artifactId>
+            <version>22-RC</version>
         </dependency>
         <dependency>
             <groupId>org.geotools.xsd</groupId>
