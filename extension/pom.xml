@@ -35,6 +35,16 @@
                 <artifactId>core</artifactId>
                 <version>${geonetwork.version}</version>
                 <scope>provided</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>edu.ucar</groupId>
+                        <artifactId>netcdf</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>net.arnx.jsonic</groupId>
+                        <artifactId>jsonic</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.geonetwork-opensource</groupId>
@@ -116,16 +126,15 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>com.vividsolutions</groupId>
-                <artifactId>jts</artifactId>
-                <version>1.13</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
                 <groupId>org.geotools</groupId>
                 <artifactId>gt-api</artifactId>
                 <version>${geotools.version}</version>
-                <scope>provided</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.geotools</groupId>
+                        <artifactId>gt-main</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.geotools.xsd</groupId>
@@ -149,4 +158,11 @@
         </dependencies>
     </dependencyManagement>
 
+    <!--  -->
+    <repositories>
+        <repository>
+            <id>osgeo-geonetwork</id>
+            <url>https://repo.osgeo.org/repository/geonetwork-core</url>
+        </repository>
+    </repositories>
 </project>

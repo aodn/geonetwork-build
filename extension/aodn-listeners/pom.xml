@@ -18,6 +18,16 @@
         <dependency>
             <groupId>org.geonetwork-opensource</groupId>
             <artifactId>core</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>edu.ucar</groupId>
+                    <artifactId>netcdf</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>net.arnx.jsonic</groupId>
+                    <artifactId>jsonic</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.geonetwork-opensource</groupId>
@@ -50,5 +60,12 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>osgeo-geonetwork</id>
+            <url>https://repo.osgeo.org/repository/geonetwork-core</url>
+        </repository>
+    </repositories>
 
 </project>
