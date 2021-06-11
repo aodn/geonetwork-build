@@ -21,8 +21,7 @@
 <!-- Sample context.xml file to used to point geonetwork to a postgis database -->
 <!-- when configured to use jndi via configuration overrides                   --> 
 <!--                                                                           -->
-<!-- To use a local postgis database instead of the default context.xml and    -->
-<!-- change the jndi connection details below to point to your database        -->
+<!-- Change the jndi connection details below to point to your database        -->
 
 
 <Context copyXML="true">
