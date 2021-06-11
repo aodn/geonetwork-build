@@ -35,3 +35,16 @@ This repository uses maven to:
 mvn clean package 
 ```
 
+### Running in IntelliJ
+
+IntelliJ doesn't cope well with the processing performed in the maven overlay so you'll need to use a maven build to build the project rather than relying on the IntelliJ build prior to deploying to a tomcat instance.
+
+![image](https://user-images.githubusercontent.com/1860215/121621288-3c9de380-caaf-11eb-9790-7420caad56cb.png)
+
+Note in this example we've specified the following system properties use a configuration overrides file similar to what's used when the app is deployed.
+
+```
+-Dgeonetwork.jeeves.configuration.overrides.file=/home/craigj/temp/geonetwork-build-overrides.xml
+```
+
+![image](https://user-images.githubusercontent.com/1860215/121621720-0e6cd380-cab0-11eb-8b5f-d57632f82fe6.png)
