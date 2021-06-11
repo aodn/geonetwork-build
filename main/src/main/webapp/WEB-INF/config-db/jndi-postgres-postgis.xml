@@ -22,6 +22,11 @@
   ~ Rome - Italy. email: geonetwork@osgeo.org
   -->
 
+<!-- ======================================================================================================= -->
+<!-- Add postgis jndi database configuration to config-db to configure use of postgis via jndi configuration -->
+<!-- Currently selected using configuration overrides                                                        -->
+<!-- ======================================================================================================= -->
+
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        default-lazy-init="true"
        xmlns="http://www.springframework.org/schema/beans"

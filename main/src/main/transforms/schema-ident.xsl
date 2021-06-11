@@ -6,7 +6,12 @@
     exclude-result-prefixes="xs ident mrc"
     version="2.0">
 
+    <!-- This transform is applied to iso19115-3.2018/schema-ident.xml to add sub template (directory entry)  -->
+    <!-- support for mrc:units -->
+
     <xsl:output indent="yes"/>
+
+    <!-- default action is to copy attributes and nodes -->
 
     <xsl:template match="@*|node()">
         <xsl:copy>
@@ -14,6 +19,8 @@
         </xsl:copy>
     </xsl:template>
 
+    <!-- add mrc:units to iso19115-3:2018 elements that can be used as sub templates (directory entries)-->
+    
     <xsl:template match="ident:elements">
         <xsl:copy>
             <xsl:apply-templates select="@*|node()"/>

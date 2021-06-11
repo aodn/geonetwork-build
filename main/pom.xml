@@ -129,7 +129,7 @@
                                         **/iso19115-3.2018/**/suggest.xsl,
                                         **/iso19115-3.2018/**/layout.xsl,
                                         **/iso19115-3.2018/schema-ident.xml,
-                                        **/iso19115-3.2018/loc/eng/strings.xml,
+                                        **/**/iso19115-3.2018/loc/eng/strings.xml,,
                                         **/iso19139/loc/eng/strings.xml
                                     </includes>
                                     <!-- Some files are not mapped to *-out because xml-maven-plugin does not rename file on output -->

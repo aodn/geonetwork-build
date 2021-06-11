@@ -9,7 +9,9 @@
                 extension-element-prefixes="saxon"
                 exclude-result-prefixes="#all">
 
-  <!-- Default to xsl-view behaviour when not overridden here -->
+  <!-- IMOS fixes for 19115-3:2018 full view - remove when upgrading and fixes included -->
+
+  <!-- Default to core full view behaviour when not overridden here -->
 
   <xsl:import href="../xsl-view/view.xsl"/>
 

@@ -16,6 +16,10 @@
             xmlns:saxon="http://saxon.sf.net/"
             exclude-result-prefixes="#all">
 
+    <!-- IMOS specific field indexing for 19115-3:2018 - required for the portal-->
+    
+    <!-- Include default GeoNetwork indexing -->
+    
     <xsl:include href="default.xsl"/>
 
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" />
