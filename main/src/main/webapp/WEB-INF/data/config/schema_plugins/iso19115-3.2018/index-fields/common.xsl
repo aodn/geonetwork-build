@@ -31,13 +31,15 @@
                 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                 exclude-result-prefixes="#all">
 
+  <!-- Override core contactIndexing template to fix issues indexing and displaying multiple contact info (address,
+       email, phone) details until core fix is available.  Where multiple different contactInfo elements are recorded
+       for a party - index/show the first only -->
+
   <!-- Include core templates -->
 
   <xsl:import href="common-core.xsl"/>
 
-  <!-- Override core contactIndexing template to fix issues indexing and displaying multiple contact info (address,
-       email, phone) details until core fix is available.  Where multiple different contactInfo elements are recorded
-       for a party - index/show the first only -->
+  <!-- Do the override -->
 
   <xsl:template name="ContactIndexing">
     <xsl:param name="type" select="'resource'" required="no" as="xs:string"/>

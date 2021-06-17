@@ -2,6 +2,7 @@
 <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
 <log4j:configuration debug="false">
 
+  <!-- IMOS indexing logging configuration - selectable in GeoNetwork Admin Settings -->
 
   <!-- Appender Configurations -->
   <appender name="consoleAppender" class="org.apache.log4j.ConsoleAppender">

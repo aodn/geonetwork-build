@@ -5,6 +5,8 @@
     exclude-result-prefixes="xs"
     version="2.0">
 
+    <!-- workaround core issue with GeoNetwork including geonet:info in CSW responses -->
+    
     <!-- default is to copy attribute or node (identity transform) -->
 
     <xsl:template match="@*|node()">
