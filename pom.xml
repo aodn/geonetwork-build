@@ -34,10 +34,6 @@
             <url>https://repo.osgeo.org/repository/geotools-releases/</url>
         </repository>
         <repository>
-            <id>aodn</id>
-            <url>https://s3-ap-southeast-2.amazonaws.com/imos-artifacts/repo/maven/</url>
-        </repository>
-        <repository>
             <id>geonetwork</id>
             <url>https://repo.osgeo.org/repository/geonetwork-releases/</url>
         </repository>
