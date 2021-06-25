@@ -75,4 +75,4 @@ your postgres database.
 
 To use this configuration add the location of the configuration overrides file to your startup options e.g.
 
-    -Dgeonetwork.dir={geonetwork-build directory}/jndi-override.xml
+    -Dgeonetwork.jeeves.configuration.overrides.file={geonetwork-build directory}/jndi-override.xml
