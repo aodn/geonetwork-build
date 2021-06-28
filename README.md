@@ -22,10 +22,10 @@ Fixes applied included in a later release which can be removed when upgrading to
 
 This repository uses maven to:
 
-* build supporting extension jars
-  * aodn-classifier - AODN portal facet generation plugin
-  * aodn-listeners - AODN metadata event listener plugins for logging metadata updates
-  * aodn-xsl - AODN xsl java indexing extensions for indexing bounding polygons as WKT
+* build supporting [AODN extension](extension/README.md) jars
+  * [aodn-classifier](extension/aodn-classifier/README.md) - AODN portal facet generation plugin
+  * [aodn-listeners](extension/aodn-listeners/README.md) - AODN metadata event listener plugins for logging metadata updates
+  * [aodn-xsl](extension/aodn-xsl/README.md) - AODN xsl java indexing extensions for indexing bounding polygons as WKT
 * build a war containing supporting extensions and making required changes to the GeoNetwork war
   using a maven overlay module
   
