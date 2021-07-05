@@ -10,6 +10,5 @@
     <!-- Look at using a java system property to allow this to be specified on startup -->
 
     <xsl:param name="dataParamsConfig" select="'../config/mcpdataparameters_config.xml'"/>
-    <xsl:param name="urlSubstitutionsConfig" select="'../config/url-substitutions/prod.xml'"/>
 
 </xsl:stylesheet>

@@ -8,7 +8,17 @@
     <xsl:import href="postprocess.xsl"/>
     
     <xsl:param name="dataParamsConfig" select="'../config/mcpdataparameters_config.xml'"/>
-    <xsl:param name="urlSubstitutionsConfig" select="'../config/url-substitutions/prod.xml'"/>
+
+    <xsl:param name="urlSubstitutionsConfig">
+        <xsl:choose>
+            <xsl:when test="system-property('catalogue.urlsubstitutions.file')">
+                <xsl:value-of select="system-property('catalogue.urlsubstitutions.file')" />
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="'../config/url-substitutions/prod.xml'" />
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:param>
 
     <xsl:template match="/">
         <xsl:variable name="convertedMetadata">
