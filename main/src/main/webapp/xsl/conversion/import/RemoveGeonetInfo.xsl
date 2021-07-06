@@ -5,7 +5,10 @@
     exclude-result-prefixes="xs"
     version="2.0">
 
-    <!-- workaround core issue with GeoNetwork including geonet:info in CSW responses -->
+    <!-- Remove geonet:info elements from harvested CSW metadata until core GeoNetwork is fixed to not -->
+    <!-- include them and that flows through to contributors -->
+    <!-- We use this when harvesting using CSW from other GN3 contributors -->
+
     
     <!-- default is to copy attribute or node (identity transform) -->
 
@@ -14,9 +17,6 @@
             <xsl:apply-templates select="@*|node()"/>
         </xsl:copy>
     </xsl:template>
-
-    <!-- Remove geonet:info elements from harvested CSW metadata until core GeoNetwork is fixed to not -->
-    <!-- include them and that flows through to contributors -->
 
     <xsl:template match="geonet:info"/>
 

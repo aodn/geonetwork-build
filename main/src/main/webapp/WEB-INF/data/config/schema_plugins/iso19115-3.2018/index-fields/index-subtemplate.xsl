@@ -12,7 +12,7 @@
 
   <xsl:include href="index-subtemplate-core.xsl"/>
 
-  <!-- Index mrc:units subtemplates -->
+  <!-- Index a title for mrc:units subtemplates -->
 
   <xsl:template mode="index" match="mrc:units">
     <Field name="_title" string="{gml:BaseUnit/gml:name/text()}" store="true" index="true"/>
