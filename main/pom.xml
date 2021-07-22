@@ -73,15 +73,6 @@
     </dependencies>
 
     <build>
-        <resources>
-            <resource>
-                <directory>${basedir}/src/main/java</directory>
-                <includes>
-                    <include>applicationContextOverrides.xml</include>
-                </includes>
-            </resource>
-        </resources>
-
         <testResources>
             <testResource>
                 <directory>${basedir}/src/test/resources</directory>
@@ -222,6 +213,7 @@
                             <directory>${project.build.directory}/renamed-templates</directory>
                         </resource>
                     </webResources>
+                    <packagingExcludes>META-INF/context_sample.xml</packagingExcludes>
                 </configuration>
             </plugin>
             <plugin>

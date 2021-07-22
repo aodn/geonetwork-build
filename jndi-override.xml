@@ -1,0 +1,10 @@
+<overrides>
+    <!-- use standard jndi configured connection to a database            -->
+    <!-- requires jndi connection details to be configured in context.xml -->
+    <!-- (see META-INF/context_sample.xml)                                -->
+
+    <spring>
+        <import file="/WEB-INF/config-db/jndi-postgres-postgis.xml"/>
+    </spring>
+
+</overrides>
