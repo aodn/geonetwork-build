@@ -15,7 +15,7 @@
 
   <!-- load substitutions config -->
 
-  <xsl:variable name="config" select="document(resolve-uri($urlSubstitutionsConfig))"/>
+  <xsl:variable name="config" select="document($urlSubstitutionsConfig)"/>
 
   <!-- url substitutions to be performed -->
 
