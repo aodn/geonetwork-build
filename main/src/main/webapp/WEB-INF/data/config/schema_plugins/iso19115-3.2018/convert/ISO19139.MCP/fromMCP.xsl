@@ -15,7 +15,7 @@
                 <xsl:value-of select="system-property('catalogue.urlsubstitutions.file')" />
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="'../config/url-substitutions/prod.xml'" />
+                <xsl:value-of select="resolve-uri('config/url-substitutions/prod.xml')" />
             </xsl:otherwise>
         </xsl:choose>
     </xsl:param>
