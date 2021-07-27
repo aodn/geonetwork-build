@@ -18,7 +18,7 @@
   <xsl:param name="dataParamsConfig"/>
   <xsl:param name="urlSubstitutionsConfig"/>
 
-  <xsl:variable name="targetUrl" select="document(resolve-uri($urlSubstitutionsConfig))/config/url"/>
+  <xsl:variable name="targetUrl" select="document($urlSubstitutionsConfig)/config/url"/>
   <xsl:variable name="thesauriConfig" select="document($dataParamsConfig)/config"/>
 
   <xsl:template match="mcp20:dataParameters" mode="from19139to19115-3.2018-aodn">
