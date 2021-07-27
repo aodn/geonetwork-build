@@ -1,15 +1,14 @@
 package au.org.emii.xsl;
 
-
+import com.vividsolutions.jts.geom.Geometry;
+import com.vividsolutions.jts.io.WKTWriter;
 import org.apache.log4j.Logger;
 import org.fao.geonet.constants.Geonet;
 import org.geotools.geometry.jts.JTS;
 import org.geotools.gml3.GMLConfiguration;
 import org.geotools.referencing.CRS;
 import org.geotools.referencing.crs.DefaultGeographicCRS;
-import org.geotools.xsd.Parser;
-import org.locationtech.jts.geom.Geometry;
-import org.locationtech.jts.io.WKTWriter;
+import org.geotools.xml.Parser;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.referencing.operation.MathTransform;
 
