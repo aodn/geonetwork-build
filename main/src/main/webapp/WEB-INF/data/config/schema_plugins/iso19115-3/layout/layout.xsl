@@ -65,7 +65,7 @@
 
     <xsl:variable name="name" select="concat(@prefix, ':', @name)"/>
     <xsl:variable name="flatModeException"
-                  select="gn-fn-metadata:isFieldFlatModeException($viewConfig, $name)"/>
+                  select="boolean('false')"/>
     <!-- TODO: this should be common to all schemas -->
     <xsl:if test="$isEditing and
                   (not($isFlatMode) or $flatModeException)">
@@ -343,7 +343,7 @@
             </xsl:element>
           </xsl:when>
           <xsl:otherwise>
-            <xsl:copy-of select="gn-fn-metadata:getFieldDirective($editorConfig, name())"/>
+            <xsl:copy-of select="boolean('false')"/>
           </xsl:otherwise>
         </xsl:choose>
       </xsl:with-param>
