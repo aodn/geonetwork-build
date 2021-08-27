@@ -340,8 +340,8 @@
           </xsl:if>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="*/cit:party/cit:CI_Organisation/cit:name|
-                                */cit:CI_Individual/cit:name"/>
+          <xsl:value-of select="*/cit:party/cit:CI_Individual/cit:name|
+                                */cit:party/cit:CI_Organisation/cit:name"/>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
@@ -431,8 +431,8 @@
                                        select="."/>
                 </span>
               </xsl:for-each>
-              <xsl:apply-templates mode="render-field"
-                                   select="cit:contactInstructions"/>
+              <!--xsl:apply-templates mode="render-field"
+                                   select="cit:contactInstructions"/-->
             </address>
           </xsl:for-each>
         </div>
