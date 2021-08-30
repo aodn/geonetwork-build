@@ -476,9 +476,9 @@
           <xsl:apply-templates mode="render-value"
                                select="*/cit:description"/>
         </xsl:variable>
-        <a href="{*/cit:linkage/*}">
+        <a href="{*/cit:linkage/*}" target="_blank">
           <xsl:apply-templates mode="render-value"
-                               select="*/cit:name"/>
+                               select="if (*/cit:name != '') then */cit:name else */cit:linkage"/>&#160;
         </a>
         <p>
           <xsl:value-of select="normalize-space($linkDescription)"/>
