@@ -340,8 +340,8 @@
           </xsl:if>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="*/cit:party/cit:CI_Organisation/cit:name|
-                                */cit:CI_Individual/cit:name"/>
+          <xsl:value-of select="*/cit:party/cit:CI_Individual/cit:name|
+                                */cit:party/cit:CI_Organisation/cit:name"/>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
@@ -431,8 +431,8 @@
                                        select="."/>
                 </span>
               </xsl:for-each>
-              <xsl:apply-templates mode="render-field"
-                                   select="cit:contactInstructions"/>
+              <!--xsl:apply-templates mode="render-field"
+                                   select="cit:contactInstructions"/-->
             </address>
           </xsl:for-each>
         </div>
@@ -476,9 +476,9 @@
           <xsl:apply-templates mode="render-value"
                                select="*/cit:description"/>
         </xsl:variable>
-        <a href="{*/cit:linkage/*}">
+        <a href="{*/cit:linkage/*}" target="_blank">
           <xsl:apply-templates mode="render-value"
-                               select="*/cit:name"/>
+                               select="if (*/cit:name != '') then */cit:name else */cit:linkage"/>&#160;
         </a>
         <p>
           <xsl:value-of select="normalize-space($linkDescription)"/>
