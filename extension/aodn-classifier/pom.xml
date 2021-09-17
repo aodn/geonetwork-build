@@ -7,7 +7,7 @@
     <parent>
         <artifactId>geonetwork-extension</artifactId>
         <groupId>au.org.emii</groupId>
-        <version>1.0.50</version>
+        <version>0.0.0</version>
     </parent>
 
     <artifactId>aodn-classifier</artifactId>
