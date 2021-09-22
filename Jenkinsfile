@@ -16,14 +16,14 @@ pipeline {
                         sh 'git clean -xffd'
                     }
                 }
-                stage('set_version_release') {
-                    when { branch 'master' }
-                    steps {
-                        withCredentials([usernamePassword(credentialsId: env.GIT_CREDENTIALS_ID, passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
-                            sh './bumpversion.sh'
-                        }
-                    }
-                }
+                //stage('set_version_release') {
+                //    when { branch 'master' }
+                //    steps {
+                //        withCredentials([usernamePassword(credentialsId: env.GIT_CREDENTIALS_ID, passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
+                //            sh './bumpversion.sh'
+                //        }
+                //    }
+                //}
                 stage('build') {
                     steps {
                         sh 'mvn -U -B -DskipTests clean compile'
