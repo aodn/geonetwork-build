@@ -15,6 +15,8 @@
             <xsl:otherwise>
                 <xsl:value-of select="'../config/url-substitutions/prod.xml'" />
 <!--  TODO point to correct file. Template it in cloud deploy -->
+<!--  This file is at /var/lib/tomcat8/webapps/geonetwork/xsl/conversion/import/modify-urls.xsl              -->
+<!--  Substitutions: something like   /var/lib/tomcat8/webapps/geonetwork/WEB-INF/data/config  put in the schema?  -->
             </xsl:otherwise>
         </xsl:choose>
     </xsl:param>
@@ -24,6 +26,8 @@
 <!--    <xsl:param name="geowebcache"/>-->
 <!--    <xsl:param name="geoserver"/>-->
 <!--    <xsl:param name="processes"/>-->
+
+<!--    TODO: do we need to remove all geonet? -->
 
     <!-- default action is to copy -->
     <xsl:template match="@*|node()">
