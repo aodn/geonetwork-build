@@ -4,6 +4,7 @@
                 xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
                 xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
                 xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
+                xmlns:gmd="http://www.isotc211.org/2005/gmd"
                 xmlns:geonet="http://www.fao.org/geonetwork"
                 version="2.0"
                 exclude-result-prefixes="#all">
@@ -127,6 +128,33 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <!-- TODO: MCP ISO 19139 -->
-    
+    <!-- TODO: MCP ISO 19139 (See the original /home/cmrose/git/cloud-deploy/sample-config/ebprep_conf/templates/geonetwork3/linkage-updater.xsl.template) -->
+    <!-- need a sample file for this -->
+    <xsl:template match="gmd:CI_OnlineResource[child::gmd:protocol[gco:CharacterString[text()='OGC:WFS-1.0.0-http-get-capabilities']]]">
+
+        <xsl:variable name="collection_name"
+                      select="gmd:name/gco:CharacterString/text()"/>
+        <gmd:onLine>
+            <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                    <xsl:value-of select="concat(string($geoserver_wfs), '/geoserver/ows')"/>
+                </gmd:linkage>
+                <gmd:protocol>
+                    <gco:CharacterString>
+                        <xsl:value-of select="'AODN:WFS-EXTERNAL-1.0.0-http-get-capabilities'"/>
+                    </gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                    <gco:CharacterString>
+                        <xsl:value-of select="$collection_name"/>
+                    </gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                    <gco:CharacterString>This OGC WFS service returns filtered geographic information. The returned data
+                        is available in multiple formats including CSV.
+                    </gco:CharacterString>
+                </gmd:description>
+            </gmd:CI_OnlineResource>
+        </gmd:onLine>
+    </xsl:template>
 </xsl:stylesheet>
