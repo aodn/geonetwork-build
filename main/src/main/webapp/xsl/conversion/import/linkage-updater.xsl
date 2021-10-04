@@ -4,30 +4,19 @@
                 xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
                 xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
                 xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
+                xmlns:geonet="http://www.fao.org/geonetwork"
                 version="2.0"
                 exclude-result-prefixes="#all">
 
-    <xsl:param name="urlSubstitutionsConfig">
-        <xsl:choose>
-            <xsl:when test="system-property('catalogue.urlsubstitutions.file')">
-                <xsl:value-of select="system-property('catalogue.urlsubstitutions.file')" />
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="'../config/url-substitutions/prod.xml'" />
-<!--  TODO point to correct file. Template it in cloud deploy -->
-<!--  This file is at /var/lib/tomcat8/webapps/geonetwork/xsl/conversion/import/modify-urls.xsl              -->
-<!--  Substitutions: something like   /var/lib/tomcat8/webapps/geonetwork/WEB-INF/data/config  put in the schema?  -->
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:param>
-
-<!--    <xsl:param name="pot"/>-->
-<!--    <xsl:param name="thredds"/>-->
-<!--    <xsl:param name="geowebcache"/>-->
-<!--    <xsl:param name="geoserver"/>-->
-<!--    <xsl:param name="processes"/>-->
-
-<!--    TODO: do we need to remove all geonet? -->
+     <xsl:variable name="config" select="document('/home/cmrose/git/geonetwork-build/main/src/main/webapp/WEB-INF/data/config/url-substitutions/linkage-updater.xml')"/>
+<!--    <xsl:variable name="config" select="document('../../../../WEB-INF/data/config/url-substitutions/linkage-updater.xml')"/>-->
+    
+    <xsl:variable name="pot" select="$config/config/pot/@replaceWith" />
+    <xsl:variable name="thredds" select="$config/config/thredds/@replaceWith" />
+    <xsl:variable name="geowebcache" select="$config/config/geowebcache/@replaceWith" />
+    <xsl:variable name="geoserver" select="$config/config/geoserver/@replaceWith" />
+    <xsl:variable name="processes" select="$config/config/processes/@replaceWith" />
+    <xsl:variable name="geoserver_wfs" select="$config/config/geoserver_wfs/@replaceWith" />
 
     <!-- default action is to copy -->
     <xsl:template match="@*|node()">
@@ -36,8 +25,13 @@
         </xsl:copy>
     </xsl:template>
 
+    <!-- Always remove geonet:* elements. -->
+    <xsl:template match="geonet:*"/>
+
+<!--    TODO: variants of this file should import the following common xsl-->
+
     <!--  Point of truth -->
-    <!-- iso-19115 -->
+    <!-- ISO 19115 -->
     <xsl:template match="mdb:metadataLinkage/cit:CI_OnlineResource/cit:linkage/gco:CharacterString">
         <xsl:copy>
             <xsl:value-of select="if (not($pot = '')) then replace(text(), '//(.+?)/', concat('//',string($pot),'/')) else text()"/>
@@ -45,14 +39,11 @@
     </xsl:template>
 
     <!-- Thredds -->
-    <!-- iso-19115 -->
+    <!-- ISO 19115 -->
     <xsl:template match="/mdb:MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource/cit:linkage/gco:CharacterString[matches(text(), '//thredds(.*?)\.aodn\.org\.au/')]">
         <xsl:choose>
             <xsl:when test="not($thredds = '')">
                 <xsl:value-of select="replace(text(), '//thredds(.*?)\.aodn\.org\.au/', concat('//',string($thredds),'/'))"/>
-            </xsl:when>
-            <xsl:when test="not('{{ config.get('stack_manifest', {}).get('ElasticBeanstalkResources', {}).get('Thredds', {}).get('root_url', '') }}' = '')">
-                <xsl:copy><xsl:value-of select="replace(., 'https?://thredds(.*?)\.aodn\.org\.au/', '{{ config.get('stack_manifest', {}).get('ElasticBeanstalkResources', {}).get('Thredds', {}).get('root_url', '') }}/')"/></xsl:copy>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="text()"/>
@@ -61,51 +52,81 @@
     </xsl:template>
 
     <!-- Geoserver -->
-    <!-- iso-19115 -->
+    <!-- ISO 19115 -->
     <xsl:template match="/mdb:MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource/cit:linkage/gco:CharacterString[matches(text(), '//geoserver(.*?)\.aodn\.org\.au/')]">
         <xsl:choose>
             <xsl:when test="not($geoserver = '')">
                 <xsl:value-of select="replace(text(), '//geoserver(.*?)\.aodn\.org\.au/', concat('//',string($geoserver),'/'))"/>
             </xsl:when>
-            <xsl:when test="not('{{ config.get('stack_manifest', {}).get('ElasticBeanstalkResources', {}).get('Geoserver', {}).get('root_url', '') }}' = '')">
-                <xsl:copy><xsl:value-of select="replace(., 'https?://geoserver(.*?)\.aodn\.org\.au/', '{{ config.get('stack_manifest', {}).get('ElasticBeanstalkResources', {}).get('Geoserver', {}).get('root_url', '') }}/')"/></xsl:copy>
-            </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="text()"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+    <!-- TODO: MCP ISO 19139 -->
+   
 
     <!-- GeoWebcache -->
-    <!-- iso-19115 -->
+    <!-- ISO 19115 -->
     <xsl:template match="cit:CI_OnlineResource/cit:linkage/gco:CharacterString[../../cit:protocol/*/text()='OGC:WMS-1.1.1-http-get-map']">
         <xsl:choose>
             <xsl:when test="not($geowebcache = '')">
-                <xsl:copy><xsl:value-of select="replace(., concat('//geoserver(.*?)\.aodn\.org\.au/','geoserver'), concat($geowebcache, '/geowebcache/service'))"/></xsl:copy>
-            </xsl:when>
-            <xsl:when test="not('{{ config.get('stack_manifest', {}).get('ElasticBeanstalkResources', {}).get('Geowebcache', {}).get('root_url', '') }}' = '')">
-                <xsl:copy><xsl:value-of select="replace(., concat('https?://geoserver(.*?)\.aodn\.org\.au/', 'geoserver'), '{{ config.get('stack_manifest', {}).get('ElasticBeanstalkResources', {}).get('Geowebcache', {}).get('root_url', '') }}/geowebcache/service')"/></xsl:copy>
+                <xsl:copy><xsl:value-of select="replace(., concat('//geoserver(.*?)\.aodn\.org\.au/','geoserver'), concat('//',string($geowebcache), '/geowebcache/service'))"/></xsl:copy>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="text()"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+    <!-- TODO: MCP ISO 19139 -->
 
     <!-- Processes -->
-    <!-- iso-19115 -->
+    <!-- ISO 19115 -->
     <xsl:template match="/mdb:MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource/cit:linkage/gco:CharacterString[matches(text(), '//processes(.*?)\.aodn\.org\.au/')]">
         <xsl:choose>
             <xsl:when test="not($processes = '')">
                 <xsl:value-of select="replace(text(), '//processes(.*?)\.aodn\.org\.au/', concat('//',string($processes),'/'))"/>
             </xsl:when>
-            <xsl:when test="not('{{ config.get('stack_manifest', {}).get('Resources', {}).get('awswps', {}).get('endpoint', '') }}' = '')">
-                <xsl:copy><xsl:value-of select="replace(., '//processes(.*?)\.aodn\.org\.au/', '//{{ config.get('stack_manifest', {}).get('Resources', {}).get('awswps', {}).get('endpoint', '') }}/')"/></xsl:copy>
-            </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="text()"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
 
+    <!-- Geoserver WFS -->
+    <!-- ISO 19115 -->
+    <xsl:template match="cit:CI_OnlineResource[child::cit:protocol[gco:CharacterString[text()='OGC:WFS-1.0.0-http-get-capabilities']]]">
+        <xsl:choose>
+            <xsl:when test="not($geoserver_wfs = '')">
+                <xsl:variable name="collection_name" select="cit:name/gco:CharacterString/text()"/>
+                <cit:CI_OnlineResource>
+                    <cit:linkage>
+                        <gco:CharacterString>
+                            <xsl:value-of select="concat(string($geoserver_wfs), '/geoserver/ows')"/>
+                        </gco:CharacterString>
+                    </cit:linkage>
+                    <cit:protocol>
+                        <gco:CharacterString>
+                            <xsl:value-of select="'AODN:WFS-EXTERNAL-1.0.0-http-get-capabilities'"/>
+                        </gco:CharacterString>
+                    </cit:protocol>
+                    <cit:name>
+                        <gco:CharacterString>
+                            <xsl:value-of select="$collection_name"/>
+                        </gco:CharacterString>
+                    </cit:name>
+                    <cit:description>
+                        <gco:CharacterString>This OGC WFS service returns filtered geographic information. The returned data 
+                            is available in multiple formats including CSV.
+                        </gco:CharacterString>
+                    </cit:description>
+                </cit:CI_OnlineResource>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="text()"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    <!-- TODO: MCP ISO 19139 -->
+    
 </xsl:stylesheet>

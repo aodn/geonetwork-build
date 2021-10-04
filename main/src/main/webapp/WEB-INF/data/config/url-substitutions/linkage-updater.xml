@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- URL Substitutions to be performed when harvesting records -->
+<!-- TODO: Template this in cloud-deploy ? -->
+
+<config>
+
+    <geoserver replaceWith="geoserver-portal.aodn.org.au" />
+    <geowebcache replaceWith="tilecache.aodn.org.au" />
+    <geoserver_wfs replaceWith="http://geoserver-123.aodn.org.au" />
+
+</config>
