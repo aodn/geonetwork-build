@@ -9,17 +9,29 @@
                 version="2.0"
                 exclude-result-prefixes="#all">
     
-<!-- Use this for CSW harvesters -->
+    <!-- Use this for CSW harvesters -->
+    <!--
+        References:
+        portal-linkage-updater
+          https://github.com/aodn/core-geonetwork/blob/93bbd3b85f33522327ee9e64a2ec0ff9ea1a4ef5/web/src/main/webapp/WEB-INF/data/config/schema_plugins/iso19139/process/portal-linkage-updater.xsl
+          portal-linkage-updater?pot_url=https://metadata.imas.utas.edu.au/geonetwork/srv/eng/catalog.search#/metadata/${uuid}
+        linkage-updater
+          https://github.com/aodn/cloud-deploy/blob/1d2d700e41f40b5002ed7e619ca16bc2bde3b9ff/sample-config/ebprep_conf/templates/geonetwork3/linkage-updater.xsl.template
+          linkage-updater?pattern=http://geoserver-123.aodn.org.au&replacement=http://geoserver-portal.aodn.org.au&pot_url=https://apps.aims.gov.au/metadata/view/${uuid}
+    -->
 
-<!--     <xsl:variable name="config" select="document('/home/cmrose/git/geonetwork-build/main/src/main/webapp/WEB-INF/data/config/url-substitutions/linkage-updater.xml')"/>-->
     <xsl:variable name="config" select="document('../../../WEB-INF/data/config/url-substitutions/linkage-updater.xml')"/>
     
-    <xsl:variable name="pot" select="$config/config/pot/@replaceWith" />
+    <xsl:variable name="pot_replace" select="$config/config/pot/@replaceWith" />
+    <xsl:variable name="pot_add" select="$config/config/pot/@add" />
     <xsl:variable name="thredds" select="$config/config/thredds/@replaceWith" />
     <xsl:variable name="geowebcache" select="$config/config/geowebcache/@replaceWith" />
     <xsl:variable name="geoserver" select="$config/config/geoserver/@replaceWith" />
     <xsl:variable name="processes" select="$config/config/processes/@replaceWith" />
     <xsl:variable name="geoserver_wfs" select="$config/config/geoserver_wfs/@pattern" />
+    
+    <xsl:variable name="metadata_uuid" select="//gmd:fileIdentifier/*/text()" />
+    <xsl:variable name="pot_add_url" select="replace($pot_add, '\$\{uuid\}', $metadata_uuid)" />
 
     <!-- default action is to copy -->
     <xsl:template match="@*|node()">
@@ -31,15 +43,38 @@
     <!-- Always remove geonet:* elements. -->
     <xsl:template match="geonet:*"/>
 
-<!--    TODO: variants of this file should import the following common xsl-->
-
     <!--  Point of truth -->
     <!-- ISO 19115 -->
+    <!-- Replace existing POT -->
     <xsl:template match="mdb:metadataLinkage/cit:CI_OnlineResource/cit:linkage/gco:CharacterString">
         <xsl:copy>
-            <xsl:value-of select="if (not($pot = '')) then replace(text(), '//(.+?)/', concat('//',string($pot),'/')) else text()"/>
+            <xsl:value-of select="if (not($pot_replace = '')) then replace(text(), '//(.+?)/', concat('//',string($pot_replace),'/')) else text()"/>
         </xsl:copy>
     </xsl:template>
+    <!-- Add POT if none exists -->
+    <!-- Add point of truth online resource element to the first transferOptions element in the MD_Distribution section 
+        if pot_url provided and it doesn't exist already -->
+    <xsl:variable name="has-pot" select="//gmd:MD_Distribution//gmd:protocol/*/text()[.='WWW:LINK-1.0-http--metadata-URL']"/>
+    <xsl:variable name="add-pot" select="$pot_add_url and not($has-pot)"/>
+    <xsl:template match="gmd:MD_Distribution[$add-pot]/gmd:transferOptions[1]/gmd:MD_DigitalTransferOptions[1]">
+        <xsl:copy>
+            <xsl:apply-templates select="node()"/>
+            <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                        <gmd:URL><xsl:value-of select="string($pot_add_url)"/></gmd:URL>
+                    </gmd:linkage>
+                    <gmd:protocol>
+                        <gco:CharacterString>WWW:LINK-1.0-http--metadata-URL</gco:CharacterString>
+                    </gmd:protocol>
+                    <gmd:description>
+                        <gco:CharacterString>Point of truth URL of this metadata record</gco:CharacterString>
+                    </gmd:description>
+                </gmd:CI_OnlineResource>
+            </gmd:onLine>
+        </xsl:copy>
+    </xsl:template>    
+    
 
     <!-- Thredds -->
     <!-- ISO 19115 -->
