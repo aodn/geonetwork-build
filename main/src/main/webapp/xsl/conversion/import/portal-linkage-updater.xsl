@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:gmd="http://www.isotc211.org/2005/gmd"
                 xmlns:geonet="http://www.fao.org/geonetwork"
                 version="2.0"
                 exclude-result-prefixes="geonet">
@@ -19,9 +18,6 @@
     <xsl:variable name="geoserver" select="$config/config/geoserver/@replaceWith" />
     <xsl:variable name="geoserver_wfs" select="$config/config/geoserver_wfs/@pattern" />
     
-    <xsl:variable name="metadata_uuid" select="//gmd:fileIdentifier/*/text()" />
-    <xsl:variable name="pot_add_url" select="replace($pot_add, '\$\{uuid\}', $metadata_uuid)" />
-
     <!-- default action is to copy -->
     <xsl:template match="@*|node()">
         <xsl:copy>
