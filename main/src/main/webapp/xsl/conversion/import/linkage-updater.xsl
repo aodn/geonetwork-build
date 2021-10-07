@@ -13,8 +13,9 @@
 
     <xsl:output indent="yes"/>
 
-    <xsl:variable name="config" select="document('../../../WEB-INF/data/config/url-substitutions/linkage-updater.xml')"/>
-    
+    <xsl:include href="../common/get-data-dir.xsl" />
+    <xsl:variable name="config" select="document(concat($data-dir,'/config/url-substitutions/linkage-updater.xml'))" />
+
     <xsl:variable name="geowebcache" select="$config/config/geowebcache/@replaceWith" />
     <xsl:variable name="geoserver" select="$config/config/geoserver/@replaceWith" />
     <xsl:variable name="geoserver_wfs" select="$config/config/geoserver_wfs/@pattern" />
@@ -26,9 +27,9 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:include href="../../../WEB-INF/data/config/url-substitutions/geonet-remove.xsl" />
-    <xsl:include href="../../../WEB-INF/data/config/url-substitutions/geoserver-update.xsl" />
-    <xsl:include href="../../../WEB-INF/data/config/url-substitutions/geowebcache-update.xsl" />
-    <xsl:include href="../../../WEB-INF/data/config/url-substitutions/wfs-update.xsl" />
+    <xsl:include href="../common/geonet-remove.xsl" />
+    <xsl:include href="../common/geoserver-update.xsl" />
+    <xsl:include href="../common/geowebcache-update.xsl" />
+    <xsl:include href="../common/wfs-update.xsl" />
 
 </xsl:stylesheet>

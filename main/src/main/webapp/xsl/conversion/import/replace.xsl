@@ -12,7 +12,11 @@
           replace?pattern=http://nzodn.nz&replacement=https://nzodn.nz
     -->
 
-    <xsl:variable name="config" select="document('../../../WEB-INF/data/config/url-substitutions/replace.xml')"/>
+    <xsl:output indent="yes"/>
+
+    <xsl:include href="../common/get-data-dir.xsl" />
+    <xsl:variable name="config" select="document(concat($data-dir,'/config/url-substitutions/replace.xml'))" />
+
     <xsl:variable name="pattern" select="$config/config/niwa/@pattern" />
     <xsl:variable name="replacement" select="$config/config/niwa/@replacement" />
 

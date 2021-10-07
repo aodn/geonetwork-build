@@ -13,10 +13,14 @@
           ga?config-dir=https://raw.githubusercontent.com/aodn/collection-config/master/geoscience-australia
     -->
 
-    <xsl:variable name="config" select="document('../../../WEB-INF/data/config/url-substitutions/collection-add.xml')"/>
+    <xsl:output indent="yes"/>
+
+    <xsl:include href="../common/get-data-dir.xsl" />
+    <xsl:variable name="config" select="document(concat($data-dir,'/config/url-substitutions/collection-add.xml'))" />
     <xsl:variable name="config-dir" select="$config/config/ga/@config-dir" />
 
-    <xsl:include href="../../../WEB-INF/data/config/schema_plugins/iso19115-3.2018/process/add-collection-config.xsl"/>
+    <xsl:include href="../../../WEB-INF/data/config/schema_plugins/iso19115-3.2018/process/add-collection-config.xsl" use-when="system-property('geonetwork.dir')=''"/>
+    <xsl:include href="/srv/geonetwork/data_dir/config/schema_plugins/iso19115-3.2018/process/add-collection-config.xsl" use-when="system-property('geonetwork.dir')='/srv/geonetwork/data_dir'"/>
 
     <!-- Fix incorrectly mapped MD_LegalConstraints/reference element -->
 

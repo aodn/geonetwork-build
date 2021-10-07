@@ -14,7 +14,7 @@
     <xsl:param name="collection" />
 
     <xsl:variable name="config" select="document('../../../url-substitutions/collection-add.xml')"/>
-    <xsl:variable name="config-dirs" select="$config/config/$collection/@config-dir" />
+    <xsl:variable name="config-dir" select="$config/config/$collection/@config-dir" />
 
     <xsl:include href="add-collection-config.xsl"/>
 

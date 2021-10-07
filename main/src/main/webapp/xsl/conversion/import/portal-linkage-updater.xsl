@@ -11,8 +11,11 @@
           portal-linkage-updater?pot_url=https://metadata.imas.utas.edu.au/geonetwork/srv/eng/catalog.search#/metadata/${uuid}
     -->
 
-    <xsl:variable name="config" select="document('../../../WEB-INF/data/config/url-substitutions/portal-linkage-updater.xml')"/>
-    
+    <xsl:output indent="yes"/>
+
+    <xsl:include href="../common/get-data-dir.xsl" />
+    <xsl:variable name="config" select="document(concat($data-dir,'/config/url-substitutions/portal-linkage-updater.xml'))" />
+
     <xsl:variable name="pot_add" select="$config/config/pot/@add" />
     <xsl:variable name="geowebcache" select="$config/config/geowebcache/@replaceWith" />
     <xsl:variable name="geoserver" select="$config/config/geoserver/@replaceWith" />
@@ -25,10 +28,10 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:include href="../../../WEB-INF/data/config/url-substitutions/geonet-remove.xsl" />
-    <xsl:include href="../../../WEB-INF/data/config/url-substitutions/geoserver-update.xsl" />
-    <xsl:include href="../../../WEB-INF/data/config/url-substitutions/geowebcache-update.xsl" />
-    <xsl:include href="../../../WEB-INF/data/config/url-substitutions/wfs-update.xsl" />
-    <xsl:include href="../../../WEB-INF/data/config/url-substitutions/pot-add.xsl" />
+    <xsl:include href="../common/geonet-remove.xsl" />
+    <xsl:include href="../common/geoserver-update.xsl" />
+    <xsl:include href="../common/geowebcache-update.xsl" />
+    <xsl:include href="../common/wfs-update.xsl" />
+    <xsl:include href="../common/pot-add.xsl" />
 
 </xsl:stylesheet>
