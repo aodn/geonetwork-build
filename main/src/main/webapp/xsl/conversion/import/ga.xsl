@@ -15,7 +15,8 @@
 
     <xsl:output indent="yes"/>
 
-    <xsl:include href="../common/get-data-dir.xsl" />
+<!--    <xsl:include href="../common/get-data-dir.xsl" />-->
+    <xsl:variable name="data-dir" select="resolve-uri('../../../WEB-INF/data')" />
     <xsl:variable name="config" select="document(concat($data-dir,'/config/url-substitutions/collection-add.xml'))" />
     <xsl:variable name="config-dir" select="$config/config/ga/@config-dir" />
 
