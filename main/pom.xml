@@ -20,8 +20,8 @@
     <dependencies>
         <dependency>
             <groupId>org.geonetwork-opensource</groupId>
-            <artifactId>geonetwork-local-build</artifactId>
-            <version>snapshot</version>
+            <artifactId>web-app</artifactId>
+            <version>${geonetwork.version}</version>
             <scope>runtime</scope>
             <type>war</type>
         </dependency>
@@ -110,7 +110,7 @@
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>org.geonetwork-opensource</groupId>
-                                    <artifactId>geonetwork-local-build</artifactId>
+                                    <artifactId>web-app</artifactId>
                                     <type>war</type>
                                     <outputDirectory>${project.build.directory}/renamed-templates</outputDirectory>
                                     <includes>
@@ -197,7 +197,7 @@
                     <overlays>
                         <overlay>
                             <groupId>org.geonetwork-opensource</groupId>
-                            <artifactId>geonetwork-local-build</artifactId>
+                            <artifactId>web-app</artifactId>
                             <excludes>
                                 <exclude>WEB-INF/classes/log4j-*.xml</exclude>
                             </excludes>
