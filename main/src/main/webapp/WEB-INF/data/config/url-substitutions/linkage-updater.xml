@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<config>
-
-    <geoserver replaceWith="geoserver-portal.aodn.org.au" />
-    <geowebcache replaceWith="tilecache.aodn.org.au" />
-    <geoserver_wfs pattern="geoserver-123.aodn.org.au" />
-
-</config>

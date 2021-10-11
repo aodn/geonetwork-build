@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<config>
-
-    <ga config-dir="https://raw.githubusercontent.com/aodn/collection-config/master/geoscience-australia" />
-    <tpac config-dir="https://raw.githubusercontent.com/aodn/collection-config/master/tpac" />
-    <deakin config-dir="https://raw.githubusercontent.com/aodn/collection-config/master/deakin-university" />
-
-</config>

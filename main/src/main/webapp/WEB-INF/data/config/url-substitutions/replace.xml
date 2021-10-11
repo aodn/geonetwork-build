@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<config>
-
-    <niwa pattern="http://nzodn.nz" replacement="https://nzodn.nz" />
-
-</config>
