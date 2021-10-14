@@ -23,10 +23,9 @@
 
     <xsl:include href="../common/add-collection-config.xsl"/>
 
+    <!-- ISO19139 -->
     <!-- Fix incorrectly mapped MD_LegalConstraints/reference element -->
-
     <xsl:template match="gmd:MD_LegalConstraints/gmd:reference">
-        <!-- not valid in iso19139 - map to otherConstraint -->
         <xsl:element name="gmd:otherConstraints">
             <xsl:element name="gco:CharacterString">
                 <xsl:value-of select="gmd:CI_Citation/gmd:title/*/text()"/>
