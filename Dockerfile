@@ -11,8 +11,8 @@ ENV JAVA_TOOL_OPTIONS -Duser.home=/home/builder
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git-core \
     libxml2-utils \
-    libnetcdf11 \
-    libgsl2 \
+    libnetcdf15 \
+    libgsl23 \
     libudunits2-0 \
     openjdk-8-jdk \
     python3-dev \
