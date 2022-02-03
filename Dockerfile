@@ -1,7 +1,9 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
 ARG BUILDER_UID=9999
+ARG DEBIAN_FRONTEND=noninteractive
 
+ENV TZ=Australia/Hobart
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 ENV HOME /home/builder
 ENV JAVA_TOOL_OPTIONS -Duser.home=/home/builder
@@ -9,8 +11,8 @@ ENV JAVA_TOOL_OPTIONS -Duser.home=/home/builder
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git-core \
     libxml2-utils \
-    libnetcdf11 \
-    libgsl2 \
+    libnetcdf15 \
+    libgsl23 \
     libudunits2-0 \
     openjdk-8-jdk \
     python3-dev \
