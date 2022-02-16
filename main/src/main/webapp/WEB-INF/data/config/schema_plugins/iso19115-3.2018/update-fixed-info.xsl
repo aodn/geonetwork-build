@@ -600,6 +600,7 @@
   <!-- Sextant / Template adding nilReason attribut with withheld value
   for some protocols. -->
   <!--  AODN:FILE-list-->
+  <!--
   <xsl:template match="cit:linkage" priority="10">
     <xsl:choose>
       <xsl:when test="
@@ -621,7 +622,7 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
+-->
 
   <xsl:template match="mri:descriptiveKeywords[not(*/mri:thesaurusName)]" priority="10">
     <xsl:variable name="name" select="name()"/>
