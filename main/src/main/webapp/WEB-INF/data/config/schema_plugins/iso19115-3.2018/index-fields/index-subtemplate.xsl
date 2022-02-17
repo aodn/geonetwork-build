@@ -6,14 +6,10 @@
                 xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <!-- Add required indexing IMOS sub templates (directory entries) -->
-
   <!-- Import core subtemplate indexing -->
-
   <xsl:include href="index-subtemplate-core.xsl"/>
 
-  <!-- Index a title for mrc:units subtemplates -->
-
+  <!-- Index mrc:units subtemplates -->
   <xsl:template mode="index" match="mrc:units">
     <Field name="_title" string="{gml:BaseUnit/gml:name/text()}" store="true" index="true"/>
     <xsl:call-template name="subtemplate-common-fields"/>

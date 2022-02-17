@@ -7,7 +7,7 @@
     <parent>
         <artifactId>geonetwork-extension</artifactId>
         <groupId>au.org.emii</groupId>
-        <version>0.0.0</version>
+        <version>1.0.38</version>
     </parent>
 
     <artifactId>aodn-xsl</artifactId>
@@ -19,13 +19,9 @@
             <artifactId>core</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.vividsolutions</groupId>
-            <artifactId>jts</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.geotools</groupId>
-            <artifactId>gt-api</artifactId>
-            <version>${geotools.version}</version>
+            <groupId>org.locationtech.jts</groupId>
+            <artifactId>jts-core</artifactId>
+            <version>1.18.1</version>
         </dependency>
         <dependency>
             <groupId>org.geotools.xsd</groupId>
@@ -42,6 +38,11 @@
         <dependency>
             <groupId>xerces</groupId>
             <artifactId>xercesImpl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jdom</groupId>
+            <artifactId>jdom</artifactId>
+            <version>1.1.2</version>
         </dependency>
     </dependencies>
 
@@ -61,5 +62,5 @@
             </plugin>
         </plugins>
     </build>
-
+    
 </project>

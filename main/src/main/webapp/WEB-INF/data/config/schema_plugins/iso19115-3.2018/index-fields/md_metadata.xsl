@@ -16,10 +16,6 @@
             xmlns:saxon="http://saxon.sf.net/"
             exclude-result-prefixes="#all">
 
-    <!-- IMOS specific field indexing for 19115-3:2018 - required for the portal-->
-    
-    <!-- Include default GeoNetwork indexing -->
-    
     <xsl:include href="default.xsl"/>
 
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" />
@@ -28,7 +24,7 @@
 
     <!-- Index layer name for use by aws-wps to lookup the metadata record for an aggregation -->
     <xsl:template mode="index"
-                  match="mrd:transferOptions//cit:CI_OnlineResource[cit:protocol/*/text()='OGC:WPS--gogoduck' or contains(cit:protocol, 'http-get-map')]">
+                  match="mrd:transferOptions//cit:CI_OnlineResource[cit:protocol/*/text()='IMOS:NCWMS--proto' or contains(cit:protocol, 'http-get-map')]">
         <Field name="layer" string="{normalize-space(cit:name/gco:CharacterString|cit:name/gcx:MimeFileType)}" store="false" index="true"/>
     </xsl:template>
 

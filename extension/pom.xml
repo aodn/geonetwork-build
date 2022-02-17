@@ -5,7 +5,7 @@
     <parent>
         <artifactId>geonetwork</artifactId>
         <groupId>au.org.emii</groupId>
-        <version>0.0.0</version>
+        <version>1.0.38</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -122,16 +122,15 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>org.geotools</groupId>
-                <artifactId>gt-api</artifactId>
-                <version>${geotools.version}</version>
+                <groupId>org.geotools.xsd</groupId>
+                <artifactId>gt-xsd-gml3</artifactId>
+                <version>24.1</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>org.geotools.xsd</groupId>
-                <artifactId>gt-xsd-gml3</artifactId>
-                <version>${geotools.version}</version>
-                <scope>provided</scope>
+                <groupId>org.geotools</groupId>
+                <artifactId>gt-xml</artifactId>
+                <version>24.1</version>
             </dependency>
             <!-- required for testing only -->
             <dependency>

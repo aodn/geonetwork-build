@@ -9,10 +9,6 @@
                 version="2.0"
                 exclude-result-prefixes="#all">
 
-    <!-- Include indexing of harvested 19139 records required for the portal -->
-
-    <!-- Include default indexing -->
-
     <xsl:include href="default.xsl"/>
 
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>

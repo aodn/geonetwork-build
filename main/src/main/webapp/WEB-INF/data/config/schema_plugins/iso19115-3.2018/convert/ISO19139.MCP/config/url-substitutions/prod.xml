@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- URL Substitutions to be performed when migrating records from GN2 to GN3 -->
+<!-- URL Substitutions to be performed when migrating records from the old GN2 catalogue-imos -->
+<!-- instance to the new GN3 production catalogue-imos instance -->
 
 <config>
     <url>https://catalogue-imos.aodn.org.au:443/geonetwork/srv</url>

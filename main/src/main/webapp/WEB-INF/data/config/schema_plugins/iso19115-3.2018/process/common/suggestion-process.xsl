@@ -3,7 +3,7 @@
                 version="2.0"
                 exclude-result-prefixes="#all">
 
-    <!-- Suggestion process parameters used by all IMOS suggestions -->
+    <!-- Suggestion process parameters -->
 
     <!-- Language of the GUI -->
     <xsl:param name="guiLang" select="'eng'"/>

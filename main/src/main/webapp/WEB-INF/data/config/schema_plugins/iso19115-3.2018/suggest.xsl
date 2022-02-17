@@ -4,8 +4,6 @@
   extension-element-prefixes="saxon"
   version="2.0">
 
-  <!-- Add IMOS suggestions to core suggestions -->
-
   <xsl:import href="suggest-core.xsl"/>
 
   <xsl:include href="process/add-missing-parameters-and-platforms.xsl"/>
