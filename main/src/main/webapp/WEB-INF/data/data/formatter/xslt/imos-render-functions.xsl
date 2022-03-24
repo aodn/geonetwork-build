@@ -43,7 +43,7 @@
                 </div>
                 <img class="gn-img-extent"
                      alt="{$schemaStrings/thumbnail}"
-                     src="{$nodeUrl}api/records/{$uuid}/extents/{$index}.png"/>
+                     src="{replace(replace($nodeUrl,'^https://','http://'),':433','')}api/records/{$uuid}/extents/{$index}.png"/>
             </div>
 
 
