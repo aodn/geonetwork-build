@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                xmlns:saxon="http://saxon.sf.net/"
+                xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0"
+                xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0"
                 xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
+                xmlns:gn-fn-render="http://geonetwork-opensource.org/xsl/functions/render"
                 xmlns:tr="java:org.fao.geonet.api.records.formatters.SchemaLocalizations"
                 version="2.0"
-                extension-element-prefixes="saxon"
                 exclude-result-prefixes="#all">
 
   <!-- IMOS fixes for 19115-3:2018 full view - remove when upgrading and fixes included -->
@@ -14,6 +15,7 @@
   <!-- Default to core full view behaviour when not overridden here -->
 
   <xsl:import href="../xsl-view/view.xsl"/>
+  <xsl:import href="../../../../../data/formatter/xslt/imos-render-functions.xsl"/>
 
   <!-- Render units -->
 
@@ -67,6 +69,29 @@
         </p>
       </dd>
     </dl>
+  </xsl:template>
+
+  <!-- Bounding polygons are displayed with max and min NSEW values -->
+
+  <xsl:template mode="render-field"
+                match="gex:EX_BoundingPolygon/gex:polygon"
+                priority="100">
+
+    <xsl:variable name="poslist"
+                  as="xs:string*"
+                  select="tokenize(gml:MultiSurface/gml:surfaceMember/gml:Polygon/gml:exterior/gml:LinearRing/gml:posList,' ')"/>
+    <xsl:variable name="poslistNumbers"
+                  select="for $i in $poslist return number($i)"/>
+    <xsl:variable name="latitudes" select="$poslistNumbers[position() mod 2 = 0]"/>
+    <xsl:variable name="longitudes" select="$poslistNumbers[position() mod 2 != 0]"/>
+
+    <br/>
+    <xsl:copy-of select="gn-fn-render:extent($metadataUuid,
+        count(ancestor::mri:extent/preceding-sibling::mri:extent/*/*[local-name() = 'geographicElement']/*) +
+        count(../../preceding-sibling::gex:geographicElement) + 1,
+        min($longitudes), min($latitudes), max($longitudes), max($latitudes))"/>
+    <br/>
+    <br/>
   </xsl:template>
 
 </xsl:stylesheet>
