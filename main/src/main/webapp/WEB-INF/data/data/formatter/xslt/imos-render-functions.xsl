@@ -51,4 +51,14 @@
 
     </xsl:function>
 
+    <!-- Remove https and render the map -->
+    <xsl:function name="gn-fn-render:extent-no-max-min">
+        <xsl:param name="uuid" as="xs:string"/>
+        <div class="thumbnail extent">
+            <img class="gn-img-extent"
+                 alt="{$schemaStrings/thumbnail}"
+                 src="{replace(replace($nodeUrl,'^https://','http://'),':433','')}api/records/{$uuid}/extents.png"/>
+        </div>
+    </xsl:function>
+
 </xsl:stylesheet>

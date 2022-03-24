@@ -5,6 +5,7 @@
                 xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0"
                 xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
+                xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
                 xmlns:gn-fn-render="http://geonetwork-opensource.org/xsl/functions/render"
                 xmlns:tr="java:org.fao.geonet.api.records.formatters.SchemaLocalizations"
                 version="2.0"
@@ -93,6 +94,31 @@
     <br/>
     <br/>
   </xsl:template>
+
+  <!-- Thumbnail extent works with https:// -->
+
+  <xsl:template mode="getExtent" match="mdb:MD_Metadata">
+    <section class="gn-md-side-extent">
+      <h2>
+        <i class="fa fa-fw fa-map-marker"><xsl:comment select="'image'"/></i>
+        <span><xsl:comment select="name()"/>
+          <xsl:value-of select="$schemaStrings/spatialExtent"/>
+        </span>
+      </h2>
+
+      <xsl:choose>
+        <xsl:when test=".//gex:EX_BoundingPolygon">
+          <xsl:copy-of select="gn-fn-render:extent-no-max-min($metadataUuid)"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:apply-templates mode="render-field"
+                               select=".//gex:EX_GeographicBoundingBox">
+          </xsl:apply-templates>
+        </xsl:otherwise>
+      </xsl:choose>
+    </section>
+  </xsl:template>
+
 
 </xsl:stylesheet>
 
