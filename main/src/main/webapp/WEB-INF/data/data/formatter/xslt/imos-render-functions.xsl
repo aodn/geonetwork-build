@@ -41,10 +41,9 @@
                            value="{format-number($west, $numberFormat)}" readonly=""/>
                     <span class="input-group-addon">W</span>
                 </div>
-<!-- TODO: strip out https:// and :433 from $nodeUrl -->
                 <img class="gn-img-extent"
                      alt="{$schemaStrings/thumbnail}"
-                     src="{replace(replace($nodeUrl,'^https://','http://'),':433','')}api/records/{$uuid}/extents/{$index}.png"/>
+                     src="{$nodeUrl}api/records/{$uuid}/extents/{$index}.png"/>
             </div>
 
 
