@@ -6,6 +6,7 @@
                 xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
                 xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
+                xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
                 xmlns:gn-fn-render="http://geonetwork-opensource.org/xsl/functions/render"
                 xmlns:tr="java:org.fao.geonet.api.records.formatters.SchemaLocalizations"
                 version="2.0"
@@ -95,7 +96,24 @@
     <br/>
   </xsl:template>
 
-  <!-- Thumbnail extent works with https:// -->
+  <!-- Bounding boxes are displayed with max and min NSEW values -->
+
+  <xsl:template mode="render-field"
+                match="gex:EX_GeographicBoundingBox"
+                priority="100">
+
+    <br/>
+    <xsl:copy-of select="gn-fn-render:extent($metadataUuid,
+        count(ancestor::mri:extent/preceding-sibling::mri:extent/*/*[local-name() = 'geographicElement']/*) +
+        count(../../preceding-sibling::gex:geographicElement) + 1,
+        number(./gex:westBoundLongitude/gco:Decimal), number(./gex:northBoundLatitude/gco:Decimal),
+        number(./gex:eastBoundLongitude/gco:Decimal), number(./gex:southBoundLatitude/gco:Decimal))"
+    />
+    <br/>
+    <br/>
+  </xsl:template>
+
+  <!-- Thumbnail extent -->
 
   <xsl:template mode="getExtent" match="mdb:MD_Metadata">
     <section class="gn-md-side-extent">
