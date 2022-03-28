@@ -73,6 +73,17 @@
     </dl>
   </xsl:template>
 
+  <!--
+
+                Original                                  Cloned
+  Polygon       37662a66-ec3a-4ece-9db0-31930c181725 - OK ea44b65c-ca5a-4d70-a102-f0b4b3db0240 - No polygon created in clone
+  MultiSurface  c317b0fe-02e8-4ff9-96c9-563fd58e82ac - OK c9c662cb-381f-4dd9-8e09-f9b70d12e513 - OK
+  BoundingBox   c78801d0-bffe-11dc-a463-00188b4c0af8 - OK b60c55b5-58f3-4da7-96ab-95843ebb7155 - OK
+  Single point
+    BoundingBox bc6bb3ec-bfa0-4a2a-ab01-8c3e337a9013
+
+-->
+
   <!-- Bounding polygons are displayed with max and min NSEW values -->
 
   <xsl:template mode="render-field"
@@ -81,17 +92,29 @@
 
     <xsl:variable name="poslist"
                   as="xs:string*"
-                  select="tokenize(gml:MultiSurface/gml:surfaceMember/gml:Polygon/gml:exterior/gml:LinearRing/gml:posList,' ')"/>
+                  select="tokenize(
+                    gml:MultiSurface/gml:surfaceMember/gml:Polygon/gml:exterior/gml:LinearRing/gml:posList|
+                    gml:Polygon/gml:exterior/gml:LinearRing/gml:posList,
+                    ' '
+                  )"
+    />
     <xsl:variable name="poslistNumbers"
                   select="for $i in $poslist return number($i)"/>
     <xsl:variable name="latitudes" select="$poslistNumbers[position() mod 2 = 0]"/>
     <xsl:variable name="longitudes" select="$poslistNumbers[position() mod 2 != 0]"/>
-
+    <xsl:variable name="index" select="count(ancestor::mri:extent/preceding-sibling::mri:extent/*/*[local-name() = 'geographicElement']/*) + count(../../preceding-sibling::gex:geographicElement) + 1"/>
     <br/>
-    <xsl:copy-of select="gn-fn-render:extent($metadataUuid,
-        count(ancestor::mri:extent/preceding-sibling::mri:extent/*/*[local-name() = 'geographicElement']/*) +
-        count(../../preceding-sibling::gex:geographicElement) + 1,
-        min($longitudes), min($latitudes), max($longitudes), max($latitudes))"/>
+    <span>Index = <xsl:value-of select="$index"/></span>
+    <xsl:choose>
+      <xsl:when test=".//gml:Polygon|.//gml:MultiSurface|.//gex:EX_GeographicBoundingBox">
+        <xsl:copy-of select="gn-fn-render:extent($metadataUuid,
+          $index,
+          min($longitudes), min($latitudes), max($longitudes), max($latitudes))"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <span>No spatial extents found</span>
+      </xsl:otherwise>
+    </xsl:choose>
     <br/>
     <br/>
   </xsl:template>
@@ -125,13 +148,16 @@
       </h2>
 
       <xsl:choose>
-        <xsl:when test=".//gex:EX_BoundingPolygon">
+        <xsl:when test=".//gex:EX_BoundingPolygon/gex:polygon/gml:Polygon|.//gex:EX_BoundingPolygon/gex:polygon/gml:MultiSurface">
           <xsl:copy-of select="gn-fn-render:extent-no-max-min($metadataUuid)"/>
         </xsl:when>
-        <xsl:otherwise>
+        <xsl:when test=".//gex:EX_GeographicBoundingBox">
           <xsl:apply-templates mode="render-field"
                                select=".//gex:EX_GeographicBoundingBox">
           </xsl:apply-templates>
+        </xsl:when>
+        <xsl:otherwise>
+          <span>No spatial extents found</span>
         </xsl:otherwise>
       </xsl:choose>
     </section>
