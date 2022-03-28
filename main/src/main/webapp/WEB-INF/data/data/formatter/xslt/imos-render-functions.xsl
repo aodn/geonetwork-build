@@ -61,4 +61,17 @@
         </xsl:if>
     </xsl:function>
 
+    <!-- Single point -->
+    <xsl:function name="gn-fn-render:point-on-map">
+        <xsl:param name="lat" as="xs:double"/>
+        <xsl:param name="long" as="xs:double"/>
+        <!-- TODO: replace this with api call to /{portal}/api/0.1/regions/geom.png to display an image. Currently
+              there is a bug in core-geonetwork where this does not work. -->
+        <div>
+            <span>
+                Single point at longitude <xsl:value-of select="$long"/> and latitude <xsl:value-of select="$lat"/>
+            </span>
+        </div>
+    </xsl:function>
+
 </xsl:stylesheet>

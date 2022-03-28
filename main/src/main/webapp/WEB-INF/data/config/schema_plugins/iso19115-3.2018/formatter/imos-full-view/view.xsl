@@ -102,14 +102,21 @@
                   select="for $i in $poslist return number($i)"/>
     <xsl:variable name="latitudes" select="$poslistNumbers[position() mod 2 = 0]"/>
     <xsl:variable name="longitudes" select="$poslistNumbers[position() mod 2 != 0]"/>
+    <xsl:variable name="west" select="min($longitudes)" />
+    <xsl:variable name="east" select="max($longitudes)" />
+    <xsl:variable name="north" select="max($latitudes)" />
+    <xsl:variable name="south" select="min($latitudes)" />
     <xsl:variable name="index" select="count(ancestor::mri:extent/preceding-sibling::mri:extent/*/*[local-name() = 'geographicElement']/*) + count(../../preceding-sibling::gex:geographicElement) + 1"/>
     <br/>
-    <span>Index = <xsl:value-of select="$index"/></span>
     <xsl:choose>
-      <xsl:when test=".//gml:Polygon|.//gml:MultiSurface|.//gex:EX_GeographicBoundingBox">
+      <xsl:when test="string($west) = 'NaN' or string($east) = 'NaN' or string($north) = 'NaN' or string($south) = 'NaN'" />
+      <xsl:when test=".//gml:Polygon|.//gml:MultiSurface|.//gex:EX_GeographicBoundingBox and $west != $east and $north != $south">
         <xsl:copy-of select="gn-fn-render:extent($metadataUuid,
           $index,
-          min($longitudes), min($latitudes), max($longitudes), max($latitudes))"/>
+          $west, $south, $east, $north)"/>
+      </xsl:when>
+      <xsl:when test=".//gml:Polygon|.//gml:MultiSurface|.//gex:EX_GeographicBoundingBox and $west = $east and $north = $south">
+        <xsl:copy-of select="gn-fn-render:point-on-map($north, $west)"/>
       </xsl:when>
       <xsl:otherwise>
         <span>No spatial extents found</span>
@@ -125,13 +132,25 @@
                 match="gex:EX_GeographicBoundingBox"
                 priority="100">
 
+    <xsl:variable name="west" select="number(./gex:westBoundLongitude/gco:Decimal)" />
+    <xsl:variable name="east" select="number(./gex:eastBoundLongitude/gco:Decimal)" />
+    <xsl:variable name="north" select="number(./gex:northBoundLatitude/gco:Decimal)" />
+    <xsl:variable name="south" select="number(./gex:southBoundLatitude/gco:Decimal)" />
+
     <br/>
-    <xsl:copy-of select="gn-fn-render:extent($metadataUuid,
-        count(ancestor::mri:extent/preceding-sibling::mri:extent/*/*[local-name() = 'geographicElement']/*) +
-        count(../../preceding-sibling::gex:geographicElement) + 1,
-        number(./gex:westBoundLongitude/gco:Decimal), number(./gex:northBoundLatitude/gco:Decimal),
-        number(./gex:eastBoundLongitude/gco:Decimal), number(./gex:southBoundLatitude/gco:Decimal))"
-    />
+    <xsl:choose>
+      <xsl:when test="string($west) = 'NaN' or string($east) = 'NaN' or string($north) = 'NaN' or string($south) = 'NaN'" />
+      <xsl:when test="$west != $east and $north != $south">
+        <xsl:copy-of select="gn-fn-render:extent($metadataUuid,
+            count(ancestor::mri:extent/preceding-sibling::mri:extent/*/*[local-name() = 'geographicElement']/*) +
+            count(../../preceding-sibling::gex:geographicElement) + 1,
+            $west, $north, $east, $south)"
+        />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:copy-of select="gn-fn-render:point-on-map($north, $west)"/>
+      </xsl:otherwise>
+    </xsl:choose>
     <br/>
     <br/>
   </xsl:template>
