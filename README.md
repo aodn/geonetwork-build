@@ -1,4 +1,4 @@
-### GeoNetwork Build
+# GeoNetwork Build
 
 This repository contains customisations/AODN specific configuration applied to the GeoNetwork war
 including:
@@ -18,7 +18,9 @@ Fixes applied included in a later release which can be removed when upgrading to
 * remove geonet info required because of GN CSW harvesting bug (xsl/conversion/import/RemoveGeonetInfo.xsl)
 * full view mrc:units display and linkage display (main/src/main/webapp/WEB-INF/data/config/schema_plugins/iso19115-3.2018/formatter/imos-full-view)
 
-### Contents
+## Licensing
+This project is licensed under the terms of the GNU GPLv3 license.
+## Contents
 
 This repository uses maven to:
 
@@ -29,13 +31,13 @@ This repository uses maven to:
 * build a war containing supporting extensions and making required changes to the GeoNetwork war
   using a maven overlay module
   
-### To build
+## To build
 
 ```
 mvn clean package 
 ```
 
-### Running in IntelliJ
+## Running in IntelliJ
 
 IntelliJ doesn't cope well with the processing performed in the maven overlay so you'll need to use a maven build to build the project rather than relying on the IntelliJ build prior to deploying to a tomcat instance.
 
@@ -57,7 +59,7 @@ a separate data directory.
  
 ![image](https://user-images.githubusercontent.com/1860215/121621720-0e6cd380-cab0-11eb-8b5f-d57632f82fe6.png)
 
-### Connecting to postgres
+## Connecting to postgres
 
 To connect to a postgres database instead of the default H2 one, use a configuration overrides file that 
 imports the spring jndi configuration:
