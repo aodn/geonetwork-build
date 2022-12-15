@@ -41,6 +41,10 @@
             <id>geonetwork</id>
             <url>https://repo.osgeo.org/repository/geonetwork-releases/</url>
         </repository>
+        <repository>
+            <id>geosolutions</id>
+            <url>https://maven.geo-solutions.it/</url>
+        </repository>
     </repositories>
 
 </project>
