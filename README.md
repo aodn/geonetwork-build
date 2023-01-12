@@ -47,7 +47,7 @@ Note in this example we've specified the following system properties use a confi
 
     -Dgeonetwork.jeeves.configuration.overrides.file=/home/craigj/temp/geonetwork-build-overrides.xml
 
-Its also possible to specify a separate location for the data directory used to store uploaded files, schema plugins
+It's also possible to specify a separate location for the data directory used to store uploaded files, schema plugins
 the lucene index and other GeoNetwork state using the geonetwork.dir system property.  For example for my local
 IntelliJ setup I use:
 
