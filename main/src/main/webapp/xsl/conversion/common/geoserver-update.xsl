@@ -12,10 +12,14 @@
     <xsl:template match="/mdb:MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource/cit:linkage/gco:CharacterString[matches(text(), '//geoserver(.*?)\.aodn\.org\.au/')]">
         <xsl:choose>
             <xsl:when test="not($geoserver = '')">
-                <xsl:value-of select="replace(text(), '//geoserver(.*?)\.aodn\.org\.au/', concat('//',string($geoserver),'/'))"/>
+                <xsl:copy>
+                    <xsl:value-of select="replace(text(), '//geoserver(.*?)\.aodn\.org\.au/', concat('//',string($geoserver),'/'))"/>
+                </xsl:copy>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="text()"/>
+                <xsl:copy>
+                    <xsl:value-of select="text()"/>
+                </xsl:copy>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
